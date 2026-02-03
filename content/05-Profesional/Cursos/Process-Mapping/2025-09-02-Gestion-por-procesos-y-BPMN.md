@@ -16,7 +16,7 @@ Técnicas de repartimiento de procesos para hacer cualquier avance, se usa tema 
 Por ejemplo, unas empresas hacen un joint venture y cómo se van a redireccionar todo ese modelo.
 
 1. Qué es la gestión por procesos
-2. Cómo abordamos estos proyectos PwC
+2. Cómo abordamos estos proyectos en la consultora
    - Levantamiento de procesos y documentación de procesos BPMN
    - Caso práctico 1: Conciliación de facturas
    - Caso real de gestión por procesos: modelos operativos
@@ -248,7 +248,7 @@ Montar un SSC que atienda varios países requiere un enfoque estratégico. Six S
 ---
 
 
-# 2 Cómo abordamos estos proyectos PwC
+# 2 Cómo abordamos estos proyectos en la consultora
 
 Hacemos un roadmap en el cual se aplica la planificación de procesos: identificación de procesos, elaboración de cadena de valor, levantamiento de procesos, sesiones de levantamiento, documentación de los procesos, diagnóstico de procesos e implementación de cambios.
 

@@ -20,7 +20,7 @@ trabaja lleva banca y seguros, it risk,
 # Propuesta al cliente: mejores prácticas de ciberseguridad
 
 ## Marco de referencia
-- Se propone al cliente una best practice del mercado: en PwC utilizamos el marco NIST.
+- Se propone al cliente una best practice del mercado: en la consultora utilizamos el marco NIST.
 - El NIST ayuda a prepararnos de forma estructurada y se organiza en cinco funciones:
   - Identificar
   - Proteger
