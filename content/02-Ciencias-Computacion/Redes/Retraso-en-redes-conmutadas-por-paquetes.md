@@ -144,5 +144,3 @@ En una red conmutada por paquetes, **el retraso total experimentado por un paque
     
 
 ---
-
-¿Te gustaría que haga una simulación con valores reales y gráficos mostrando cómo crece el retraso según la congestión?

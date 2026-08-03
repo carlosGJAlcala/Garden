@@ -5,14 +5,11 @@ tags:
   - ciberseguridad
   - practicas
 ---
-Aquí tienes el texto corregido, mejor estructurado y expandido para mayor claridad y profesionalismo:
-
----
 
 ### **Análisis de seguridad en un sitio WordPress**
 
 
-> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[01-Ciberseguridad/Herramientas/WPScan|WPScan]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Herramientas/Burp-suite|Burp suite]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[01-Ciberseguridad/Herramientas/WPScan|WPScan]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Herramientas/Burp-suite|Burp suite]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 Durante la revisión del sitio, se identificaron múltiples puntos de exposición y vulnerabilidades potenciales. A continuación, se detallan los hallazgos:
 
@@ -254,6 +251,3 @@ elementor es un plugin no se recomienda y no está actualizada
         - Evitar el uso innecesario de **CDATA** en HTML para mantener una correcta interpretación de los datos.
             
 
----
-
-Si necesitas más detalles o deseas que lo agregue en un reporte, avísame.

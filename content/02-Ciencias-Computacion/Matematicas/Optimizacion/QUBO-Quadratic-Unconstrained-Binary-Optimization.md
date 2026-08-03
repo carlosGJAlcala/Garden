@@ -87,7 +87,3 @@ Este es un **ejemplo real**:
     
 
 Es exactamente lo que hacen empresas como **Volkswagen** y **DHL** con D-Wave: optimizar rutas y logística en la vida real.
-
----
-
-¿Quieres que te prepare este ejemplo **en LaTeX con las fórmulas y una matriz QQ simplificada** (quizá con 2 o 3 ciudades para que quede legible en tu TFM)?

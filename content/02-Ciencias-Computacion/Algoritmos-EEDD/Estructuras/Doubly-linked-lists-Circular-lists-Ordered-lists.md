@@ -6,20 +6,17 @@ tags:
   - algoritmos-eedd
   - estructuras
 ---
-Perfecto. Vamos a desarrollar estas tres variantes avanzadas del **List ADT**:
 
+# Variantes del List ADT
+
+Tres variantes avanzadas del List ADT:
 - **Doubly Linked Lists** (listas doblemente enlazadas)
-    
 - **Circular Lists** (listas circulares)
-    
 - **Ordered Lists** (listas ordenadas)
-    
-
-Veremos sus estructuras, operaciones, complejidad, ventajas/desventajas y ejemplos de uso real.
 
 ---
 
-##  1. **Doubly Linked List (Lista doblemente enlazada)**
+## 1. **Doubly Linked List (Lista doblemente enlazada)**
 
 
 > **Relacionado**: [[01-Ciberseguridad/Fundamentos/ELPSCRK/DICCIONARIOS|DICCIONARIOS]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/recorridos|recorridos]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Estructuras/Puntero|Puntero]]. [[02-Ciencias-Computacion/Sistemas-Operativos/UNIX/comandos/Locate|Locate]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Estructuras/List-ADT|List ADT]].

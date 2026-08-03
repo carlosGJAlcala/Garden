@@ -159,5 +159,3 @@ int read() {
 ##  Conclusión
 
 El **buffer cíclico** es una de las estructuras más eficientes para manejar datos en flujo continuo, especialmente cuando se necesita bajo consumo de CPU, latencia mínima y uso controlado de memoria. Su implementación es simple, pero poderosa, y forma parte integral de cualquier arquitectura robusta en sistemas embebidos, tiempo real, y robótica.
-
-¿Te gustaría ver un ejemplo en Python, C++, o con ROS para lectura de sensores en tiempo real?

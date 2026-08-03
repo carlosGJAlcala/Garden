@@ -24,16 +24,14 @@ Fundamentos teóricos: algoritmos, estructuras de datos, sistemas operativos, re
 ### [[../03-Desarrollo-Software/MOC-Desarrollo|Desarrollo de Software]]
 Programación y arquitectura: paradigmas, concurrencia, sistemas distribuidos, bases de datos y herramientas de desarrollo.
 
-### [[../04-Idiomas/MOC-Idiomas|Idiomas]]
-Aprendizaje de inglés: vocabulario, gramática y recursos.
 
-### [[../05-Profesional/MOC-Profesional|Desarrollo Profesional]]
+### [[../04-Profesional/MOC-Profesional|Desarrollo Profesional]]
 Cursos, certificaciones y formación continua.
 
-### [[../06-Infraestructura/MOC-Infraestructura|Infraestructura]]
+### [[../05-Infraestructura/MOC-Infraestructura|Infraestructura]]
 Servidores, cloud (Azure) y administración de sistemas.
 
-### [[../07-Investigacion/MOC-Investigacion|Investigación]]
+### [[../06-Investigacion/MOC-Investigacion|Investigación]]
 TFM, computación cuántica y proyectos de investigación.
 
 

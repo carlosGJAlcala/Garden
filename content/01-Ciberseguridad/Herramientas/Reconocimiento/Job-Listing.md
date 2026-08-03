@@ -75,21 +75,21 @@ tags:
 ####  **Cómo aprovechar Job Listings en pentesting / Red Team / OSINT**
 
  Técnicas prácticas:  
-1️⃣ **Revisión manual:**
+1. **Revisión manual:**
 
 - Analizar las publicaciones recientes en portales como LinkedIn o la web oficial del cliente.
     
 - Identificar tendencias tecnológicas, herramientas, certificaciones que demandan.
     
 
-2️⃣ **Extracción automatizada:**
+2. **Extracción automatizada:**
 
 - Scrapers en Python que recojan y analicen ofertas de empleo masivamente.
     
 - Clasificación de tecnologías mencionadas → creación de un “stack de tecnología de la organización”.
     
 
-3️⃣ **Enriquecimiento con otros datos OSINT:**
+3. **Enriquecimiento con otros datos OSINT:**
 
 - Cruzar información de Job Listings con:
     
@@ -100,7 +100,7 @@ tags:
     - Shodan → detectar servicios publicados (coincidiendo con tecnologías mencionadas en las ofertas).
         
 
-4️⃣ **Identificación de “target personas”:**
+4. **Identificación de "target personas":**
 
 - Contactos que aparecen en ofertas pueden ser empleados con acceso privilegiado o clave para campañas de ingeniería social.
     
@@ -189,12 +189,3 @@ Buscamos ingeniero DevOps con experiencia en:
 > Su análisis permite mapear tecnologías, perfilar infraestructura y planificar ataques con alta precisión antes de realizar interacción activa.
 
 ---
-
-Si quieres puedo prepararte:
-
--  **Checklist avanzada para análisis de Job Listings en fase de reconocimiento.**
-    
-- ️ **Script en Python que scrapee ofertas de empleo y extraiga tecnologías mencionadas automáticamente.**
-    
-
-Solo dime  y lo preparo.

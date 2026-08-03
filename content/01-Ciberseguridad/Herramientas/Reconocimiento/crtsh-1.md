@@ -6,7 +6,7 @@ tags:
   - herramientas
   - reconocimiento
 ---
-###  crt.sh (Ct)
+### crt.sh (Ct)
 
 
 > **Relacionado**: [[01-Ciberseguridad/Herramientas/Reconocimiento/Amass|Amass]]. [[01-Ciberseguridad/Herramientas/Reconocimiento/Crtsh|Crtsh]]. [[01-Ciberseguridad/Herramientas/Reconocimiento/DNSDumpster|DNSDumpster]]. [[01-Ciberseguridad/Herramientas/Reconocimiento/Naabu|Naabu]]. [[01-Ciberseguridad/Herramientas/Reconocimiento/Subfinder|Subfinder]].
@@ -24,7 +24,7 @@ tags:
 
 ---
 
-##  ¿Qué es crt.sh?
+## ¿Qué es crt.sh?
 
 **crt.sh** es un buscador gratuito que permite consultar los registros públicos de **transparencia de certificados** (CT logs). Estos registros contienen todos los **certificados digitales TLS/SSL emitidos por autoridades certificadoras públicas**, con el objetivo de **evitar fraudes y emitir alertas tempranas** si se generan certificados no autorizados.
 
@@ -186,5 +186,3 @@ Devuelve los resultados en JSON si se especifica `&output=json`.
 **crt.sh** es una herramienta fundamental en el reconocimiento de dominios, tanto para equipos ofensivos (Red Team, Bug Bounty) como defensivos (Blue Team, SOC). Gracias a los logs públicos de transparencia de certificados, puedes detectar rápidamente **subdominios expuestos, dominios recién creados, y posibles fraudes de identidad digital**.
 
 ---
-
-¿Quieres que prepare un **script en Bash o Python** para obtener subdominios de un dominio objetivo usando crt.sh y filtrarlos por fecha? ¿O que integremos esto en un pipeline de reconocimiento completo junto a Naabu, HTTPX y Nuclei?

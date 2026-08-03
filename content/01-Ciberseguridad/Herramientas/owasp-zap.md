@@ -8,7 +8,7 @@ tags:
 ### **OWASP ZAP (Zed Attack Proxy): Herramienta de Seguridad para Aplicaciones Web**
 
 
-> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[02-Ciencias-Computacion/Sistemas-Operativos/UNIX/comandos/chmod|chmod]]. [[01-Ciberseguridad/Fundamentos/seguridadWebYAuditoria/seguridad-web-y-auditoria|seguridad web y auditoria]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[02-Ciencias-Computacion/Sistemas-Operativos/UNIX/comandos/chmod|chmod]]. [[01-Ciberseguridad/Fundamentos/seguridadWebYAuditoria/seguridad-web-y-auditoria|seguridad web y auditoria]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 **OWASP ZAP (Zed Attack Proxy)** es una herramienta de seguridad gratuita y de código abierto desarrollada por **OWASP (Open Web Application Security Project)**. Su principal objetivo es ayudar a **identificar vulnerabilidades en aplicaciones web** mediante pruebas de penetración automatizadas y manuales.
 
@@ -68,23 +68,23 @@ sudo snap install zaproxy --classic
 
 ## **3. Modos de Uso de OWASP ZAP**
 
-### **1️⃣ Modo Interceptador (Proxy MITM)**
+### **1. Modo Interceptador (Proxy MITM)**
 
 - Configura tu navegador para usar **OWASP ZAP como proxy**.
 - Captura y edita solicitudes antes de que lleguen al servidor.
 - Permite modificar parámetros y headers para probar vulnerabilidades.
 
-### **2️⃣ Escaneo Automático**
+### **2. Escaneo Automático**
 
 - Detecta vulnerabilidades comunes en la aplicación con un solo clic.
 - Recomendado para **pruebas rápidas** de seguridad.
 
-### **3️⃣ Escaneo Manual (Modo Avanzado)**
+### **3. Escaneo Manual (Modo Avanzado)**
 
 - Permite a los pentesters realizar pruebas más detalladas.
 - Se pueden modificar peticiones, hacer ataques de fuerza bruta y pruebas específicas.
 
-### **4️⃣ Integración en DevSecOps (CI/CD)**
+### **4. Integración en DevSecOps (CI/CD)**
 
 - Se puede integrar con herramientas como **Jenkins, GitHub Actions o GitLab CI**.
 - Permite realizar escaneos de seguridad en pipelines de desarrollo.

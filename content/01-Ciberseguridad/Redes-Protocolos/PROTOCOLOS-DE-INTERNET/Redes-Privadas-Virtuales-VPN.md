@@ -15,7 +15,7 @@ Una **VPN (Virtual Private Network)** permite crear un **canal cifrado y seguro*
 
 ---
 
-###  Objetivos principales de una VPN
+### Objetivos principales de una VPN
 
 1. **Confidencialidad**: El tráfico viaja cifrado y no puede ser leído por terceros.
     
@@ -30,7 +30,7 @@ Una **VPN (Virtual Private Network)** permite crear un **canal cifrado y seguro*
 
 ---
 
-###  Componentes básicos de una VPN
+### Componentes básicos de una VPN
 
 - **Cliente VPN**: el software o dispositivo que inicia la conexión.
     
@@ -43,7 +43,7 @@ Una **VPN (Virtual Private Network)** permite crear un **canal cifrado y seguro*
 
 ---
 
-###  Tipos de uso de VPNs
+### Tipos de uso de VPNs
 
 1. **Acceso remoto (Remote Access VPN)**  
     Usuarios se conectan desde fuera de la red corporativa, por ejemplo, trabajadores en casa.
@@ -57,7 +57,7 @@ Una **VPN (Virtual Private Network)** permite crear un **canal cifrado y seguro*
 
 ---
 
-###  Protocolos comunes usados en VPNs
+### Protocolos comunes usados en VPNs
 
 |Protocolo|Capa|Características principales|
 |---|---|---|
@@ -69,7 +69,7 @@ Una **VPN (Virtual Private Network)** permite crear un **canal cifrado y seguro*
 
 ---
 
-### ️ Modos de operación de IPsec (usado en VPNs)
+### Modos de operación de IPsec (usado en VPNs)
 
 1. **Modo transporte**:
     
@@ -90,7 +90,7 @@ Una **VPN (Virtual Private Network)** permite crear un **canal cifrado y seguro*
 
 ---
 
-### ️ Vulnerabilidades y riesgos en VPNs
+### Vulnerabilidades y riesgos en VPNs
 
 1. **Falsificación de servidor**:
     
@@ -115,7 +115,7 @@ Una **VPN (Virtual Private Network)** permite crear un **canal cifrado y seguro*
 
 ---
 
-###  Buenas prácticas y mecanismos de seguridad
+### Buenas prácticas y mecanismos de seguridad
 
 - Usar **certificados digitales** para autenticación.
     
@@ -132,7 +132,7 @@ Una **VPN (Virtual Private Network)** permite crear un **canal cifrado y seguro*
 
 ---
 
-### ️ Aplicaciones típicas de una VPN
+### Aplicaciones típicas de una VPN
 
 - **Empresarial**: conectar teletrabajadores a redes internas.
     
@@ -145,7 +145,7 @@ Una **VPN (Virtual Private Network)** permite crear un **canal cifrado y seguro*
 
 ---
 
-###  Comparación entre protocolos VPN modernos
+### Comparación entre protocolos VPN modernos
 
 |Protocolo|Seguridad|Rendimiento|Facilidad de configuración|Estado|
 |---|---|---|---|---|
@@ -160,5 +160,3 @@ Una **VPN (Virtual Private Network)** permite crear un **canal cifrado y seguro*
 Las VPNs son fundamentales para asegurar comunicaciones privadas y confiables en entornos tanto corporativos como personales. Aunque son potentes, su eficacia depende de **una buena configuración, elección del protocolo adecuado, y conciencia de sus límites**. Con el auge del teletrabajo y la movilidad, su uso se ha convertido en una **pieza esencial de la ciberseguridad moderna**.
 
 ---
-
-¿Quieres que te prepare un ejemplo de configuración de VPN con WireGuard o OpenVPN en Linux o Windows?

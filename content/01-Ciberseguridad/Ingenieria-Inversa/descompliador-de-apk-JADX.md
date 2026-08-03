@@ -5,11 +5,10 @@ tags:
   - ciberseguridad
   - ingenieria-inversa
 ---
-¡Perfecto ! Vamos a preparar unas **notas extensas, densas y técnicas sobre `jadx`**, una herramienta clave en **pentesting móvil y análisis de aplicaciones Android**. Ideal para incluir en tus apuntes avanzados sobre reversing y auditorías móviles.
 
----
+# jadx
 
-###  **jadx**
+Herramienta clave en **pentesting móvil y análisis de aplicaciones Android**. Notas técnicas sobre reversing y auditorías móviles.
 
 
 > **Relacionado**: [[01-Ciberseguridad/Malware/Apuntes|Apuntes]]. [[02-Ciencias-Computacion/IA/Notas|Notas]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[02-Ciencias-Computacion/Sistemas-Operativos/UNIX/carpetas|carpetas]]. [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]].
@@ -249,12 +248,3 @@ jadx -d salida/ app.apk
 > Muy potente, ideal en combinación con `apktool` para auditorías completas.
 
 ---
-
- Si quieres puedo prepararte:
-
--  **Checklist paso a paso para análisis de un APK con `jadx`.**
-    
--  **Guía de análisis combinando `jadx` + `apktool` + `MobSF`.**
-    
-
-Solo dime  y lo preparo.

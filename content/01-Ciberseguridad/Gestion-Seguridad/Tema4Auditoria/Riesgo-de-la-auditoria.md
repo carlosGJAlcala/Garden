@@ -6,14 +6,13 @@ tags:
   - gestion-seguridad
   - tema4auditoria
 ---
-Perfecto. Aquí tienes una **nota técnica ampliada sobre el riesgo de la auditoría**, combinando lo explicado en el documento `MUCS-FGSI-T4.pdf` con una explicación profesional basada en las buenas prácticas internacionales (ISO, NIST, ISACA):
 
----
+# Riesgo de la Auditoría
 
-## ️ Riesgo de la Auditoría
+Nota técnica que combina lo explicado en el documento `MUCS-FGSI-T4.pdf` con buenas prácticas internacionales (ISO, NIST, ISACA).
 
 
-> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Alcance|Alcance]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/COBIT|COBIT]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Alcance|Alcance]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/COBIT|COBIT]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 ###  ¿Qué es?
 
@@ -114,5 +113,3 @@ Por eso, los informes de auditoría **no suelen decir “todo está bien”, sin
     
 
 ---
-
-Si quieres, puedo ayudarte a montar un **diagrama simple con los 3 riesgos principales** o redactar un fragmento para tu TFM/informe. ¿Te interesa eso?

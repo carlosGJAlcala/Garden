@@ -9,7 +9,7 @@ tags:
 # Gestión de Riesgos y Seguridad en Contratos
 
 
-> **Relacionado**: [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 En el ámbito de la gestión de riesgos y seguridad, se utilizan diferentes metodologías y métricas clave para evaluar la exposición al riesgo y la resiliencia operativa. Algunas de las siglas más relevantes incluyen:
 
@@ -58,5 +58,3 @@ Algunos ejemplos de **KRI** incluyen:
 Estos indicadores deben ser revisados regularmente para ajustar las estrategias de mitigación de riesgos y mejorar la resiliencia operativa de la empresa.
 
 ---
-
-Este texto ahora tiene una mejor redacción, fluidez y claridad. ¿Te gustaría que profundizara en algún punto en particular?

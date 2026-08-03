@@ -5,9 +5,6 @@ tags:
   - ciberseguridad
   - criptografia
 ---
-Perfecto, vamos a expandirlo en ambos sentidos: **criptografía pura** y **blockchain**, porque aunque se usan en contextos distintos, se relacionan.
-
----
 
 ### 1. **En criptografía pura (teoría de seguridad en capas)**
 
@@ -86,5 +83,3 @@ Una **L2** sería una autopista secundaria rápida y barata, que cada cierto tie
     
 
 ---
-
-¿Quieres que te prepare una explicación enfocada en **zk-STARKs y tu TFM** (cómo se aplican en L2 y autenticación), o prefieres algo más **general de seguridad multicapa** para entender la idea de L2 en cualquier contexto criptográfico?

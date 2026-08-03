@@ -135,5 +135,3 @@ UsuarioA     SMTP →   Servidor origen   SMTP →  Servidor destino   ← IMAP/
 El **correo electrónico funciona sobre un conjunto de protocolos bien definidos**. SMTP gestiona el envío, mientras que POP3 o IMAP permiten la recuperación de mensajes. Aunque su estructura es robusta y ampliamente usada, **requiere medidas de seguridad activas** para evitar abusos como spam o suplantación.
 
 ---
-
-¿Te gustaría que prepare un esquema visual que muestre el flujo de un email desde emisor hasta receptor con los protocolos involucrados?

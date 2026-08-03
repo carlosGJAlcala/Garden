@@ -79,7 +79,7 @@ Ada puede ser compilado y ejecutado en sistemas sin un sistema operativo (bare-m
 
 ### **Ejemplo de Ada en un Sistema Embebido Sin SO**
 
-Aquí tienes un ejemplo muy básico de cómo podrías escribir un programa en Ada para un sistema bare-metal que parpadea un LED utilizando un temporizador y una interrupción. Suponiendo que estás trabajando con un microcontrolador con un puerto GPIO para controlar el LED:
+Ejemplo básico de un programa en Ada para un sistema bare-metal que parpadea un LED utilizando un temporizador y una interrupción (asumiendo un microcontrolador con un puerto GPIO para controlar el LED):
 
 ```ada
 with Ada.Text_IO; use Ada.Text_IO;

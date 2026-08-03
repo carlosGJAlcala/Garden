@@ -10,7 +10,7 @@ Excelente pregunta. Si ya estás o te estás formando como **senior developer, a
 
 ---
 
-##  ¿Qué es pseudocódigo, realmente?
+## ¿Qué es pseudocódigo, realmente?
 
 
 > **Relacionado**: [[01-Ciberseguridad/Fundamentos/ELPSCRK/DICCIONARIOS|DICCIONARIOS]]. [[01-Ciberseguridad/Herramientas/Reconocimiento/ARIN|ARIN]]. [[03-Desarrollo-Software/Distribuido/Microservicios|Microservicios]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/recorridos|recorridos]]. [[02-Ciencias-Computacion/IA/Notas|Notas]].
@@ -148,7 +148,7 @@ end procedure
 
 Muy buena pregunta. El **pseudocódigo** se considera una forma de **expresividad matemática** porque, aunque no es matemáticas formales como álgebra o cálculo, **describe procesos lógicos y computacionales usando estructuras y símbolos que provienen de la lógica matemática**.
 
-Vamos a desglosarlo paso a paso.
+Desglose paso a paso:
 
 ---
 
@@ -250,7 +250,7 @@ Esto es **exactamente el mismo proceso que la definición matemática recursiva*
 
 ---
 
-Perfecto. A continuación te muestro **varios ejemplos reales de pseudocódigo**, en distintos **estilos de documentación técnica**, incluyendo:
+**Ejemplos reales de pseudocódigo** en distintos estilos de documentación técnica:
 
 - Pseudocódigo formal estilo académico (como en libros tipo CLRS).
     
@@ -529,7 +529,7 @@ Una lista de `TODOs` en un editor es **tuya y solo tuya**. Nadie puede entender 
     # TODO: implementar validación de IBAN con checksum (módulo 97)
     ```
     
-Buena pregunta. Si estás trabajando en un enfoque **profesional y estructurado**, desde el **pseudocódigo hasta la implementación final**, hay varias herramientas que puedes usar según tu estilo de trabajo, el tipo de proyecto y tu equipo. Vamos a dividirlas por propósito:
+Para trabajar en un enfoque **profesional y estructurado**, desde el **pseudocódigo hasta la implementación final**, hay varias herramientas según el estilo de trabajo, tipo de proyecto y equipo. División por propósito:
 
 ---
 
@@ -649,4 +649,3 @@ Te recomiendo este stack minimalista pero muy potente:
 
 ---
 
-¿Quieres que te dé una plantilla en Markdown para pseudocódigo + diagrama Mermaid integrada en VSCode o Notion? ¿O un ejemplo paso a paso desde pseudocódigo a código real (Java, Python, etc.)?

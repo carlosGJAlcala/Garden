@@ -8,7 +8,7 @@ tags:
 ### **Burp Suite: Herramienta de Pentesting Web**
 
 
-> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[02-Ciencias-Computacion/Sistemas-Operativos/UNIX/comandos/chmod|chmod]]. [[01-Ciberseguridad/Fundamentos/seguridadWebYAuditoria/seguridad-web-y-auditoria|seguridad web y auditoria]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[02-Ciencias-Computacion/Sistemas-Operativos/UNIX/comandos/chmod|chmod]]. [[01-Ciberseguridad/Fundamentos/seguridadWebYAuditoria/seguridad-web-y-auditoria|seguridad web y auditoria]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 Burp Suite es una de las herramientas más utilizadas para realizar **pruebas de seguridad en aplicaciones web**. Desarrollada por PortSwigger, permite a los pentesters interceptar, analizar y modificar el tráfico entre un navegador y un servidor web. Es ampliamente utilizada para detectar **vulnerabilidades como [[SQLMap|inyección SQL]], cross-site scripting ([[XXE|XSS]]) y fallos en autenticación** (ver [[owasp|OWASP Top 10]]).
 

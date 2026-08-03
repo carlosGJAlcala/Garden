@@ -134,5 +134,3 @@ El archivo generado puede ser:
 ###  Conclusión
 
 El **mapa de entorno** es una representación clave para que un robot pueda actuar inteligentemente en su espacio. Dependiendo de la aplicación, puede ser un mapa de ocupación 2D, un modelo 3D o una red topológica/semántica. En sistemas como ROS, se construyen en tiempo real usando sensores y algoritmos SLAM, y son esenciales para la localización, navegación y planificación del movimiento.
-
-¿Quieres que te prepare un ejemplo de cómo construir un mapa con ROS y SLAM?

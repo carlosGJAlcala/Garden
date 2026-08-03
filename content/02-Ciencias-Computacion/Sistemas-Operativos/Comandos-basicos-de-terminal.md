@@ -5,9 +5,6 @@ tags:
   - ciencias-computacion
   - sistemas-operativos
 ---
-Te reordeno y amplío estos apuntes para que tengas una **chuleta de comandos básicos de Linux y Windows**, pero también con el contexto de para qué sirve cada cosa y algunos trucos.
-
----
 
 ## **Comandos básicos de terminal (Linux, macOS, Windows)**
 
@@ -249,6 +246,3 @@ cat > texto.md
  **Nota**: Cada vez que abres la terminal, se ejecuta un **shell** (como `bash`) que carga configuraciones desde archivos como `.bash_profile` o `.bashrc`, donde se definen variables, alias y funciones personalizadas.
 
 ---
-
-Si quieres, puedo prepararte **una tabla comparativa con todos estos comandos en Linux/macOS y su equivalente en Windows**, así podrías usarla como guía rápida para ambos sistemas.  
-¿Quieres que te la haga?

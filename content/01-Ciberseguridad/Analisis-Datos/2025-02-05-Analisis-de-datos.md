@@ -151,18 +151,18 @@ Los **hiperparámetros** afectan significativamente el rendimiento de un modelo 
  **Proceso de ajuste de hiperparámetros:**  
 Se crea una **estructura iterativa** en la que se prueban diferentes valores de hiperparámetros para encontrar la mejor combinación. Esto se hace mediante:
 
-1️⃣ **Grid Search (Búsqueda en rejilla)**
+1. **Grid Search (Búsqueda en rejilla)**
 
 - Se prueban **todas las combinaciones posibles** de valores en un conjunto predefinido.
 - **Desventaja:** Muy costoso computacionalmente.
 - **Ejemplo en KNIME:** Usando **"Parameter Optimization Loop"**.
 
-2️⃣ **Random Search (Búsqueda Aleatoria)**
+2. **Random Search (Búsqueda Aleatoria)**
 
 - Se prueban combinaciones aleatorias de valores dentro de un rango.
 - **Ventaja:** Menos costoso que Grid Search, pero no garantiza encontrar la mejor combinación.
 
-3️⃣ **Bayesian Optimization (Optimización Bayesiana)**
+3. **Bayesian Optimization (Optimización Bayesiana)**
 
 - Se basa en modelos probabilísticos para **elegir los hiperparámetros más prometedores** en cada iteración.
 - **Ventaja:** Más eficiente que Grid y Random Search.
@@ -204,10 +204,10 @@ Los **datos en streaming** se generan y procesan en tiempo real, en lugar de alm
 - **Redes sociales:** Procesamiento en tiempo real de comentarios y tendencias.
 - **Sensores IoT:** Monitoreo en fábricas o ciudades inteligentes.
 
- **Desafíos en procesamiento de datos en streaming:**  
-1️⃣ **Alto volumen de datos** → Se necesitan técnicas para procesarlos sin almacenar todo.  
-2️⃣ **Latencia** → Responder en tiempo real requiere sistemas altamente optimizados.  
-3️⃣ **Técnicas de reducción de datos** → Métodos como **muestreo estadístico** o **agregaciones en ventana** ayudan a manejar grandes volúmenes.
+ **Desafíos en procesamiento de datos en streaming:**
+1. **Alto volumen de datos** - Se necesitan técnicas para procesarlos sin almacenar todo.
+2. **Latencia** - Responder en tiempo real requiere sistemas altamente optimizados.
+3. **Técnicas de reducción de datos** - Métodos como **muestreo estadístico** o **agregaciones en ventana** ayudan a manejar grandes volúmenes.
 
  **Técnicas utilizadas:**
 
@@ -277,7 +277,6 @@ Ejemplo:
  **"All models are wrong, but some are useful."**  
 Esta frase destaca que **ningún modelo es perfecto**, pero si se ajusta correctamente, puede ser útil para la toma de decisiones.
 
-Si necesitas más detalles sobre alguno de estos conceptos en **KNIME o Python**, dime y te ayudo a implementarlo. 
 
 ---
 
@@ -458,4 +457,4 @@ Así, la variable se convierte en numérica y puede usarse en modelos como **K-M
 
 ### ** Conclusión**
 
-Este texto mejora la claridad y profundidad de cada concepto. Si necesitas más detalles sobre **cómo implementarlo en KNIME**, dime y te ayudo con ejemplos específicos. 
+ 

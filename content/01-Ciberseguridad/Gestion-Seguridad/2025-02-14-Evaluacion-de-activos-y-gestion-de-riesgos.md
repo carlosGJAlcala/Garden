@@ -5,7 +5,8 @@ tags:
   - ciberseguridad
   - gestion-seguridad
 ---
-Para evaluar un activo desde la perspectiva de un director, necesitas un enfoque estructurado basado en metodologías de gestión de riesgos. Aquí tienes una guía simplificada:
+
+## Evaluación de activos y gestión de riesgos
 
 ### **1. Identificación del Activo**
 

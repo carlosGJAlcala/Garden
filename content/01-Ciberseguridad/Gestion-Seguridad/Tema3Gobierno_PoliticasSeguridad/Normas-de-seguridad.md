@@ -6,11 +6,10 @@ tags:
   - gestion-seguridad
   - tema3gobierno_politicasseguridad
 ---
-Perfecto. Vamos a desarrollar a fondo el concepto de **normas de seguridad**, su papel dentro de un sistema de gestión (como un SGSI basado en ISO 27001), sus características y su relación con políticas y procedimientos.
 
----
+# Normas de Seguridad
 
-##  ¿Qué son las normas de seguridad?
+## ¿Qué son las normas de seguridad?
 
 
 > **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/NIS2|NIS2]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/RGPD|RGPD]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]].
@@ -124,5 +123,3 @@ Las normas ayudan a cumplir:
 > Son la **pieza clave** para asegurar la coherencia, el cumplimiento y la mejora continua en un SGSI maduro.
 
 ---
-
-¿Te gustaría que te prepare un modelo editable de una norma de seguridad (por ejemplo, control de accesos, uso aceptable o clasificación de activos) según ISO 27001 o ENS?

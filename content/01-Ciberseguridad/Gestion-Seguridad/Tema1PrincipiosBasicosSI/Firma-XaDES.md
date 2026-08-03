@@ -6,14 +6,17 @@ tags:
   - gestion-seguridad
   - tema1principiosbasicossi
 ---
-Perfecto. Vamos a desarrollar de forma clara qué es la **firma XAdES** (XML Advanced Electronic Signature), para qué se usa, cómo funciona y por qué es importante especialmente en **entornos administrativos, jurídicos y gubernamentales**.
+
+# Firma XAdES (XML Advanced Electronic Signature)
+
+La **firma XAdES** se usa en **entornos administrativos, jurídicos y gubernamentales** para garantizar autenticidad, integridad y validez legal de documentos XML.
 
 ---
 
-##  ¿Qué es la firma XAdES?
+## ¿Qué es la firma XAdES?
 
 
-> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema1PrincipiosBasicosSI/PAdES|PAdES]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema1PrincipiosBasicosSI/PAdES|PAdES]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 **XAdES (XML Advanced Electronic Signature)** es un **formato de firma electrónica avanzada**, diseñado para firmar documentos electrónicos en formato **XML** de forma **legalmente vinculante**, cumpliendo con normativas europeas como **eIDAS** y leyes nacionales como la **Ley 39/2015** en España.
 
@@ -75,7 +78,7 @@ Perfecto. Vamos a desarrollar de forma clara qué es la **firma XAdES** (XML Adv
 
 ---
 
-## ️ Herramientas y plataformas que usan XAdES
+## Herramientas y plataformas que usan XAdES
 
 - **@firma y AutoFirma** (Ministerio de Hacienda y Función Pública)
     
@@ -101,7 +104,7 @@ Perfecto. Vamos a desarrollar de forma clara qué es la **firma XAdES** (XML Adv
 
 ---
 
-## ️ Consideraciones técnicas
+## Consideraciones técnicas
 
 - No es compatible con formatos PDF ni binarios (para eso se usa PAdES o CAdES)
     
@@ -118,5 +121,3 @@ Perfecto. Vamos a desarrollar de forma clara qué es la **firma XAdES** (XML Adv
 > Garantiza **autenticidad, integridad, no repudio y validez legal**, incluso a largo plazo, y es una pieza clave en la **transformación digital del sector público** en España y Europa.
 
 ---
-
-¿Quieres que te prepare un esquema visual de los niveles XAdES o un ejemplo práctico con XML firmado?

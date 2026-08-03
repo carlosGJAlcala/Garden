@@ -234,7 +234,3 @@ El **método de diferencias divididas y el polinomio de Newton** ofrecen una for
     
 
 Es uno de los métodos clásicos más usados en análisis numérico, ingeniería, gráficos computacionales y software simbólico.
-
----
-
-¿Quieres que prepare también una tabla tipo plantilla para que la llenes a mano al resolver ejercicios con diferencias divididas? ¿O prefieres una versión Markdown lista para Obsidian con todo esto estructurado?

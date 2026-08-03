@@ -177,7 +177,3 @@ Una forma de prevenir TOCTOU es usar funciones que aseguren el acceso y modifica
 #### Después de la corrección (sin vulnerabilidad):
 
 - **Resultado del análisis de seguridad**: Las vulnerabilidades han sido corregidas. El uso de `strlcpy` elimina el desbordamiento de pila, y la validación del puntero NULL mejora la estabilidad. Sin embargo, para evitar el problema TOCTOU, es necesario considerar otras soluciones como el uso de técnicas para garantizar un acceso de archivo atómico.
-
----
-
-Si necesitas más detalles sobre cómo implementar otras soluciones de seguridad o análisis de vulnerabilidades, no dudes en preguntar. ¡Estoy aquí para ayudarte!

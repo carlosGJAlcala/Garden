@@ -6,9 +6,6 @@ tags:
   - forense
   - guia
 ---
-Te desarrollo esa sección como hicimos con la de Linux, pero enfocada en **Windows** y siempre desde un enfoque seguro (modo usuario y herramientas soportadas por Microsoft).
-
----
 
 ## **Ruta segura en Windows (usuario, depuración y minidumps)**
 
@@ -162,13 +159,3 @@ Esto es similar a `strace` en Linux.
 
 ---
 
-Si quieres, puedo ahora añadir un **mini-laboratorio Windows paso a paso** donde:
-
-1. Compilas dos programas (uno “target” y uno “inspector”).
-    
-2. El inspector lee y escribe memoria del target usando `ReadProcessMemory` y `WriteProcessMemory`.
-    
-3. Capturas un minidump del target y analizas la variable modificada con WinDbg.
-    
-
-¿Quieres que lo prepare así?

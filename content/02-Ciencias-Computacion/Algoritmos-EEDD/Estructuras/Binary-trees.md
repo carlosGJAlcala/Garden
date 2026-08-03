@@ -6,11 +6,12 @@ tags:
   - algoritmos-eedd
   - estructuras
 ---
-Perfecto. Vamos a desarrollar a fondo el concepto de **Binary Trees (Árboles Binarios)**: qué son, cómo funcionan, cómo se implementan, sus operaciones clave, usos reales, y cómo se diferencian de otros árboles.
+
+# Binary Trees (Árboles Binarios)
 
 ---
 
-##  ¿Qué es un Binary Tree?
+## ¿Qué es un Binary Tree?
 
 
 > **Relacionado**: [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/recorridos|recorridos]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Estructuras/Heaps|Heaps]]. [[01-Ciberseguridad/Comunicaciones-Seguras/Practica-1-Apendice-Programacion-con-sockets-en-Python-Master-IoT-UCM-Practicas-RPIANIOTLSI-2425|Practica 1 Apendice Programacion con sockets en Python Master IoT UCM Practicas RPIANIOTLSI 2425]]. [[02-Ciencias-Computacion/Compiladores/Comprobacion-de-tipos/Comprobacion-de-codigo-comprobacion-de-tipos|Comprobacion de codigo comprobacion de tipos]].
@@ -196,5 +197,3 @@ procedure insert(nodo, valor)
 > Su forma recursiva y su eficiencia lo hacen fundamental para algoritmos rápidos y estructuras dinámicas.
 
 ---
-
-¿Te gustaría que te prepare una implementación completa en código (Python, Java o C)? ¿O ver cómo aplicar árboles binarios en un caso práctico como ordenar datos, evaluar expresiones o crear un índice?

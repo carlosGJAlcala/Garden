@@ -10,13 +10,13 @@ tags:
 
 > **Relacionado**: [[01-Ciberseguridad/Herramientas/Reconocimiento/ARIN|ARIN]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]].
 
-![[Pasted image 20250909093052.png]]
+![[assets/Pasted image 20250909093052.png]]
 
 
-los dolares  es para fija fija  la columana facilita mucho trabajo
+los dolares  es para fija fija  la columna facilita mucho trabajo
 
 
-![[Pasted image 20250909095948.png]]
+![[assets/Pasted image 20250909095948.png]]
 
 
 
@@ -326,7 +326,6 @@ los dolares  es para fija fija  la columana facilita mucho trabajo
  **En resumen:**  
 Fijar sirve para que tus fórmulas **no se rompan al copiarlas o moverlas**. Te da control sobre si quieres que la celda de referencia se actualice o no.
 
-¿Quieres que te arme un **ejemplo paso a paso en una tabla pequeña de Excel** (con números, fórmulas arrastradas y resultado) para que veas exactamente la diferencia entre relativa, absoluta y mixta?
 
 # Entregar caso 2
 Marina Gomez Martin
@@ -337,9 +336,9 @@ Hugo hernandez martín
 slide master
 con el slide master se puede coger el slidedropper
 
-![[Pasted image 20250909154628.png]]
-![[Pasted image 20250909154648.png]]
+![[assets/Pasted image 20250909154628.png]]
+![[assets/Pasted image 20250909154648.png]]
 
 
-![[Pasted image 20250909154953.png]]
-![[Pasted image 20250909155015.png]]
+![[assets/Pasted image 20250909154953.png]]
+![[assets/Pasted image 20250909155015.png]]

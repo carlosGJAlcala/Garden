@@ -10,10 +10,10 @@ Las **tecnologías Triple A** en seguridad de la información hacen referencia a
 
 ---
 
-##  Tecnologías Triple A: **Autenticación, Autorización y Accountability**
+## Tecnologías Triple A: Autenticación, Autorización y Accountability
 
 
-> **Relacionado**: [[01-Ciberseguridad/Redes-Protocolos/Vulnerabilidades-y-Amenazas/Acceso-remoto/Acceso-remoto|Acceso remoto]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/Sistema-de-Gestion-de-la-Seguridad-de-la-Informacion|Sistema de Gestion de la Seguridad de la Informacion]]. [[02-Ciencias-Computacion/Percepcion-Control/partes-principales-de-un-sistema-robotico|partes principales de un sistema robotico]].
+> **Relacionado**: [[01-Ciberseguridad/Redes-Protocolos/Vulnerabilidades-y-Amenazas/Acceso-remoto/Acceso-remoto|Acceso remoto]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/Sistema-de-Gestion-de-la-Seguridad-de-la-Informacion|Sistema de Gestion de la Seguridad de la Informacion]]. [[02-Ciencias-Computacion/Percepcion-Control/partes-principales-de-un-sistema-robotico|partes principales de un sistema robotico]].
 
 Estas tres funciones trabajan en conjunto para **verificar identidades, conceder permisos y dejar trazabilidad de las acciones** realizadas por usuarios en un sistema.
 
@@ -128,5 +128,3 @@ Según el documento FGSI-T1-Control de accesos:
 >     
 
 ---
-
-¿Quieres que prepare una tabla comparativa entre RADIUS, TACACS+ y DIAMETER? ¿O ejemplos reales de uso en sistemas operativos o cloud?

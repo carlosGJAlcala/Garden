@@ -20,8 +20,6 @@ Un **Sistema Automático Digital (SAD)** está compuesto por **módulos funciona
 
 ##  Principales módulos de un SAD
 
-Aquí tienes una descripción detallada y ampliada de cada módulo:
-
 ---
 
 ### 1. **Módulo Sensorial (Adquisición de datos)**
@@ -218,4 +216,4 @@ Cada uno de estos bloques puede ser un **módulo independiente**, con interfaces
 
 Los **módulos de un Sistema Automático Digital (SAD)** representan una arquitectura robusta y flexible que permite implementar lazos de control reales sobre hardware digital. Su diseño modular, basado en el flujo de información desde sensores hasta actuadores, permite abordar desde sistemas embebidos simples hasta robots cognitivos complejos.
 
-Si lo deseas, puedo complementar esto con un **diagrama funcional**, **esquema de implementación en código** o **simulación en MATLAB/Simulink**. ¿Quieres alguno de esos ejemplos?
+---

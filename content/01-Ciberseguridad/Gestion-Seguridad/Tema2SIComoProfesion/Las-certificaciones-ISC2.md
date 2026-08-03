@@ -6,11 +6,10 @@ tags:
   - gestion-seguridad
   - tema2sicomoprofesion
 ---
-Perfecto. Vamos a detallar las **certificaciones (ISC)²**, basándonos en el documento que has proporcionado y ampliando con información actualizada y profesionalmente útil:
 
----
+# Certificaciones (ISC)²
 
-##  ¿Qué es (ISC)²?
+## ¿Qué es (ISC)²?
 
 
 > **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/NIS2|NIS2]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[02-Ciencias-Computacion/Redes/ONOS|ONOS]]. [[01-Ciberseguridad/Fundamentos/Conceptos-basicos-de-la-seguridad-en-el-software|Conceptos basicos de la seguridad en el software]]. [[01-Ciberseguridad/Comunicaciones-Seguras/Practica-1-Apendice-Programacion-con-sockets-en-Python-Master-IoT-UCM-Practicas-RPIANIOTLSI-2425|Practica 1 Apendice Programacion con sockets en Python Master IoT UCM Practicas RPIANIOTLSI 2425]].
@@ -174,5 +173,3 @@ El máster en ciberseguridad de la UAH **cubre casi todos los dominios de CISSP 
 > Combinadas con un máster oficial como el de la UAH, te permiten **acceder a puestos técnicos y directivos de alta responsabilidad**, tanto en el sector público como privado.
 
 ---
-
-¿Quieres una tabla comparativa con los requisitos, dominios, duración del examen y mantenimiento de cada certificación (ISC)²? ¿O una guía paso a paso para prepararte para la CISSP o SSCP?

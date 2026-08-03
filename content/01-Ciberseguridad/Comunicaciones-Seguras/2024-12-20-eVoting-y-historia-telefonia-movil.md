@@ -96,10 +96,6 @@ La principal diferencia entre un **bit** clásico y un **qubit** (bit cuántico)
     - La criptografía cuántica actualmente sirve como **inicialización** para un futuro en el que las redes cuánticas sean más robustas y seguras.
 - la clave  es un cuarto  porque una mitad se va eliguiendo y la otra mita se va detectar entonces se queda en cuarto
 
-El contenido sobre **SUCI** y **SUPI** en redes 5G trata temas fundamentales de seguridad y cómo la arquitectura 5G soluciona problemas de generaciones anteriores. Aquí tienes una versión corregida, organizada y explicada para mayor claridad:
-
----
-
 ### Redes 5G y Identificadores: SUPI y SUCI
 
 #### Problema en redes previas (4G)
@@ -166,10 +162,6 @@ El **SUCI** se construye cifrando el **SUPI** con una clave pública de la red d
 - **Privacidad mejorada**: El **SUPI** ya no se transmite en texto plano gracias al cifrado del **SUCI**.
 - **Resiliencia a ataques**: Con mecanismos como SQN y tiempos de expiración, los ataques de repetición son mucho más difíciles.
 - **Cifrado robusto**: ECIES proporciona seguridad avanzada, dificultando la intercepción y descifrado de identificadores.
-
-Aquí tienes una descripción organizada y mejorada de los conceptos que planteaste, incluyendo los **ataques laterales**, **métodos de sonido** y la introducción a la **criptografía de posicionamiento cuántica (QPV)**:
-
----
 
 ### **Ataques Laterales (Side-Channel Attacks)**
 

@@ -6,11 +6,10 @@ tags:
   - gestion-seguridad
   - tema4auditoria
 ---
-Perfecto. Vamos a explicar el concepto de **“Militarización”** tal como aparece en el documento _Auditoría Técnica de Seguridad.pdf_, combinándolo con buenas prácticas reales en **post-explotación** y **Red Teaming**.
 
----
+# Militarización (en pentesting y Red Teaming)
 
-##  Militarización (en pentesting y Red Teaming)
+Concepto de **"Militarización"** según el documento _Auditoría Técnica de Seguridad.pdf_, combinado con buenas prácticas reales en **post-explotación** y **Red Teaming**.
 
 
 > **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/AuditoriaTecnica/Pivoting|Pivoting]]. [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[01-Ciberseguridad/Herramientas/Netcat|Netcat]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Herramientas/Cobalt-Strike|Cobalt Strike]].
@@ -149,14 +148,3 @@ En ciberseguridad, significa lo mismo: **convertir una intrusión puntual en una
     
 
 ---
-
-###  ¿Quieres que te prepare...?
-
-- Una práctica guiada de militarización paso a paso
-    
-- Un script Python personalizado para control remoto
-    
-- Un informe de ejemplo con esta técnica documentada
-    
-
-Dímelo y te lo creo al instante.

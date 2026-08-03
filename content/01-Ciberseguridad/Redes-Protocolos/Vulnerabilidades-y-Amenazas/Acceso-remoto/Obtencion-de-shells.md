@@ -9,7 +9,7 @@ tags:
 ### Obtención de Shells – Nota expandida
 
 
-> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[01-Ciberseguridad/Herramientas/Netcat|Netcat]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Redes-Protocolos/Vulnerabilidades-y-Amenazas/Escalada-de-Privilegios/Escalada-de-Privilegios|Escalada de Privilegios]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[01-Ciberseguridad/Herramientas/Netcat|Netcat]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Redes-Protocolos/Vulnerabilidades-y-Amenazas/Escalada-de-Privilegios/Escalada-de-Privilegios|Escalada de Privilegios]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 **La obtención de una shell** es el momento clave de un ataque en el que el atacante **logra ejecutar comandos en el sistema de la víctima**, generalmente a través de una terminal interactiva. Obtener una shell representa **tomar el control** de un equipo, al menos parcialmente, y permite al atacante moverse dentro del sistema, escalar privilegios y desplegar herramientas maliciosas o realizar acciones específicas.
 
@@ -191,5 +191,3 @@ export TERM=xterm
 **Obtener una shell es un punto de inflexión en un ataque**. A partir de ahí, el atacante tiene control directo sobre el sistema y puede continuar con la escalada de privilegios, persistencia o movimiento lateral. Comprender los distintos tipos y técnicas es clave tanto para pentesters como para defensores.
 
 ---
-
-¿Te gustaría que prepare un laboratorio con shells inversas en Linux y Windows usando Netcat, Metasploit o webshells reales?

@@ -9,7 +9,7 @@ tags:
 ### Infraestructura de Internet – Nota expandida
 
 
-> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[01-Ciberseguridad/Redes-Protocolos/PROTOCOLOS-DE-INTERNET/DHCP|DHCP]]. [[01-Ciberseguridad/Redes-Protocolos/PROTOCOLOS-DE-INTERNET/OSPF|OSPF]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[01-Ciberseguridad/Redes-Protocolos/PROTOCOLOS-DE-INTERNET/DHCP|DHCP]]. [[01-Ciberseguridad/Redes-Protocolos/PROTOCOLOS-DE-INTERNET/OSPF|OSPF]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 La infraestructura de Internet es el conjunto de componentes físicos y lógicos que permiten la conectividad global entre dispositivos, sistemas y usuarios. Esta infraestructura está organizada en capas, según el modelo TCP/IP, y cuenta con diversos protocolos que permiten que la comunicación ocurra de manera eficiente y escalable. A continuación se detallan los elementos clave, ampliando lo que aparece en el documento:
 
@@ -95,5 +95,3 @@ La infraestructura de Internet es el conjunto de componentes físicos y lógicos
 La infraestructura de Internet es un entramado complejo y distribuido, compuesto por sistemas interdependientes que permiten el enrutamiento, resolución de nombres, y acceso eficiente a los recursos. Sin embargo, su diseño original no contemplaba la seguridad como prioridad, lo que obliga a añadir capas de protección mediante estándares, protocolos seguros y vigilancia continua para mitigar riesgos crecientes.
 
 ---
-
-¿Quieres que profundice en algún protocolo concreto (por ejemplo, BGP o DNSSEC) o en una tecnología como VPN o IPsec?

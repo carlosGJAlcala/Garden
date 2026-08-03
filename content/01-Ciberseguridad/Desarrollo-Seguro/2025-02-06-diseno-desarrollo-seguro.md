@@ -11,21 +11,17 @@ tags:
 
 ---
 
-Excelente contenido. A continuación te presento una versión **revisada, mejor redactada, estructurada y enriquecida**, para que quede claro y formal, ideal para un informe o guía técnica sobre **validación de datos de entrada y seguridad en el desarrollo seguro**:
-
----
-
 # Orden de validación de datos de entrada
 
 El proceso de **validación de datos de entrada** es un componente esencial del desarrollo seguro. Su correcto diseño permite proteger las aplicaciones frente a múltiples amenazas, como inyecciones, corrupción de datos o fallos lógicos.
 
 El orden recomendado para validar los datos contempla diferentes aspectos clave:
 
-1️⃣ **Origen de los datos**  
+1. **Origen de los datos**  
 Primero debe verificarse **de dónde provienen los datos**. Si los datos atraviesan una **frontera de confianza** (por ejemplo, si llegan desde un cliente externo o un sistema no confiable), será necesario aplicar **validaciones más estrictas y controles adicionales**.  
 Esto se basa en el principio de **no confiar en datos externos**, independientemente de su apariencia.
 
-2️⃣ **Tamaño**  
+2. **Tamaño**  
 Comprobar que los datos no superan los límites establecidos:
 
 - **Longitud** (por ejemplo, número máximo de caracteres permitidos en un campo).
@@ -35,7 +31,7 @@ Comprobar que los datos no superan los límites establecidos:
 
 Esto ayuda a prevenir ataques como desbordamientos de buffer o inyecciones masivas de datos.
 
-3️⃣ **Léxico**  
+3. **Léxico**  
 Verificar que los **caracteres que componen el dato sean aceptables en el contexto previsto**.  
 Ejemplos:
 
@@ -44,7 +40,7 @@ Ejemplos:
 - Permitir solo letras en un campo de nombre.
     
 
-4️⃣ **Sintaxis**  
+4. **Sintaxis**  
 Revisar la estructura general del dato para asegurar que sigue el **formato esperado**.  
 Ejemplos:
 
@@ -53,7 +49,7 @@ Ejemplos:
 - Validar que un código postal sigue el patrón establecido.
     
 
-5️⃣ **Semántica**  
+5. **Semántica**  
 Por último, comprobar que el **valor del dato tiene sentido en su contexto de uso**.  
 Ejemplos:
 
@@ -168,14 +164,7 @@ Con esta primitiva de dominio se garantiza que **nunca podrá existir una cantid
 
 ---
 
- Si quieres, puedo añadir:
-
-- Un **diagrama comparativo de los modelos de tipado** (estático, dinámico, débil).
-    
-- Ejemplos de **implementación de primitivas de dominio en Python o en otro lenguaje**.
-    
-
-Dímelo y lo preparamos. 
+ 
 
 ---
 

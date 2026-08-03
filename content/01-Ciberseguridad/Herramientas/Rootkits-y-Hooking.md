@@ -8,7 +8,7 @@ tags:
 # Técnicas de Ocultación y Manipulación en Seguridad Informática**
 
 
-> **Relacionado**: [[01-Ciberseguridad/Redes-Protocolos/Vulnerabilidades-y-Amenazas/GanarAcceso/Rootkits|Rootkits]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Fundamentos/Conceptos-basicos-de-la-seguridad-en-el-software|Conceptos basicos de la seguridad en el software]]. [[01-Ciberseguridad/Comunicaciones-Seguras/Practica-1-Apendice-Programacion-con-sockets-en-Python-Master-IoT-UCM-Practicas-RPIANIOTLSI-2425|Practica 1 Apendice Programacion con sockets en Python Master IoT UCM Practicas RPIANIOTLSI 2425]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[01-Ciberseguridad/Redes-Protocolos/Vulnerabilidades-y-Amenazas/GanarAcceso/Rootkits|Rootkits]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Fundamentos/Conceptos-basicos-de-la-seguridad-en-el-software|Conceptos basicos de la seguridad en el software]]. [[01-Ciberseguridad/Comunicaciones-Seguras/Practica-1-Apendice-Programacion-con-sockets-en-Python-Master-IoT-UCM-Practicas-RPIANIOTLSI-2425|Practica 1 Apendice Programacion con sockets en Python Master IoT UCM Practicas RPIANIOTLSI 2425]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 Los **rootkits** y el **hooking** son técnicas avanzadas utilizadas tanto por atacantes para mantener el control sobre un sistema comprometido como por herramientas de seguridad para monitorear actividades maliciosas.
 
@@ -30,7 +30,7 @@ Un **rootkit** es un tipo de software malicioso diseñado para **ocultarse en un
 
 ## **2. Tipos de Rootkits**
 
-### **1️⃣ Rootkits de Espacio de Usuario (User-mode, Ring 3)**
+### **1. Rootkits de Espacio de Usuario (User-mode, Ring 3)**
 
 - Se ejecutan en **modo usuario** y modifican procesos normales del sistema.
 - Utilizan técnicas como **DLL Injection y API Hooking** para ocultar su presencia.
@@ -38,7 +38,7 @@ Un **rootkit** es un tipo de software malicioso diseñado para **ocultarse en un
 
 Ejemplo: **Rootkit Hacker Defender**, que oculta procesos y conexiones en Windows.
 
-### **2️⃣ Rootkits de Espacio de Kernel (Kernel-mode, Ring 0)**
+### **2. Rootkits de Espacio de Kernel (Kernel-mode, Ring 0)**
 
 - Se ejecutan con privilegios elevados en el **kernel del sistema operativo**.
 - Pueden modificar estructuras internas como la **System Call Table**.
@@ -46,7 +46,7 @@ Ejemplo: **Rootkit Hacker Defender**, que oculta procesos y conexiones en Window
 
 Ejemplo: **Rootkit FU** en Windows, que oculta procesos modificando estructuras del kernel.
 
-### **3️⃣ Rootkits de Firmware (BIOS/UEFI Rootkits)**
+### **3. Rootkits de Firmware (BIOS/UEFI Rootkits)**
 
 - Se instalan en el **firmware de la placa base o discos duros**.
 - Persisten incluso tras formatear el disco y reinstalar el sistema operativo.
@@ -54,7 +54,7 @@ Ejemplo: **Rootkit FU** en Windows, que oculta procesos modificando estructuras 
 
 Ejemplo: **LoJax**, el primer rootkit detectado en el firmware UEFI.
 
-### **4️⃣ Rootkits de Modo Virtualización (Hypervisor Rootkits)**
+### **4. Rootkits de Modo Virtualización (Hypervisor Rootkits)**
 
 - Se ejecutan en un nivel más bajo que el sistema operativo.
 - Pueden interceptar y modificar todas las instrucciones del sistema.
@@ -69,7 +69,7 @@ El **hooking** es una técnica utilizada tanto por **malware** como por herramie
 
 ### **Tipos de Hooking**
 
-### **1️⃣ API Hooking**
+### **1. API Hooking**
 
 - Consiste en modificar funciones del sistema para alterar su ejecución.
 - Se usa para ocultar procesos, archivos y conexiones de red.
@@ -89,7 +89,7 @@ BOOL WINAPI HookedCreateFile(LPCTSTR lpFileName, DWORD dwDesiredAccess, DWORD dw
 
 Este código modifica la API `CreateFile` para impedir que el sistema abra ciertos archivos.
 
-### **2️⃣ System Call Hooking**
+### **2. System Call Hooking**
 
 - Se usa en rootkits de kernel para modificar la **System Call Table**.
 - Permite ocultar procesos, archivos y conexiones de red al modificar llamadas como `sys_open` o `sys_read`.
@@ -109,7 +109,7 @@ asmlinkage int hooked_sys_open(const char __user *filename, int flags, int mode)
 
 Este código intercepta `sys_open` para evitar la apertura de un archivo específico.
 
-### **3️⃣ Inline Hooking**
+### **3. Inline Hooking**
 
 - Modifica directamente el código en memoria de una función.
 - Se usa en **malware avanzado y herramientas de seguridad**.
@@ -131,7 +131,7 @@ Ejemplo: Un keylogger puede **hookear GetAsyncKeyState** en Windows para captura
 
 ## **5. Cómo Detectar y Eliminar Rootkits y Hooking**
 
-### **1️⃣ Herramientas de Detección de Rootkits**
+### **1. Herramientas de Detección de Rootkits**
 
 - **Chkrootkit** (Linux):
     
@@ -150,7 +150,7 @@ Ejemplo: Un keylogger puede **hookear GetAsyncKeyState** en Windows para captura
 - **GMER** (Windows): Escanea procesos ocultos y hooks en el kernel.
 - **Malwarebytes Anti-Rootkit**: Detecta y elimina rootkits en Windows.
 
-### **2️⃣ Métodos de Eliminación**
+### **2. Métodos de Eliminación**
 
 - **Modo seguro y escaneo con herramientas especializadas**.
 - **Restauración de archivos del sistema** con comandos como `sfc /scannow` en Windows.

@@ -6,9 +6,6 @@ tags:
   - forense
   - guia
 ---
-Te amplío esa sección para que quede como una práctica guiada y con contexto, conectando la **sincronización de recursos entre procesos** con la **detección forense de mutex nombrados como IOC**.
-
----
 
 ## **Lectura y escritura coordinada entre procesos (sin kernel)**
 
@@ -146,5 +143,3 @@ handle.exe | findstr NombreGlobal
 Verás cómo puedes detectar su existencia, igual que harías en una investigación forense.
 
 ---
-
-Si quieres, puedo unir esto con un **laboratorio forense** donde se cree un mutex nombrado, se observe en ejecución, y luego se detecte con Volatility a partir de un volcado de memoria. ¿Quieres que lo prepare?

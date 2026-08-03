@@ -88,5 +88,3 @@ El ciclo de transformación de datos desde su estado crudo hasta un producto ana
     
 
 ---
-
-¿Quieres que te prepare un **esquema gráfico tipo pipeline** con todas estas fases (Raw to Ready + MLOps) para que quede visual, o prefieres que lo mantengamos solo en texto detallado?

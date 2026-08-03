@@ -5,8 +5,6 @@ tags:
   - desarrollo-software
   - distribuido
 ---
-Vamos a verlo con enfoque de **programación distribuida**, que es justo el contexto de los documentos que me pasaste antes.
-
 ---
 
 ## **1. Qué es un socket en Java**
@@ -145,4 +143,3 @@ Esto evita que un cliente lento bloquee a los demás.
 
 ---
 
-Si quieres, puedo prepararte **un ejemplo completo de cliente-servidor TCP concurrente en Java** que encaje con la teoría de los documentos que me pasaste. ¿Quieres que lo haga?

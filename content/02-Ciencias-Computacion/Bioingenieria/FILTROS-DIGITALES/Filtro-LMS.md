@@ -101,7 +101,7 @@ Entrada \( x(n) \) → Filtro FIR adaptativo → Salida \( y(n) \)
 \(\quad\) ↘ Comparación con \( d(n) \) → Error \( e(n) \) → Actualización de \( \mathbf{w}(n) \)
 
 ---
-![[Pasted image 20250808214641.png]]
+![[assets/Pasted image 20250808214641.png]]
 
 ## Función de transferencia del filtro LMS
 

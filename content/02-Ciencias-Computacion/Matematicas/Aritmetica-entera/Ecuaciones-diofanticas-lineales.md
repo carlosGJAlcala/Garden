@@ -153,5 +153,3 @@ Las ecuaciones diofánticas lineales **son simples pero poderosas**, y aparecen 
 Con el algoritmo extendido de Euclides puedes resolverlas **de forma eficiente**, y aplicarlas directamente en muchos contextos reales de software.
 
 ---
-
-¿Quieres que prepare un ejemplo más avanzado donde calculamos el inverso modular y lo usamos para implementar una parte del cifrado RSA?

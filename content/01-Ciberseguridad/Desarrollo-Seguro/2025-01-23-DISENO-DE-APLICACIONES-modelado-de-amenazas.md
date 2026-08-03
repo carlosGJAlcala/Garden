@@ -205,8 +205,6 @@ Portal online que permite a los usuarios registrarse, iniciar sesión y consulta
 
 ---
 
-Si quieres, puedo preparar una **tabla resumen** de este análisis STRIDE o un **diagrama visual del flujo del modelado de amenazas para este escenario bancario**. Solo dime. 
-
 ---
 
 ## Cómo aplicar estrategias de modelado en este caso
@@ -219,7 +217,7 @@ Para aplicar correctamente el **modelado de amenazas** al escenario de la aplica
 
 Esta estrategia se centra en **identificar y proteger los activos más importantes del sistema**. Los pasos serían:
 
-1️⃣ **Identificación de activos clave:**
+1. **Identificación de activos clave:**
 
 - **Datos personales de los usuarios**: nombres, direcciones, datos financieros, etc.
     
@@ -228,7 +226,7 @@ Esta estrategia se centra en **identificar y proteger los activos más important
 - **Infraestructura tecnológica**: servidores web, bases de datos, redes y servicios que soportan la aplicación.
     
 
-2️⃣ **Análisis de amenazas STRIDE sobre cada activo:**
+2. **Análisis de amenazas STRIDE sobre cada activo:**
 
 - Para **datos personales**: Information Disclosure (ID), Tampering (T).
     
@@ -245,7 +243,7 @@ De esta forma, el análisis se orienta a garantizar la **confidencialidad, integ
 
 Esta estrategia analiza el **comportamiento de las funciones principales del sistema**, evaluando qué amenazas pueden materializarse en cada paso funcional. El proceso sería:
 
-1️⃣ **Identificación de funciones principales:**
+1. **Identificación de funciones principales:**
 
 - **Registro de usuarios**: proceso mediante el cual los usuarios crean sus cuentas.
     
@@ -256,7 +254,7 @@ Esta estrategia analiza el **comportamiento de las funciones principales del sis
 - **Transferencias bancarias**: operaciones críticas que mueven fondos.
     
 
-2️⃣ **Análisis de amenazas STRIDE por función:**
+2. **Análisis de amenazas STRIDE por función:**
 
 - **Registro de usuarios**: posible spoofing (S) si no hay controles sólidos de validación de identidad.
     

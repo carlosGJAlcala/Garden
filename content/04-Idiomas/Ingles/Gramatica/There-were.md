@@ -6,11 +6,8 @@ tags:
   - ingles
   - gramatica
 ---
-Aquí tienes unos **apuntes densos y detallados** sobre **“there were”**, para un nivel intermedio-avanzado. Te explico su uso, estructura, diferencias con otras formas y aplicaciones prácticas en contexto.
 
----
-
-#  Apuntes avanzados sobre **“There were”**
+#  Apuntes avanzados sobre **"There were"**
 
 
 > **Relacionado**: [[01-Ciberseguridad/Malware/Apuntes|Apuntes]].
@@ -167,5 +164,3 @@ Aquí tienes unos **apuntes densos y detallados** sobre **“there were”**, pa
     
 
 ---
-
-¿Te gustaría que convierta estos apuntes en una ficha para Obsidian o que prepare ejercicios para afianzar el uso de “there were”?

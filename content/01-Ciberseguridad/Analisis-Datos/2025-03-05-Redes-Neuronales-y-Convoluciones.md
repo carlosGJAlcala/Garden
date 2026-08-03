@@ -9,7 +9,7 @@ tags:
 # Redes Neuronales y Convoluciones
 
 
-> **Relacionado**: [[01-Ciberseguridad/Herramientas/Reconocimiento/FOCA|FOCA]]. [[07-Investigacion/Cuantica/bibliografia/biblio|biblio]]. [[00-Inicio/HOME|HOME]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]].
+> **Relacionado**: [[01-Ciberseguridad/Herramientas/Reconocimiento/FOCA|FOCA]]. [[07-Investigacion/Cuantica/bibliografia/biblio|biblio]]. [[00-Inicio/HOME|HOME]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]].
 
 Las **redes neuronales convolucionales (CNNs)** son un tipo de arquitectura de redes neuronales diseñadas específicamente para procesar datos con una estructura de cuadrícula, como imágenes.
 

@@ -165,7 +165,3 @@ El analizador sintáctico puede:
 - Evitar retrocesos siempre que sea posible.
 
 ---
-
-
-Si quieres, puedo ahora prepararte **diagramas LL(1)**, **pilas paso a paso** y **árboles de derivación** para que el apartado sea más visual y didáctico.  
-¿Quieres que te lo haga?

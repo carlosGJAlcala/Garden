@@ -163,5 +163,3 @@ La división euclídea no es solo una operación matemática elemental, sino una
 Es uno de esos conceptos matemáticos **con impacto inmediato en el código**, en todos los niveles.
 
 ---
-
-¿Quieres que prepare una demo de programación en Python que use división euclídea extendida para resolver ecuaciones diofánticas o calcular un inverso modular (clave en RSA)?

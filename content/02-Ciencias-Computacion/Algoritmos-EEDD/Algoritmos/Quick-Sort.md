@@ -6,11 +6,10 @@ tags:
   - algoritmos-eedd
   - algoritmos
 ---
-Perfecto. Vamos a profundizar en **Quick Sort**, uno de los algoritmos de ordenamiento más rápidos y usados en la práctica. Es eficiente, versátil, y forma parte de las librerías estándar de muchos lenguajes (como `Arrays.sort()` en Java o `sort()` en Python bajo ciertas condiciones).
 
----
+# Quick Sort
 
-## ️ ¿Qué es Quick Sort?
+## ¿Qué es Quick Sort?
 
 
 > **Relacionado**: [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/Merge-Sort|Merge Sort]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/Insertion-Sort|Insertion Sort]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/algoritmos-de-ordenamiento|algoritmos de ordenamiento]].
@@ -162,5 +161,3 @@ Cuando el **pivote es siempre el mínimo o máximo** → por ejemplo en arrays y
 > **Quick Sort** es uno de los algoritmos más eficientes y prácticos para ordenamiento general. Su rendimiento en promedio es excelente, y su estructura recursiva lo hace elegante, aunque requiere atención en la **elección del pivote** para evitar el peor caso.
 
 ---
-
-¿Te gustaría que simule paso a paso cómo se divide y ordena un array con Quick Sort? ¿O que compare su rendimiento contra Merge Sort con datos reales? También puedo mostrar su implementación en Java, C o C++ si lo necesitas.

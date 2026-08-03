@@ -269,5 +269,3 @@ Porque el programa separa **la comprobación (`access()`) de la acción (`open()
 Las condiciones de carrera permiten escalar privilegios en sistemas mal programados, especialmente si se manipulan **archivos temporales, SUIDs o cron jobs**. Con un simple script de flip y un binario vulnerable, puedes **obtener root sin necesidad de exploits de kernel**.
 
 ---
-
-¿Quieres que te prepare un código de prueba en C vulnerable a race condition para hacer pruebas en laboratorio y probar la escalada paso a paso?

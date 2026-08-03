@@ -9,7 +9,9 @@ tags:
 
 > **Relacionado**: [[01-Ciberseguridad/Herramientas/Reconocimiento/Subfinder|Subfinder]]. [[02-Ciencias-Computacion/IA/Notas|Notas]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[01-Ciberseguridad/Fundamentos/owasp|owasp]].
 
-Excelente, vamos a explicar crt.sh, una herramienta clave para reconocimiento y enumeración de subdominios en la fase de OSINT en pentesting. Aquí tienes las notas detalladas:
+# crt.sh
+
+Herramienta clave para reconocimiento y enumeración de subdominios en la fase de OSINT en pentesting.
 
 
 ---
@@ -52,8 +54,8 @@ Enumerar potenciales vectores de ataque.
 
  Cómo usar crt.sh
 
-Uso manual: 1️⃣ Ir a: https://crt.sh/
-2️⃣ Buscar:
+Uso manual: 1. Ir a: https://crt.sh/
+2. Buscar:
 
 %.ejemplo.com
 
@@ -141,13 +143,3 @@ Potente herramienta de reconocimiento pasivo OSINT en pentesting y bug bounty.
 
 
 ---
-
-Si quieres puedo prepararte:
-
- Mini-guía sobre cómo extraer resultados de crt.sh con scripts.
-
-️ Laboratorio: enumeración de subdominios combinando crt.sh + Subfinder + httpx.
-
-
-Solo dime .
-

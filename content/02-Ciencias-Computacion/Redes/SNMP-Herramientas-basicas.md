@@ -243,4 +243,3 @@ Para recibir traps necesitas:
 
 Usando SNMP puedes monitorizar cualquier aspecto técnico de una **conexión WAN**, desde si está activa hasta si hay errores, congestión o rutas anómalas. Con `snmpget` y `snmpwalk` puedes hacer pruebas manuales, y con herramientas como **Telegraf + SNMP input**, **Zabbix**, **LibreNMS** o **Nagios**, puedes automatizar esta supervisión y generar alertas si algo falla.
 
-¿Quieres que te prepare un script o una plantilla de Telegraf para recolectar estos OIDs automáticamente?

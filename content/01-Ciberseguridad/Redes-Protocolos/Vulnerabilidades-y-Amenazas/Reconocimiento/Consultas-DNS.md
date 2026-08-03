@@ -194,5 +194,3 @@ dig @dns.objetivo.com objetivo.com AXFR
 Las **consultas DNS son esenciales para el funcionamiento de Internet**, pero también pueden ser utilizadas como vector de ataque, fuga de información o canal encubierto de comunicación. Por ello, tanto en tareas de pentesting como en defensa, **entender y controlar el tráfico DNS es una prioridad crítica**.
 
 ---
-
-¿Quieres que te prepare ejemplos de prácticas ofensivas (enumeración de subdominios o uso de dig/nslookup) o defensivas (configurar DNSSEC o monitorización)?

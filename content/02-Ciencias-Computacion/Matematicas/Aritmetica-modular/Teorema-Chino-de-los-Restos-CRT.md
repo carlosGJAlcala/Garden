@@ -161,5 +161,3 @@ El **Teorema Chino de los Restos** es una joya de la teoría de números **que s
     
 
 ---
-
-¿Quieres que te prepare un ejemplo con RSA donde se use el CRT para descifrar más rápido, o una visualización paso a paso de cómo se recombinan las congruencias en Python?

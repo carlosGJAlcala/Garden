@@ -148,5 +148,3 @@ last -f /var/log/wtmp
 La **limpieza de logs es una técnica común y peligrosa** usada por atacantes para ocultar su presencia y dificultar la respuesta. Detectarla requiere **visibilidad externa, controles de integridad, y buenas prácticas de logging**. Para los defensores, es clave que los sistemas de registro **no dependan exclusivamente del host comprometido**.
 
 ---
-
-¿Te gustaría que prepare un laboratorio en el que simulas un ataque con limpieza de logs y luego analizas los rastros que quedan para detección forense?

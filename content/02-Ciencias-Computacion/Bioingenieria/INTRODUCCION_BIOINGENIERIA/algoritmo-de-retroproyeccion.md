@@ -100,7 +100,3 @@ Pasos:
     
 
 ---
-
-Si quieres, puedo prepararte **un esquema visual paso a paso** del algoritmo de retroproyección con la diferencia entre la versión simple y la filtrada, de forma que quede listo para un documento técnico o de clase. Esto ayudaría mucho a que sea más entendible para un lector no especializado.
-
-¿Quieres que lo añada?

@@ -6,9 +6,6 @@ tags:
   - forense
   - guia
 ---
-Te amplío esa sección con más detalle, ejemplos y contexto para que quede como una guía paso a paso de prácticas seguras en Linux para observación y manipulación de memoria en modo usuario.
-
----
 
 ## **Ruta segura en Linux (usuario y observabilidad)**
 
@@ -183,6 +180,3 @@ Todo lo haces desde **ring 3** usando APIs y herramientas oficiales. No comprome
     
 
 ---
-
-Si quieres, puedo ampliarte esta parte con **un diagrama del flujo de memoria en Linux** que muestre cómo se ven las regiones de código, heap, pila y bibliotecas en `/proc/<pid>/maps`, y cómo encajan con las direcciones que inspeccionas en GDB.  
-¿Quieres que lo haga?

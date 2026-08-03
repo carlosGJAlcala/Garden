@@ -16,7 +16,7 @@ Quien vigilará a esto vigilante
 ### Debate sobre si cada agente de seguridad es efectivo o tiene demasiado poder, y si puede limitar los privilegios sin reducir sus propiedades. Individualizar en 1 o 2 párrafos por tema
 
 
-> **Relacionado**: [[01-Ciberseguridad/Redes-Protocolos/Vulnerabilidades-y-Amenazas/GanarAcceso/Rootkits|Rootkits]]. [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Forense/guia/Forense-de-memoria-de-sistema-completo|Forense de memoria de sistema completo]].
+> **Relacionado**: [[01-Ciberseguridad/Redes-Protocolos/Vulnerabilidades-y-Amenazas/GanarAcceso/Rootkits|Rootkits]]. [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Forense/guia/Forense-de-memoria-de-sistema-completo|Forense de memoria de sistema completo]].
 
 **TPM**  
 Está basada en la seguridad del procesador y tiene partes criptográficas. Surgió en 1999, y en 2003 se generó un nuevo modelo. El modelo actual es el 2.0. Sus motivaciones eran asegurar el arranque seguro y detectar la autenticación.

@@ -14,7 +14,7 @@ tags:
 **Israel HERNANDEZ**
 
 trabaja lleva banca y seguros, it risk,
-![[Pasted image 20250910163605.png]]
+![[assets/Pasted image 20250910163605.png]]
 
 
 # Propuesta al cliente: mejores prácticas de ciberseguridad
@@ -78,7 +78,7 @@ trabaja lleva banca y seguros, it risk,
 
 
 
-![[Pasted image 20250910172606.png]]
+![[assets/Pasted image 20250910172606.png]]
 
 
 

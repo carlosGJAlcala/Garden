@@ -6,11 +6,13 @@ tags:
   - algoritmos-eedd
   - algoritmos
 ---
-Perfecto. Vamos a desarrollar a fondo los **algoritmos de ordenamiento (sorting algorithms)**, que son fundamentales en programación, estructuras de datos, y análisis de rendimiento. Ordenar datos es una tarea recurrente en todo tipo de aplicaciones: bases de datos, procesamiento de listas, visualización, inteligencia artificial, etc.
 
----
+<<<<<<< HEAD
+=======
+# Algoritmos de Ordenamiento (Sorting Algorithms)
+>>>>>>> 788cfbd6a7588493c9844126e17f19f7b6628750
 
-##  ¿Qué es ordenar?
+## ¿Qué es ordenar?
 
 
 > **Relacionado**: [[02-Ciencias-Computacion/Algoritmos-EEDD/Estructuras/Heaps|Heaps]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]].
@@ -224,5 +226,3 @@ Cuando los datos son **enteros pequeños o estructuras especiales**, se puede us
 |Ordenar enteros en rango pequeño|Counting/Radix|
 
 ---
-
-¿Quieres que te dé implementaciones en código real (Python, Java, C)? ¿O una visualización paso a paso de cómo funciona Merge Sort o Quick Sort en un array?

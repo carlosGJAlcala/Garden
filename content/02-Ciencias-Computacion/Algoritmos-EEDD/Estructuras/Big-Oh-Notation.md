@@ -131,11 +131,14 @@ Pero en la práctica, **Big O** es la más usada, especialmente para describir e
 >     
 
 ---
-Perfecto. Vamos a ver ejemplos **en código**, y te explicaré **paso a paso cómo calcular su complejidad con operaciones matemáticas** (sumas, productos, potencias, logaritmos...). Verás cómo **contar operaciones elementales** te lleva directamente a la **notación Big O**.
+
+# Ejemplos en código y cálculo de complejidad
+
+Ejemplos paso a paso de cómo calcular complejidad con operaciones matemáticas (sumas, productos, potencias, logaritmos). Contar operaciones elementales lleva directamente a la notación Big O.
 
 ---
 
-##  Ejemplo 1: Bucle simple – **O(n)**
+## Ejemplo 1: Bucle simple – **O(n)**
 
 ```c
 void imprimir(int n) {
@@ -314,5 +317,3 @@ while(n>1)n=n/2while (n > 1) n = n / 2
 > Contando operaciones elementales (sumas, multiplicaciones, recursión), puedes **analizar el rendimiento** de cualquier algoritmo.
 
 ---
-
-¿Te gustaría que te prepare una tabla con algoritmos y su derivación matemática paso a paso (por ejemplo, Quicksort, BFS, Dijkstra, etc.)? ¿O quieres que analice un fragmento de código tuyo concreto?

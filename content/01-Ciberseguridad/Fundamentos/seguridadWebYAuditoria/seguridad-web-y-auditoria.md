@@ -35,7 +35,7 @@ Para el tema de la configuración he instalado las dos máquinas con virtual box
 ## PARTE I- AUDITORÍA WEB Y HARDENING
 
 
-> **Relacionado**: [[01-Ciberseguridad/Fundamentos/owasp|owasp]]. [[01-Ciberseguridad/Herramientas/Reconocimiento/OpenVAS|OpenVAS]]. [[02-Ciencias-Computacion/Sistemas-Operativos/UNIX/comandos/NMAP|NMAP]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-03-27-charla-seguridad-APIs-OAUTH20|2025 03 27 charla seguridad APIs OAUTH20]].
+> **Relacionado**: [[01-Ciberseguridad/Fundamentos/owasp|owasp]]. [[01-Ciberseguridad/Herramientas/Reconocimiento/OpenVAS|OpenVAS]]. [[02-Ciencias-Computacion/Sistemas-Operativos/UNIX/comandos/NMAP|NMAP]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-03-27-charla-seguridad-APIs-OAUTH20|2025 03 27 charla seguridad APIs OAUTH20]].
 
 Primero veos en la máquina Lamp está levantado están los seguridad
 ![[Pasted-image-20241113164146.png]]Suponemos que no conocemos la ip, el primer paso sería hacer un nmap con la máscara de red.

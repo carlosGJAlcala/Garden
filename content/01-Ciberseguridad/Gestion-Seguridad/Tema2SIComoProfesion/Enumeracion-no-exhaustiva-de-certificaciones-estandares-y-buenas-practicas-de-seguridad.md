@@ -8,7 +8,7 @@ tags:
 ##  1. S.I – Seguridad de la Información
 
 
-> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/NIS2|NIS2]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/Sistema-de-Gestion-de-la-Seguridad-de-la-Informacion|Sistema de Gestion de la Seguridad de la Informacion]].
+> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/NIS2|NIS2]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/Sistema-de-Gestion-de-la-Seguridad-de-la-Informacion|Sistema de Gestion de la Seguridad de la Informacion]].
 
 Aquí se incluyen estándares y certificaciones orientadas a la **gestión y gobierno de la seguridad**:
 
@@ -87,5 +87,3 @@ Se trata del estándar de **Gestión de Continuidad de Negocio**, que:
 Un profesional de alto nivel en ciberseguridad debe **conocer y combinar elementos de los tres bloques**, sobre todo si aspira a roles de liderazgo (como CISO, responsable de cumplimiento, arquitecto de seguridad o consultor ENS/NIS2).
 
 ---
-
-¿Te gustaría que prepare un gráfico más detallado de esta clasificación, con rutas de carrera profesional asociadas a cada grupo de certificaciones?

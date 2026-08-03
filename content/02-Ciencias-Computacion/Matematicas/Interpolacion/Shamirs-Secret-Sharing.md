@@ -6,11 +6,8 @@ tags:
   - matematicas
   - interpolacion
 ---
-Perfecto. Aquí tienes una nota **explicada y completa sobre Shamir’s Secret Sharing**, en formato de texto enriquecido con **fórmulas entre símbolos `$$...$$`** para que puedas usarla directamente en Obsidian o cualquier entorno compatible con LaTeX.
 
----
-
-#  Shamir's Secret Sharing – Explicación y aplicación en programación
+# Shamir's Secret Sharing
 
 
 > **Relacionado**: [[01-Ciberseguridad/Herramientas/Reconocimiento/ARIN|ARIN]]. [[02-Ciencias-Computacion/Matematicas/Interpolacion/Interpolacion|Interpolacion]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[02-Ciencias-Computacion/Matematicas/Interpolacion/Metodo-de-diferencias-divididas-y-polinomio-de-Newton|Metodo de diferencias divididas y polinomio de Newton]].
@@ -171,5 +168,3 @@ Con estas tres, podemos reconstruir f(0)=s=5f(0) = s = 5 mediante interpolación
     
 
 ---
-
-¿Quieres que prepare un ejemplo en Python que genere y recupere un secreto paso a paso usando interpolación de Lagrange sobre un campo finito? También puedo darte una versión visual en Obsidian o graficada.

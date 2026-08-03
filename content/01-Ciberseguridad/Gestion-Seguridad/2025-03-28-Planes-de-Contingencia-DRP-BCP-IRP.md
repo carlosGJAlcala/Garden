@@ -87,8 +87,6 @@ La respuesta efectiva ante un incidente requiere la participación de diferentes
 
 ---
 
-Si quieres puedo añadir ejemplos concretos de tipos de incidentes definidos por **INCIBE** o un esquema de cómo se relacionan estos tres planes (BCP, DRP, IRP). Solo dime. 
-
 ---
 
 # Tipos de incidentes de seguridad

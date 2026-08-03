@@ -6,14 +6,17 @@ tags:
   - gestion-seguridad
   - tema4auditoria
 ---
-Perfecto. Vamos a explicar qué es el marco **CIS Controls Top 18**, su estructura, objetivos y por qué es uno de los marcos de **ciberseguridad técnica más prácticos, priorizados y reconocidos internacionalmente**.
+
+# CIS Controls Top 18
+
+El marco **CIS Controls Top 18**: estructura, objetivos y por qué es uno de los marcos de ciberseguridad técnica más prácticos, priorizados y reconocidos internacionalmente.
 
 ---
 
-##  ¿Qué es CIS?
+## ¿Qué es CIS?
 
 
-> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/NIS2|NIS2]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[01-Ciberseguridad/Herramientas/Reconocimiento/FOCA|FOCA]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/NIS2|NIS2]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[01-Ciberseguridad/Herramientas/Reconocimiento/FOCA|FOCA]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 **CIS (Center for Internet Security)** es una organización sin ánimo de lucro que desarrolla **guías, controles y benchmarks de seguridad** para proteger sistemas frente a amenazas reales.
 
@@ -122,5 +125,3 @@ Con esto ya cubre la mayoría de los ataques comunes como phishing, ransomware o
 > Son ideales para **empresas en crecimiento, AAPP pequeñas, proveedores TIC** o proyectos que necesitan una guía clara sin depender exclusivamente de normas complejas.
 
 ---
-
-¿Te gustaría que te prepare una tabla comparativa entre los controles CIS y los del ENS o ISO 27001? ¿O una checklist editable con los controles CIS IG1 para autoevaluación rápida?

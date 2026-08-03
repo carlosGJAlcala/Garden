@@ -5,7 +5,7 @@ tags:
   - ciberseguridad
 ---
 
-##  ¿Qué significa “orientación basada en riesgos”?
+## ¿Qué significa "orientación basada en riesgos"?
 
 
 > **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/NIS2|NIS2]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[01-Ciberseguridad/Herramientas/IDOR|IDOR]].
@@ -78,5 +78,3 @@ Una universidad puede aceptar:
 > Permite **priorizar recursos**, justificar decisiones ante auditores y **cumplir con marcos normativos exigentes** como ENS, ISO 27001 o NIS2.
 
 ---
-
-¿Quieres que te prepare una plantilla de matriz de apetito de riesgo o una gráfica de aceptación vs tratamiento de riesgos para usar en informes o presentaciones?

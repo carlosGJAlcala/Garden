@@ -6,7 +6,6 @@ tags:
   - cursos
   - contabilidad
 ---
-Muy buena pregunta .
 
 ### 1. Qué es el **Debe** y el **Haber**
 
@@ -81,4 +80,3 @@ En otras palabras:
 
  Así, cuando ves un asiento contable, el **Debe** muestra a dónde va el dinero o el valor, y el **Haber** muestra de dónde viene.
 
-¿Quieres que te arme un ejemplo muy simple con un asiento real (por ejemplo, comprar mercancía pagando en efectivo) para que lo veas aplicado al Debe y al Haber?

@@ -6,11 +6,14 @@ tags:
   - algoritmos-eedd
   - estructuras
 ---
-Perfecto. Vamos a desarrollar completamente el concepto de **Priority Queue (Cola con Prioridad)**, que se basa en el **Heap ADT**, y es fundamental en algoritmos, sistemas operativos, redes, planificación, simulaciones, IA y muchas otras áreas.
+
+# Priority Queue (Cola con Prioridad)
+
+La Priority Queue se basa en el **Heap ADT** y es fundamental en algoritmos, sistemas operativos, redes, planificación, simulaciones, IA y muchas otras áreas.
 
 ---
 
-##  ¿Qué es una Priority Queue?
+## ¿Qué es una Priority Queue?
 
 
 > **Relacionado**: [[02-Ciencias-Computacion/Algoritmos-EEDD/Estructuras/Heaps|Heaps]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Estructuras/Queue-ADT|Queue ADT]]. [[02-Ciencias-Computacion/Percepcion-Control/partes-principales-de-un-sistema-robotico|partes principales de un sistema robotico]].
@@ -180,5 +183,3 @@ class PriorityQueue:
 > Su implementación más eficiente y usada en la práctica es mediante un **heap binario**, lo que permite insertar y extraer el elemento prioritario en **O(log n)**.
 
 ---
-
-¿Quieres que te muestre cómo implementar una cola con prioridad desde cero con un heap manual en C, Python o Java? ¿O un ejemplo aplicado como la ejecución de tareas por prioridad o simulación de eventos?

@@ -6,11 +6,8 @@ tags:
   - gestion-seguridad
   - tema4auditoria
 ---
-Perfecto. A continuación te dejo una **nota técnica extensa y actualizada sobre OWASP WSTG (Web Security Testing Guide)**, conectando lo que aparece en el documento y ampliando con contenido profesional y práctico para que puedas aplicarlo o documentarlo en tus trabajos:
 
----
-
-##  OWASP WSTG — Web Security Testing Guide
+# OWASP WSTG (Web Security Testing Guide)
 
 
 > **Relacionado**: [[01-Ciberseguridad/Fundamentos/owasp|owasp]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Alcance|Alcance]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[01-Ciberseguridad/Herramientas/Nikto|Nikto]]. [[01-Ciberseguridad/Herramientas/Reconocimiento/Amass|Amass]].
@@ -164,5 +161,3 @@ Ejemplos de categorías clave:
     
 
 ---
-
-¿Quieres que te prepare un **checklist editable en Excel o Markdown basado en el WSTG** para usar en tus propias auditorías o en un CTF? También puedo ayudarte a redactar una sección para el informe técnico de pentesting basada en WSTG.

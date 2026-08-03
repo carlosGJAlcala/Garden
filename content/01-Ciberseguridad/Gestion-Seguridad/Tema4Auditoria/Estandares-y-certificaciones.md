@@ -6,14 +6,11 @@ tags:
   - gestion-seguridad
   - tema4auditoria
 ---
-Aquí tienes una **nota técnica expandida sobre “Estándares y certificaciones en auditoría de seguridad de la información”**, basada en el contenido del documento y ampliada con información profesional y normativa:
 
----
-
-## ️ Estándares y Certificaciones en Auditoría de Seguridad de la Información
+## Estándares y Certificaciones en Auditoría de Seguridad de la Información
 
 
-> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/COBIT|COBIT]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/COBIT|COBIT]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 Los **estándares y certificaciones** proporcionan un marco común, validado internacionalmente, que permite **evaluar la seguridad de una organización**, mejorar procesos, **lograr conformidad regulatoria** y demostrar confianza frente a terceros (clientes, socios, autoridades).
 
@@ -141,6 +138,3 @@ Estos estándares pueden aplicarse tanto **al sistema auditado como a los propio
 
 La adopción de **estándares reconocidos** y la certificación formal son elementos clave para demostrar que una organización **gestiona su seguridad de forma madura y controlada**. Además, en muchos casos es una **exigencia legal o contractual**.
 
----
-
-¿Quieres que te prepare una tabla resumen comparando todos estos estándares y certificaciones? También puedo redactarte una sección para un informe de auditoría o tu TFM.

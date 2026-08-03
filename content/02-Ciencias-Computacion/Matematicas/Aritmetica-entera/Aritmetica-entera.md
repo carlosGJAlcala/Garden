@@ -6,14 +6,17 @@ tags:
   - matematicas
   - aritmetica-entera
 ---
-Perfecto. Vamos a relacionar el tema de **Aritmética entera** con la **programación**, tomando como base lo que aparece en tus apuntes y complementándolo con aplicaciones reales en desarrollo de software y algoritmos.
+
+# Aritmética Entera y Programación
+
+Relación del tema de **Aritmética entera** con la **programación**, con aplicaciones reales en desarrollo de software y algoritmos.
 
 ---
 
-###  1. Números enteros en programación
+## 1. Números enteros en programación
 
 
-> **Relacionado**: [[01-Ciberseguridad/Malware/Apuntes|Apuntes]]. [[01-Ciberseguridad/Redes-Protocolos/Vulnerabilidades-y-Amenazas/Escalada-de-Privilegios/Integer-overflow|Integer overflow]]. [[01-Ciberseguridad/Fundamentos/Conceptos-basicos-de-la-seguridad-en-el-software|Conceptos basicos de la seguridad en el software]]. [[01-Ciberseguridad/Comunicaciones-Seguras/Practica-1-Apendice-Programacion-con-sockets-en-Python-Master-IoT-UCM-Practicas-RPIANIOTLSI-2425|Practica 1 Apendice Programacion con sockets en Python Master IoT UCM Practicas RPIANIOTLSI 2425]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[01-Ciberseguridad/Malware/Apuntes|Apuntes]]. [[01-Ciberseguridad/Redes-Protocolos/Vulnerabilidades-y-Amenazas/Escalada-de-Privilegios/Integer-overflow|Integer overflow]]. [[01-Ciberseguridad/Fundamentos/Conceptos-basicos-de-la-seguridad-en-el-software|Conceptos basicos de la seguridad en el software]]. [[01-Ciberseguridad/Comunicaciones-Seguras/Practica-1-Apendice-Programacion-con-sockets-en-Python-Master-IoT-UCM-Practicas-RPIANIOTLSI-2425|Practica 1 Apendice Programacion con sockets en Python Master IoT UCM Practicas RPIANIOTLSI 2425]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 En matemáticas, los números enteros son el conjunto **ℤ = {..., -2, -1, 0, 1, 2, ...}**. En programación, los **tipos de datos enteros (`int`)** son su equivalente, aunque con **límites de tamaño** según el lenguaje y arquitectura (por ejemplo, `int32`, `int64`, etc.).
 
@@ -133,5 +136,3 @@ def extended_gcd(a, b):
     
 
 ---
-
-¿Quieres que te relacione ahora la **aritmética modular**, **el algoritmo RSA** o **el teorema chino de los restos** con la programación y sus usos reales?

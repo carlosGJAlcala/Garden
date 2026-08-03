@@ -11,7 +11,7 @@ tags:
 ###  Detalles sobre hunter.io:
 
 
-> **Relacionado**: [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Fundamentos/seguridadWebYAuditoria/seguridad-web-y-auditoria|seguridad web y auditoria]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-03-27-charla-seguridad-APIs-OAUTH20|2025 03 27 charla seguridad APIs OAUTH20]].
+> **Relacionado**: [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Fundamentos/seguridadWebYAuditoria/seguridad-web-y-auditoria|seguridad web y auditoria]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-03-27-charla-seguridad-APIs-OAUTH20|2025 03 27 charla seguridad APIs OAUTH20]].
 
 - **Nombre completo:** Hunter.io
     
@@ -50,6 +50,5 @@ Hunter.io permite **encontrar direcciones de correo electrónico** asociadas a u
 - Preparación para una campaña de ingeniería social o Red Team.
     
 - OSINT para investigaciones empresariales o de ciberinteligencia.
-    
 
-¿Te gustaría un ejemplo práctico de cómo usar Hunter.io en una fase de pentesting o un script que lo consuma desde su API?
+---

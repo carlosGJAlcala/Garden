@@ -6,11 +6,14 @@ tags:
   - algoritmos-eedd
   - estructuras
 ---
-Perfecto. Vamos a desarrollar a fondo los **Directed Graph ADTs** (Tipos Abstractos de Datos para grafos dirigidos), que permiten representar relaciones unidireccionales entre entidades. Son esenciales en múltiples campos: análisis de redes, programación, algoritmos de búsqueda, compiladores, grafos de dependencia, control de flujo, etc.
+
+# Directed Graph ADTs (Grafos Dirigidos)
+
+Tipos Abstractos de Datos para grafos dirigidos, que permiten representar relaciones unidireccionales entre entidades. Esenciales en análisis de redes, algoritmos de búsqueda, compiladores, grafos de dependencia, control de flujo, etc.
 
 ---
 
-##  ¿Qué es un grafo dirigido?
+## ¿Qué es un grafo dirigido?
 
 
 > **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/recorridos|recorridos]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]].
@@ -185,5 +188,3 @@ procedure bfs(v)
 > Es fundamental para algoritmos de caminos, ordenaciones, dependencias y control de flujo.
 
 ---
-
-¿Quieres ver un ejemplo práctico en código (Python, Java o C++) de un grafo dirigido con listas de adyacencia y búsqueda DFS o Dijkstra? ¿O una implementación del ADT usando clases?

@@ -7,11 +7,9 @@ tags:
 ---
 **Apache HTTP Server (también conocido como Apache httpd)** es un servidor web de código abierto y gratuito, uno de los más populares y utilizados en el mundo para servir páginas web. Fue desarrollado por la Apache Software Foundation y es conocido por su flexibilidad, modularidad y facilidad de configuración.
 
-A continuación te explico qué es, cómo funciona y algunas de sus características clave.
-
 ---
 
-###  **¿Qué es Apache HTTP Server?**
+## ¿Qué es Apache HTTP Server?
 
 
 > **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[01-Ciberseguridad/Comunicaciones-Seguras/Practica-1-Apendice-Programacion-con-sockets-en-Python-Master-IoT-UCM-Practicas-RPIANIOTLSI-2425|Practica 1 Apendice Programacion con sockets en Python Master IoT UCM Practicas RPIANIOTLSI 2425]]. [[01-Ciberseguridad/Comunicaciones-Seguras/Konversation/konversation|konversation]]. [[01-Ciberseguridad/Herramientas/IDS-IPS/Instalacion-y-Configuracion-de-Splunk-Universal-Forwarder-con-Snort-en-Windows-y-Ubuntu|Instalacion y Configuracion de Splunk Universal Forwarder con Snort en Windows y Ubuntu]].

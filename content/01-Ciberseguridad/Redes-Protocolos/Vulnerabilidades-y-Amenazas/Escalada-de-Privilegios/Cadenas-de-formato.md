@@ -284,5 +284,3 @@ root
 Una escalada de privilegios mediante **format strings** permite a un atacante escribir en direcciones arbitrarias, sobrescribir punteros de función o direcciones de retorno, y ejecutar su propio código con privilegios elevados (root). Aunque menos comunes hoy gracias a las protecciones modernas, **aún existen en software heredado y sistemas embebidos**.
 
 ---
-
-¿Quieres que te genere un exploit automático en Python o `pwntools` para un binario de laboratorio vulnerable a format string?

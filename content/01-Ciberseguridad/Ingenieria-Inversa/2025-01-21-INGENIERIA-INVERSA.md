@@ -119,10 +119,6 @@ Consulta la **bibliografía del Tema 2** del curso para profundizar en:
 
 ---
 
-¿Quieres que te prepare una plantilla con funciones comunes y su patrón en ensamblador o ejemplos en Ghidra o radare2? Puedo ayudarte a practicar casos reales.
-
----
-
 **Reversing Tools**
 
 ### Disassemblers

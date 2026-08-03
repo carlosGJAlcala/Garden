@@ -6,13 +6,10 @@ tags:
   - algoritmos-eedd
   - algoritmos
 ---
-Perfecto. Vamos a explorar en detalle las **implementaciones del List ADT**, cubriendo las principales técnicas: **arrays (vectores)**, **listas enlazadas simples**, **listas doblemente enlazadas**, **listas circulares**, y **cursores**.
 
-Te mostraré su estructura, ventajas/desventajas, complejidades, ejemplos visuales y cuándo elegir cada una.
+# Implementaciones del List ADT
 
----
-
-##  1. **Implementación con Arrays (estática o dinámica)**
+## 1. Implementación con Arrays (estática o dinámica)
 
 
 > **Relacionado**: [[02-Ciencias-Computacion/Algoritmos-EEDD/Estructuras/Puntero|Puntero]]. [[02-Ciencias-Computacion/Sistemas-Operativos/UNIX/comandos/Locate|Locate]]. [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Estructuras/List-ADT|List ADT]]. [[01-Ciberseguridad/Comunicaciones-Seguras/Practica-1-Apendice-Programacion-con-sockets-en-Python-Master-IoT-UCM-Practicas-RPIANIOTLSI-2425|Practica 1 Apendice Programacion con sockets en Python Master IoT UCM Practicas RPIANIOTLSI 2425]].
@@ -212,5 +209,3 @@ cada nodo = (element, next)
 > rapidez, memoria, acceso aleatorio, recorrido en ambas direcciones o compatibilidad con lenguajes.
 
 ---
-
-¿Quieres que te prepare ejemplos en código real (C, Java, Python) con punteros o arrays? ¿O te interesa ver visualmente cómo se comportan las operaciones en una lista enlazada o circular?

@@ -6,11 +6,12 @@ tags:
   - gestion-seguridad
   - tema1principiosbasicossi
 ---
-Perfecto. Vamos a desarrollar qué significan y cómo se aplican los conceptos de **contabilidad** y **auditoría de accesos** en el contexto de la seguridad de la información. Estas funciones forman parte de la "A" final del modelo **Triple A** (Authentication, Authorization, **Accounting**).
 
----
+# Contabilidad y Auditoría de Accesos
 
-##  ¿Qué es la **contabilidad de accesos** (Accounting)?
+Los conceptos de **contabilidad** y **auditoría de accesos** en seguridad de la información forman parte de la "A" final del modelo **Triple A** (Authentication, Authorization, **Accounting**).
+
+## ¿Qué es la contabilidad de accesos (Accounting)?
 
 
 > **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/NIS2|NIS2]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/RGPD|RGPD]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[08-Personal/Rutinas/Horario|Horario]].
@@ -47,7 +48,7 @@ Estos datos se guardan en **logs o bitácoras**, que pueden almacenarse localmen
 
 ---
 
-## ️ ¿Qué es la **auditoría de accesos**?
+## ¿Qué es la auditoría de accesos?
 
 La auditoría de accesos es la **revisión periódica o reactiva de esos registros** de actividad para:
 
@@ -96,7 +97,7 @@ La auditoría de accesos es la **revisión periódica o reactiva de esos registr
 
 ---
 
-## ️ Riesgos si no se audita
+## Riesgos si no se audita
 
 - No detectar accesos indebidos
     
@@ -115,5 +116,3 @@ La auditoría de accesos es la **revisión periódica o reactiva de esos registr
 > Sin trazabilidad adecuada, una organización **pierde visibilidad** y capacidad de defensa ante amenazas internas o externas.
 
 ---
-
-¿Quieres que te prepare un ejemplo de política de contabilidad de accesos, o una plantilla de checklist para una auditoría técnica según ISO o ENS?

@@ -216,4 +216,3 @@ Según estudios, más del **90% de los lazos de control industriales** están ba
 
 El **controlador PID** representa una de las soluciones más eficaces y extendidas para el control de sistemas dinámicos. Su equilibrio entre **teoría y aplicabilidad**, junto con su flexibilidad para ser afinado a distintos entornos, lo convierten en un estándar industrial, educativo y de investigación. Aunque en sistemas muy complejos se usen técnicas avanzadas (estado, MPC, adaptativos), el **PID sigue siendo insustituible** en una enorme variedad de casos.
 
-¿Quieres que veamos cómo se ajusta un PID sobre un sistema de segundo orden, o una simulación paso a paso con MATLAB o Python?

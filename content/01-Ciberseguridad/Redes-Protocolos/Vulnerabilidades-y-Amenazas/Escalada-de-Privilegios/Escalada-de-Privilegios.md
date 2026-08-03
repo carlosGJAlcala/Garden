@@ -183,5 +183,3 @@ Resultado: shell con permisos de root (`id → uid=0(root)`)
 La **escalada de privilegios es lo que convierte a un atacante en administrador del sistema**. A menudo es el paso intermedio más difícil, pero más recompensante. Para los defensores, es una prioridad **detectar esta actividad rápidamente** y asegurar el sistema para que un acceso inicial no implique una toma total de control.
 
 ---
-
-¿Quieres que prepare una demo paso a paso con `LinPEAS` o `winPEAS`, o cómo explotar un binario SUID en un entorno de laboratorio?

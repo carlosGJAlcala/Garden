@@ -11,7 +11,7 @@ Autor Carlos Garrido
 >>>>>>> origin/main
 # Preguntas
 
-> **Relacionado**: [[01-Ciberseguridad/Ingenieria-Inversa/objetos-COM|objetos COM]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/Sistema-de-Gestion-de-la-Seguridad-de-la-Informacion|Sistema de Gestion de la Seguridad de la Informacion]].
+> **Relacionado**: [[01-Ciberseguridad/Ingenieria-Inversa/objetos-COM|objetos COM]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/Sistema-de-Gestion-de-la-Seguridad-de-la-Informacion|Sistema de Gestion de la Seguridad de la Informacion]].
 
 1- Dado el binario analízalo brevemente y describe por encima que simula este binario.  
 2- Al igual que en la práctica anterior describe las funciones definidas por el programador.  

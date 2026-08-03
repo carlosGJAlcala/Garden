@@ -7,7 +7,7 @@ tags:
 ---
 # Hospital infanta sofía
 
-> **Relacionado**: [[01-Ciberseguridad/Fundamentos/seguridadWebYAuditoria/seguridad-web-y-auditoria|seguridad web y auditoria]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-03-27-charla-seguridad-APIs-OAUTH20|2025 03 27 charla seguridad APIs OAUTH20]].
+> **Relacionado**: [[01-Ciberseguridad/Fundamentos/seguridadWebYAuditoria/seguridad-web-y-auditoria|seguridad web y auditoria]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-03-27-charla-seguridad-APIs-OAUTH20|2025 03 27 charla seguridad APIs OAUTH20]].
 
 ## Misión: 
 El objetivo principal  reside en orientar las estrategias y actuaciones a garantizar una asistencia sanitaria próxima, con clara vocación de servicio basada en la seguridad de los pacientes, la equidad en el acceso a las prestaciones, la eficiencia en la utilización de los recursos y la innovación.

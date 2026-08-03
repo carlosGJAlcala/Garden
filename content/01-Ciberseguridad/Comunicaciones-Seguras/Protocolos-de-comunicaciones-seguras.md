@@ -29,7 +29,7 @@ D. La comunicación se ve comprometida por el ataque de replay.
 
 ### Pregunta Supuesto 1.1
 
-> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 **Si se repitiesen los números aleatorios, ¿qué número debería adivinar Trudy para suplantar a Bob? ¿Y a Alice?**
 

@@ -1,20 +1,17 @@
 ---
-title: " RESUMEN COMPLETO"
+title: "RESUMEN COMPLETO"
 date: 2026-01-26
 tags:
   - ciencias-computacion
   - sistemas-operativos
 ---
-Aquí tienes un **resumen completo** de todo lo que hemos visto, incluyendo **GPT, MBR, USB Live, ISO9660 y la configuración de persistencia** en Parrot OS. 
 
----
-
-# ** RESUMEN COMPLETO**
+# RESUMEN COMPLETO
 
 
 > **Relacionado**: [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[02-Ciencias-Computacion/Percepcion-Control/partes-principales-de-un-sistema-robotico|partes principales de un sistema robotico]].
 
-## **1️⃣ GPT vs MBR: Esquema de particiones**
+## **1. GPT vs MBR: Esquema de particiones**
 
 Cuando creamos o administramos discos, podemos usar dos tipos de esquemas de particiones:  
  **MBR (Master Boot Record)**  
@@ -54,7 +51,7 @@ Cuando creamos o administramos discos, podemos usar dos tipos de esquemas de par
 
 ---
 
-## **2️⃣ Creación y gestión de un USB Live con Parrot OS**
+## **2. Creación y gestión de un USB Live con Parrot OS**
 
 Cuando se graba un **USB Live**, el sistema de archivos suele quedar en **ISO9660** (de solo lectura). Esto puede:  Permitir arrancar Parrot OS.  
  Bloquear la escritura en el USB y no usar todo el espacio disponible.
@@ -84,7 +81,7 @@ Cuando se graba un **USB Live**, el sistema de archivos suele quedar en **ISO966
 
 ---
 
-## **3️⃣ Soluciones para recuperar el espacio del USB**
+## **3. Soluciones para recuperar el espacio del USB**
 
 Si un **USB de 120 GiB solo usa 5 GiB**, es porque:
 
@@ -158,7 +155,7 @@ Si el USB está completamente en **ISO9660**, debes **eliminar la tabla de parti
 
 ---
 
-## **4️⃣ Creación de una partición de persistencia en USB Live**
+## **4. Creacion de una particion de persistencia en USB Live**
 
 Si quieres que Parrot OS **guarde cambios entre reinicios**, necesitas una partición de **persistencia**.
 
@@ -193,7 +190,7 @@ Si quieres que Parrot OS **guarde cambios entre reinicios**, necesitas una parti
 
 ---
 
-## **5️⃣ Comandos clave explicados**
+## **5. Comandos clave explicados**
 
 |Comando|Explicación|
 |---|---|
@@ -216,4 +213,3 @@ Si quieres que Parrot OS **guarde cambios entre reinicios**, necesitas una parti
  **Si quieres guardar cambios en Parrot OS Live, necesitas una partición de persistencia en ext4.**  
  **GPT es mejor para UEFI, mientras que MBR es mejor para BIOS Legacy.**
 
- **Si tienes dudas o errores en algún paso, dime y te ayudo a solucionarlo. **

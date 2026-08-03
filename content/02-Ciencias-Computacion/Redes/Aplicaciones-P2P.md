@@ -134,5 +134,3 @@ Las **aplicaciones Peer-to-Peer (P2P)** se basan en una arquitectura **descentra
 Las aplicaciones P2P **cambian la lógica tradicional de cliente-servidor**, permitiendo a cada usuario participar como igual en la red. Desde el intercambio de archivos hasta la computación distribuida y las blockchains, el modelo P2P **sigue siendo esencial en la evolución de Internet**, especialmente en entornos donde **la descentralización y la resistencia a la censura son prioritarias**.
 
 ---
-
-¿Te gustaría que prepare una tabla comparativa entre P2P y cliente-servidor con ejemplos, ventajas, desventajas y casos de uso reales?

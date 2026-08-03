@@ -244,5 +244,3 @@ Una **sugerencia** es una manera de **proponer una idea, acción o plan** de for
     
 
 ---
-
-¿Quieres que te prepare ahora ejercicios para completar frases o transformar enunciados usando estas estructuras? También puedo convertir esto en un resumen tipo PDF o Markdown para que lo guardes como guía.

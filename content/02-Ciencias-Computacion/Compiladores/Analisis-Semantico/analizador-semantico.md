@@ -116,5 +116,3 @@ f(3, "hola"); // Error: el segundo argumento debería ser float
 
 ---
 
-Si quieres, puedo montarte **un ejemplo completo** donde tomemos un fragmento de código, lo pasemos por léxico, sintáctico y semántico, para que veas **qué detecta cada uno** y dónde el sintáctico no basta pero el semántico sí detecta el error.  
-¿Quieres que lo haga?

@@ -7,7 +7,7 @@ tags:
   - dispositivosot
 ---
 
-> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[06-Infraestructura/Servidores/DispositivosOT/Abb-red670|Abb red670]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Criptografia/2025-04-20-Computacion-Cuantica-y-Criptografia-Post-Cuantica|2025 04 20 Computacion Cuantica y Criptografia Post Cuantica]].
+> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[06-Infraestructura/Servidores/DispositivosOT/Abb-red670|Abb red670]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Criptografia/2025-04-20-Computacion-Cuantica-y-Criptografia-Post-Cuantica|2025 04 20 Computacion Cuantica y Criptografia Post Cuantica]].
 
 **SYNCHOR SCADA** es un sistema de sincronización horaria que garantiza que todos los dispositivos y equipos conectados a la red SCADA de una planta fotovoltaica mantengan exactamente la misma referencia de tiempo con una precisión de milisegundos.
 

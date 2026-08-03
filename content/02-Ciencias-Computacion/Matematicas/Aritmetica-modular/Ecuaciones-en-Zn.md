@@ -9,7 +9,7 @@ tags:
 # Ecuaciones en $\mathbb{Z}_n$ – Aritmética modular y resolución
 
 
-> **Relacionado**: [[01-Ciberseguridad/Comunicaciones-Seguras/Konversation/konversation|konversation]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Herramientas/IDS-IPS/Instalacion-y-Configuracion-de-Splunk-Universal-Forwarder-con-Snort-en-Windows-y-Ubuntu|Instalacion y Configuracion de Splunk Universal Forwarder con Snort en Windows y Ubuntu]]. [[01-Ciberseguridad/Ingenieria-Inversa/2025-01-21-INGENIERIA-INVERSA|2025 01 21 INGENIERIA INVERSA]]. [[01-Ciberseguridad/Ingenieria-Inversa/2025-01-28-Ingenieria-Inversa|2025 01 28 Ingenieria Inversa]].
+> **Relacionado**: [[01-Ciberseguridad/Comunicaciones-Seguras/Konversation/konversation|konversation]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Herramientas/IDS-IPS/Instalacion-y-Configuracion-de-Splunk-Universal-Forwarder-con-Snort-en-Windows-y-Ubuntu|Instalacion y Configuracion de Splunk Universal Forwarder con Snort en Windows y Ubuntu]]. [[01-Ciberseguridad/Ingenieria-Inversa/2025-01-21-INGENIERIA-INVERSA|2025 01 21 INGENIERIA INVERSA]]. [[01-Ciberseguridad/Ingenieria-Inversa/2025-01-28-Ingenieria-Inversa|2025 01 28 Ingenieria Inversa]].
 
 Resolver ecuaciones en $\mathbb{Z}_n$ significa trabajar con enteros **módulo $n$**, donde dos números son equivalentes si su diferencia es divisible por $n$.
 

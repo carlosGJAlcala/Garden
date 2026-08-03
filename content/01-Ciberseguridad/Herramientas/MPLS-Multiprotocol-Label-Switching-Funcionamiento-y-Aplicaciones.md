@@ -8,7 +8,7 @@ tags:
 ### **MPLS (Multiprotocol Label Switching): Funcionamiento y Aplicaciones**
 
 
-> **Relacionado**: [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 **MPLS (Multiprotocol Label Switching)** es una tecnología de conmutación de paquetes que mejora la velocidad y eficiencia del enrutamiento en redes IP. En lugar de depender únicamente de direcciones IP para tomar decisiones de encaminamiento, MPLS usa **etiquetas (labels)** para dirigir el tráfico a través de la red, reduciendo la latencia y optimizando el tráfico.
 

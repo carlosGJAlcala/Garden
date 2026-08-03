@@ -8,7 +8,7 @@ tags:
 ### **Artículo 45: Acuerdos de intercambio de información en relación con información e inteligencia sobre ciberamenazas**
 
 
-> **Relacionado**: [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Criptografia/2025-04-20-Computacion-Cuantica-y-Criptografia-Post-Cuantica|2025 04 20 Computacion Cuantica y Criptografia Post Cuantica]].
+> **Relacionado**: [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Criptografia/2025-04-20-Computacion-Cuantica-y-Criptografia-Post-Cuantica|2025 04 20 Computacion Cuantica y Criptografia Post Cuantica]].
 
 El **Artículo 45** establece que las **entidades financieras** pueden intercambiar información entre sí sobre las ciberamenazas que enfrentan, lo que incluye una variedad de datos relevantes para mejorar la seguridad colectiva y la protección de infraestructuras críticas.
 

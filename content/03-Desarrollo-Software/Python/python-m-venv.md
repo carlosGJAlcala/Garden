@@ -5,9 +5,6 @@ tags:
   - desarrollo-software
   - python
 ---
-¡Excelente idea! Aquí tienes una nota explicativa completa sobre `python -m venv`, lista para copiar y pegar en un archivo Markdown (`.md`).
-
----
 
 # Guía Rápida: `python -m venv` - Creando Entornos Virtuales
 

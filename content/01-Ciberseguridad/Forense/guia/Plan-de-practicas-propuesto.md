@@ -6,9 +6,6 @@ tags:
   - forense
   - guia
 ---
-Te lo puedo desarrollar en un formato más detallado, con objetivos claros y pasos prácticos, para que este **plan de prácticas** te sirva como una hoja de ruta paso a paso y no solo como un enunciado.
-
----
 
 ## **Plan de prácticas propuesto**
 
@@ -129,5 +126,3 @@ Al final de este plan:
 
 ---
 
-Si quieres, puedo prepararte este mismo plan en un **formato de checklist imprimible**, con comandos exactos y huecos para anotar resultados, para que lo uses como guía en tu laboratorio.  
-¿Quieres que lo arme así?

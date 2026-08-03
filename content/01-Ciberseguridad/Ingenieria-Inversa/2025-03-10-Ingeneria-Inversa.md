@@ -5,9 +5,8 @@ tags:
   - ciberseguridad
   - ingenieria-inversa
 ---
-Aquí tienes una versión expandida con más detalles sobre cómo afectan los cambios en los binarios y cómo solucionarlos en Windows, Linux y macOS.
 
----
+# Modificación de binarios: PE, ELF y Mach-O
 
 ## **Windows (PE - Portable Executable)**
 

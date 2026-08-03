@@ -14,7 +14,7 @@ En el contexto de redes de computadoras, como se explica en el libro **"Computer
 
 ---
 
-##  1. **Network Edge** (el borde de la red)
+## 1. Network Edge (el borde de la red)
 
 Es **donde están los dispositivos finales**, es decir, **los sistemas que usan los usuarios** para acceder a la red.
 
@@ -49,7 +49,7 @@ Es **donde están los dispositivos finales**, es decir, **los sistemas que usan 
 
 ---
 
-##  2. **Network Core** (el núcleo de la red)
+## 2. Network Core (el núcleo de la red)
 
 Es la **infraestructura central de interconexión** que transporta los datos de un lado a otro del mundo. Es decir, **el "sistema de transporte" de Internet**.
 
@@ -114,5 +114,3 @@ La arquitectura de Internet se divide en:
 Esta distinción ayuda a entender cómo fluye la información y cómo se diseñan los mecanismos de **encaminamiento, control de tráfico y seguridad**.
 
 ---
-
-¿Quieres que te prepare un esquema visual o una analogía más profunda entre el modelo red-core y el funcionamiento del transporte en una ciudad (por ejemplo: calles locales vs autopistas)?

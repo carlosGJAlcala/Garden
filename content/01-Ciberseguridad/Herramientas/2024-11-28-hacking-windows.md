@@ -10,7 +10,7 @@ tags:
 
 > **Relacionado**: [[01-Ciberseguridad/Fundamentos/ELPSCRK/HashCat|HashCat]]. [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[01-Ciberseguridad/Herramientas/Reconocimiento/DCsync|DCsync]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[02-Ciencias-Computacion/Sistemas-Operativos/UNIX/comandos/NMAP|NMAP]].
 
-![[Pasted image 20250727203426.png]]
+![[assets/Pasted image 20250727203426.png]]
 Active Directory funciona de la siguiente manera: utiliza **Kerberos**, un protocolo que usa **Windows** para autenticarse. Su funcionamiento es el siguiente:
 
 1. **Envío de Solicitud TGT**: Se envía una solicitud TGT (Ticket Granting Ticket).
@@ -83,11 +83,10 @@ El parámetro **usuarios** se usa para guardar los posibles usuarios que existen
 - [Kerberos Authentication Protocol](https://en.wikipedia.org/wiki/Kerberos_(protocol))
 - [Mimikatz: A Post-Exploitation Tool](https://github.com/gentilkiwi/mimikatz)
 - [Pass the Hash: Explanation and Methods](https://www.cyberark.com/resources/threat-research-blog/what-is-pass-the-hash)
-¡Claro! Aquí tienes el texto corregido y con una estructura más clara, con el formato adecuado para Obsidian, como si fuera un documento de estudio:
 
 ---
 
-# **Pass the Ticket y Golden Ticket**
+# Pass the Ticket y Golden Ticket
 
 **Pass the Ticket (PTT)** y **Golden Ticket** son técnicas utilizadas en el protocolo **Kerberos** para obtener acceso a los servicios de un dominio mediante la manipulación de tickets de autenticación.
 

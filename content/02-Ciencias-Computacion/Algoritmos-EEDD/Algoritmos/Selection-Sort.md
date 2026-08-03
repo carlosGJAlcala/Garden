@@ -138,5 +138,3 @@ Solo en contextos muy específicos:
 > Aun así, su idea de seleccionar mínimos sucesivos **inspira otros algoritmos más avanzados**.
 
 ---
-
-¿Quieres que lo compare en rendimiento con Bubble e Insertion con arrays grandes en Python? ¿O una animación visual paso a paso de cómo se seleccionan los mínimos?

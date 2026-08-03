@@ -17,7 +17,7 @@ Los puertos representan **puertas de entrada** al sistema. Si una está abierta 
 
 ---
 
-###  ¿Qué es un puerto?
+### ¿Qué es un puerto?
 
 - En una máquina con IP, los **puertos (0–65535)** permiten que múltiples servicios escuchen en paralelo.
     
@@ -32,7 +32,7 @@ Los puertos representan **puertas de entrada** al sistema. Si una está abierta 
 
 ---
 
-###  Objetivos del escaneo de puertos
+### Objetivos del escaneo de puertos
 
 - Identificar puertos **abiertos** (accepting connections).
     
@@ -306,5 +306,3 @@ Host: 192.168.1.10
 `Netcat` es una herramienta **sencilla pero eficaz** para realizar escaneos de puertos rápidos y discretos, ideal para situaciones donde otras herramientas no están disponibles. Aunque no sustituye a `nmap` en capacidades, es una gran opción en entornos limitados o para pruebas específicas.
 
 ---
-
-¿Quieres que te prepare un pequeño script en Bash para automatizar escaneos con Netcat o te interesa combinarlo con shells reversas para prácticas avanzadas?

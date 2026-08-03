@@ -5,11 +5,8 @@ tags:
   - desarrollo-software
   - concurrencia
 ---
-Aquí tienes una versión expandida y detallada del apartado sobre **Tipos de hardware concurrente**, con mayor profundidad y complejidad en la explicación:
 
----
-
-### 1.2.2 Tipos de Hardware Concurrente
+# Tipos de Hardware Concurrente
 
 
 > **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[01-Ciberseguridad/Forense/guia/Lectura-y-escritura-coordinada-entre-procesos-sin-kernel|Lectura y escritura coordinada entre procesos sin kernel]]. [[05-Profesional/Cursos/Process-Mapping/2025-09-02-Gestion-por-procesos-y-BPMN|2025 09 02 Gestion por procesos y BPMN]]. [[01-Ciberseguridad/Comunicaciones-Seguras/Practica-1-Apendice-Programacion-con-sockets-en-Python-Master-IoT-UCM-Practicas-RPIANIOTLSI-2425|Practica 1 Apendice Programacion con sockets en Python Master IoT UCM Practicas RPIANIOTLSI 2425]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-03-06-diseno-y-desarrollo-de-sistema|2025 03 06 diseno y desarrollo de sistema]].

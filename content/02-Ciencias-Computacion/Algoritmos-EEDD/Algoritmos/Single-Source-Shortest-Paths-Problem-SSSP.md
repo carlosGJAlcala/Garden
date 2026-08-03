@@ -6,11 +6,10 @@ tags:
   - algoritmos-eedd
   - algoritmos
 ---
-Perfecto. Vamos a desarrollar completamente el **Single Source Shortest Paths Problem (SSSP)** con el enfoque de **Dijkstra’s Algorithm**, uno de los algoritmos más importantes y utilizados en ciencias de la computación, redes, logística, inteligencia artificial, y más.
 
----
+# Single Source Shortest Paths Problem (SSSP)
 
-##  ¿Qué es el problema SSSP?
+## ¿Qué es el problema SSSP?
 
 
 > **Relacionado**: [[02-Ciencias-Computacion/Algoritmos-EEDD/Estructuras/Heaps|Heaps]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Estructuras/Priority-queues|Priority queues]].
@@ -199,5 +198,3 @@ graph = {
 > Combinado con **priority queues (heaps)**, logra rendimientos óptimos para grafos reales y dispersos.
 
 ---
-
-¿Quieres que lo implemente paso a paso con visualización del heap y del conjunto `dist[]`? ¿O quieres verlo aplicado a un grafo real (red de ciudades, mapa, etc.)?

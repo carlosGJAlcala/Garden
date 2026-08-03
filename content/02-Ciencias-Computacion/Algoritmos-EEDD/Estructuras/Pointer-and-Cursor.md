@@ -98,5 +98,3 @@ Aquí, `cursor` es simplemente el índice dentro del array.
 > **Punteros y cursores son mecanismos para conectar datos.** Los punteros apuntan directamente a memoria; los cursores simulan ese comportamiento con índices. Ambos permiten construir estructuras dinámicas como listas, árboles o grafos.
 
 ---
-
-¿Quieres que te haga un ejemplo completo de lista enlazada con punteros y otro con cursores para ver la diferencia práctica?

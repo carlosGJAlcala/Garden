@@ -6,9 +6,6 @@ tags:
   - bioingenieria
   - introduccion_bioingenieria
 ---
-Perfecto, el tema de **instrumentación médica diagnóstica** es muy amplio, así que lo voy a desarrollar de forma más compleja y bien estructurada para que tenga un formato académico sólido y un nivel técnico elevado.
-
----
 
 ## **Instrumentación Médica Diagnóstica**
 
@@ -70,7 +67,3 @@ En la actualidad, la instrumentación médica diagnóstica evoluciona hacia:
     
 
 ---
-
-Si quieres, puedo hacerte también una **versión ampliada con ejemplos detallados de cada equipo, diagramas de bloques de funcionamiento y aplicaciones clínicas reales**, para que el apartado quede completo y listo para un trabajo académico. Esto lo haría mucho más robusto y técnico.
-
-¿Quieres que lo prepare así?

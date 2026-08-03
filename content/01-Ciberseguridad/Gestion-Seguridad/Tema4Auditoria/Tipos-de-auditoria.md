@@ -6,11 +6,14 @@ tags:
   - gestion-seguridad
   - tema4auditoria
 ---
-Perfecto. Vamos a explicar de forma clara y completa los **tipos de auditoría** en seguridad de la información, basándonos en el material del máster y ampliándolo con contexto profesional real.
+
+# Tipos de Auditoría en Seguridad de la Información
+
+Basado en el material del máster y ampliado con contexto profesional real.
 
 ---
 
-##  ¿Qué es una auditoría de seguridad?
+## ¿Qué es una auditoría de seguridad?
 
 
 > **Relacionado**: [[01-Ciberseguridad/Fundamentos/owasp|owasp]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/NIS2|NIS2]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/RGPD|RGPD]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/COBIT|COBIT]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]].
@@ -173,5 +176,3 @@ Ejemplo:
 > En conjunto, todas sirven para evaluar y mejorar la seguridad, generar evidencias, garantizar cumplimiento legal y anticiparse a los riesgos reales.
 
 ---
-
-¿Te gustaría que te prepare un esquema visual con todos estos tipos y sus relaciones? ¿O una guía práctica para realizar una auditoría interna tipo ISO o ENS?

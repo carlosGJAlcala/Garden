@@ -78,6 +78,3 @@ Una empresa global usa SuccessFactors para:
 6. Planificar quién podría sustituirle en caso de promoción o salida.
 
 ---
-
-Si quieres, puedo relacionarte **SuccessFactors con Ariba y otras soluciones SAP**, para que veas cómo encajan juntas dentro de la estrategia global de SAP para cubrir todas las áreas de una empresa.  
-¿Quieres que lo haga?

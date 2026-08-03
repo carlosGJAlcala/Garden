@@ -171,5 +171,3 @@ Se usa para indicar que **la acción pasiva ocurrió antes de otra en el pasado*
 |**Past Perfect**|had been + V3|Acción completada antes de otra en el pasado|
 
 ---
-
-¿Quieres que te prepare ejercicios para practicar las tres voces pasivas o que convierta estos apuntes en una ficha en PDF o formato Markdown para tu Obsidian?

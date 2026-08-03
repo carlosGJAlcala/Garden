@@ -5,9 +5,6 @@ tags:
   - ciberseguridad
   - desarrollo-seguro
 ---
-Perfecto, gracias por compartir esta excelente base de contenido. A continuación te presento **una versión revisada, ordenada y redactada de forma más clara, formal y técnica**, lista para usar como nota, informe o introducción a **seguridad por diseño en APIs web y el rol del arquitecto de seguridad**:
-
----
 
 # Seguridad por diseño en APIs web
 
@@ -111,9 +108,9 @@ Por ejemplo, aplicar controles como **mecanismos passwordless**, utilizando aute
 
 El flujo de trabajo que debe guiar el enfoque de seguridad por diseño en APIs web sería:
 
-1️⃣ **Requerimientos del negocio** →  
-2️⃣ **Arquitectura de seguridad** (actúa como puente y garante de la seguridad) →  
-3️⃣ **Arquitectura de software e implementación**, incluyendo el diseño de las APIs web seguras.
+1. **Requerimientos del negocio** ->
+2. **Arquitectura de seguridad** (actúa como puente y garante de la seguridad) ->
+3. **Arquitectura de software e implementación**, incluyendo el diseño de las APIs web seguras.
 
 ---
 
@@ -296,8 +293,6 @@ Se usa especialmente en integraciones _server-to-server_ en las que:
 > **Ventajas:** autenticación robusta, escalable y segura sin necesidad de secretos compartidos. Ampliamente usado por plataformas como Google Cloud y Azure.
 
 ---
-
-¿Quieres que te prepare una tabla comparativa de estos flujos o que amplíe los flujos que faltan como Device Code y CIBA?
 
 ## **OAuth Resumen**  
 - **Authorization Code**: cliente confidencial, 3 patas.  

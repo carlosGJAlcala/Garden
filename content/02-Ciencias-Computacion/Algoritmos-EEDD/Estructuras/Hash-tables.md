@@ -12,7 +12,7 @@ tags:
 
 ---
 
-##  ¿Qué es una Hash Table?
+## ¿Qué es una Hash Table?
 
 Una **tabla hash** es una estructura que permite almacenar pares **clave → valor**, y **acceder a ellos rápidamente** (en tiempo promedio **O(1)**), usando una **función hash** que transforma la clave en un índice.
 
@@ -191,5 +191,3 @@ Bajo el capó, `dict` usa **hash tables con open addressing** y **hashing perfec
 > El secreto está en **una buena función hash**, el manejo correcto de colisiones y mantener bajo el **load factor**.
 
 ---
-
-¿Quieres que te prepare una implementación completa de una hash table desde cero (con encadenamiento o probing) en C, Java o Python? ¿O te interesa ver cómo se usa en un caso real, como una tabla de símbolos o un sistema de caché?

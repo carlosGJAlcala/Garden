@@ -144,5 +144,3 @@ Algunos esquemas de almacenamiento distribuido utilizan fragmentación y dispers
 El polinomio de Lagrange es una **herramienta fundamental en interpolación**, muy útil en aplicaciones que requieren precisión en puntos discretos. En programación, destaca por su uso en **Shamir’s Secret Sharing**, reconstrucción de señales y gráficos computacionales.
 
 ---
-
-¿Te gustaría que prepare un gráfico interactivo con Python/Matplotlib mostrando cómo cambia el polinomio de Lagrange cuando mueves un punto? También puedo adaptarlo para campos finitos (como en criptografía).

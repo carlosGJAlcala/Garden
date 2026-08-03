@@ -6,14 +6,17 @@ tags:
   - gestion-seguridad
   - tema1principiosbasicossi
 ---
-Perfecto. Vamos a profundizar en uno de los **métodos de autorización** más extendidos y robustos en seguridad de la información: **RBAC – Role-Based Access Control** (Control de Acceso Basado en Roles).
+
+# RBAC – Role-Based Access Control
+
+Uno de los **métodos de autorización** más extendidos y robustos en seguridad de la información: **Control de Acceso Basado en Roles**.
 
 ---
 
-##  ¿Qué es RBAC?
+## ¿Qué es RBAC?
 
 
-> **Relacionado**: [[03-Desarrollo-Software/Distribuido/SAP_PI/Salesforce|Salesforce]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[03-Desarrollo-Software/Distribuido/SAP_PI/Salesforce|Salesforce]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 **RBAC** es un modelo de autorización que **asigna permisos a roles**, y luego **asigna roles a usuarios**.
 
@@ -125,5 +128,3 @@ Supón una aplicación con los recursos: **Clientes**, **Facturas** y **Usuarios
 > Al delegar los permisos en roles, se vuelve **más fácil de gestionar, auditar y escalar** sin comprometer la seguridad.
 
 ---
-
-¿Quieres que prepare una plantilla de RBAC con estructura de roles y permisos para un sistema tipo empresa/ERP o cloud? ¿O una comparativa con ABAC (Access Based on Attributes)?

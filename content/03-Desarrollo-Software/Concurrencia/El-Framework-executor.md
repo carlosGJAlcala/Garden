@@ -5,9 +5,6 @@ tags:
   - desarrollo-software
   - concurrencia
 ---
-Perfecto, vamos a desarrollar **4.6.2 El Framework Executor** con un nivel técnico más profundo, ampliando los conceptos del documento y añadiendo contexto, ventajas, problemas y ejemplos de uso reales.
-
----
 
 ## **4.6.2 El Framework Executor**
 
@@ -178,5 +175,3 @@ El Framework Executor se integra de forma natural con:
 
 ---
 
-Si quieres, puedo continuar y **ampliar el apartado “Threads pools”** que está directamente ligado a este, ya que es el núcleo operativo del Executor en entornos concurrentes.  
-¿Quieres que lo desarrolle a continuación?

@@ -6,11 +6,14 @@ tags:
   - algoritmos-eedd
   - estructuras
 ---
-Perfecto. Vamos a desarrollar el **Stack ADT** (Tipo Abstracto de Datos Pila) desde todos los ángulos relevantes: su definición formal, operaciones, usos reales, implementación, complejidad y ejemplos en pseudocódigo y código real. Ideal tanto para entrevistas técnicas como diseño profesional.
+
+# Stack ADT (Tipo Abstracto de Datos Pila)
+
+Definición formal, operaciones, usos reales, implementación, complejidad y ejemplos en pseudocódigo y código real.
 
 ---
 
-##  ¿Qué es un Stack (pila)?
+## ¿Qué es un Stack (pila)?
 
 Una **pila** es una estructura de datos **lineal** donde los elementos se insertan y eliminan **por un solo extremo**, llamado el **tope (top)**.
 
@@ -183,5 +186,3 @@ end procedure
 > Su capacidad para manejar **estructuras reversibles, recursivas o de exploración** lo hace fundamental en lenguajes de programación, algoritmos, compiladores y lógica de sistemas.
 
 ---
-
-¿Quieres que prepare un ejemplo de stack aplicado a un algoritmo como DFS, evaluación de expresiones, o deshacer operaciones? ¿O una plantilla de implementación lista para usar en Java, C o Python?

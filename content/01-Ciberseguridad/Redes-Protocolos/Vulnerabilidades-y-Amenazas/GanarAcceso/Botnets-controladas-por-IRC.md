@@ -9,7 +9,7 @@ tags:
 ### Botnets controladas por IRC – Nota expandida
 
 
-> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[01-Ciberseguridad/Herramientas/IDS-IPS/SNORT|SNORT]]. [[01-Ciberseguridad/Herramientas/IDS-IPS/suricata|suricata]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[01-Ciberseguridad/Herramientas/IDS-IPS/SNORT|SNORT]]. [[01-Ciberseguridad/Herramientas/IDS-IPS/suricata|suricata]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 Una **botnet controlada por IRC** es una red de máquinas comprometidas (bots o zombies) que **reciben instrucciones a través de un canal de chat IRC (Internet Relay Chat)**. Aunque IRC es una tecnología antigua, **sigue siendo usada por su simplicidad, anonimato y flexibilidad**, especialmente en **ataques automatizados, campañas de spam, DDoS o propagación de malware**.
 
@@ -153,5 +153,3 @@ Aunque IRC fue el estándar clásico, hoy muchas botnets:
 Las **botnets controladas por IRC** fueron una de las formas más comunes de malware coordinado y **aún son funcionales por su simplicidad, persistencia y anonimato**. Entender su funcionamiento ayuda a detectar actividad anómala en redes, analizar tráfico sospechoso y **fortalecer medidas de monitoreo y filtrado** en entornos empresariales y personales.
 
 ---
-
-¿Quieres que prepare una simulación de una botnet IRC controlada en laboratorio con cliente mIRC o `irssi`, y cómo capturar su tráfico con Wireshark o reglas Snort?

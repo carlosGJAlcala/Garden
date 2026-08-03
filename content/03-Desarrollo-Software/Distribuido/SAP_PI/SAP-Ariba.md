@@ -6,9 +6,6 @@ tags:
   - distribuido
   - sap_pi
 ---
-Perfecto, te explico **SAP Ariba** de forma extensa y sin relacionarlo con SAP CPI, para que lo entiendas como plataforma independiente.
-
----
 
 ### **1. Qué es SAP Ariba**
 
@@ -140,5 +137,3 @@ Para entenderlo mejor:
 - No todas las empresas interactúan con todas: la relación comprador-proveedor en Ariba requiere una conexión y acuerdo previos dentro de la red.
     
 
-Si quieres, puedo prepararte un **esquema visual de cómo funciona Ariba Network como “plataforma común” y cómo cada empresa tiene su propio espacio privado dentro**. Creo que eso te dejaría la idea muy clara.  
-¿Quieres que te lo haga?

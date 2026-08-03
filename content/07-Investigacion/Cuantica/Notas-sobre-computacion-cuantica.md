@@ -13,7 +13,7 @@ Los **computadores cuánticos** no utilizan transistores convencionales como los
 ### Teoría de la Computación Cuántica
 
 
-> **Relacionado**: [[07-Investigacion/Cuantica/bibliografia/biblio|biblio]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[07-Investigacion/Cuantica/bibliografia/biblio|biblio]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 David Deutsch, uno de los pioneros en la computación cuántica, formuló una **teoría formal** sobre cómo se podrían construir computadores cuánticos. Su trabajo fue fundamental para sentar las bases de lo que hoy entendemos como la **computación cuántica universal**, que, al igual que los ordenadores clásicos, puede realizar cualquier tipo de cálculo, pero aprovechando las propiedades cuánticas como la superposición y el entrelazamiento.
 

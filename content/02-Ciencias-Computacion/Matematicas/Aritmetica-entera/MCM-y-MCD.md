@@ -156,5 +156,3 @@ Tanto el **MCD como el MCM tienen un valor fundamental en programación**, porqu
 Su uso va mucho más allá de la teoría de números: **aparecen en bases de datos, redes, multimedia, programación competitiva y criptografía moderna**.
 
 ---
-
-¿Quieres que prepare ejemplos de uso real de MCD/MCM en criptografía con Python o un mini sistema de sincronización de eventos con ciclos múltiples?

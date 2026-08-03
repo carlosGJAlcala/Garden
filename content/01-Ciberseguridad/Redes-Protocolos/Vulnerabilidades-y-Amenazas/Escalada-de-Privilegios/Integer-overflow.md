@@ -121,5 +121,3 @@ La escalada de privilegios mediante **integer overflow** ocurre cuando una varia
 Estos errores son **difíciles de detectar manualmente**, pero muy peligrosos, especialmente en software heredado, controladores, firmware o código en C/C++ sin protecciones.
 
 ---
-
-¿Quieres que prepare un código de laboratorio en C vulnerable a integer overflow que puedas compilar y explotar con un shell como root?

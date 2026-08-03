@@ -79,4 +79,3 @@ Dentro de ese ecosistema, Power Apps es la pieza que se encarga de **crear aplic
 
 ---
 
-Si quieres, puedo hacerte ahora un **mapa visual de cómo Power Apps se conecta con el resto de Microsoft Power Platform y con servicios externos**, para que entiendas su arquitectura completa. Creo que ahí es donde de verdad se ve su potencia.

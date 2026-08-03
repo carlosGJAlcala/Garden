@@ -6,11 +6,8 @@ tags:
   - gestion-seguridad
   - tema4auditoria
 ---
-Perfecto. A continuación te explico de forma detallada y profesional qué es el **Red Teaming (RF)** en el contexto de la auditoría técnica de seguridad, incluyendo su propósito, metodología, diferencias con otros enfoques como el pentesting, y cómo se elabora un ejercicio de Red Team realista. También explico el posible significado de ese “(RF)” que aparece en el documento.
 
----
-
-##  Red Teaming (RF) — Simulación real de ataques avanzados
+# Red Teaming (RF) — Simulación real de ataques avanzados
 
 
 > **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Alcance|Alcance]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/AuditoriaTecnica/Pivoting|Pivoting]]. [[01-Ciberseguridad/Redes-Protocolos/Vulnerabilidades-y-Amenazas/GanarAcceso/Rootkits|Rootkits]]. [[01-Ciberseguridad/Redes-Protocolos/Vulnerabilidades-y-Amenazas/Escalada-de-Privilegios/Escalada-de-Privilegios|Escalada de Privilegios]].
@@ -150,15 +147,4 @@ Debe incluir:
 
 ---
 
-###  ¿Te gustaría?
-
-- Que te prepare una **simulación Red Team en entorno virtual (HTB o TryHackMe)**
-    
-- Una plantilla de informe Red Team realista
-    
-- Un ejemplo de plan de ataque basado en MITRE ATT&CK
-    
-- Una comparativa entre marcos como TIBER-EU, CBEST y CORIE
-    
-
-Pídemelo y te lo desarrollo.
+---

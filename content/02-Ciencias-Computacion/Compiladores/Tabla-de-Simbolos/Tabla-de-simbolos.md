@@ -123,5 +123,3 @@ void f() {
 
 ---
 
-Si quieres, puedo prepararte un **ejemplo visual** donde, al compilar un pequeño programa en C o Pascal, veas cómo la tabla de símbolos se va llenando paso a paso conforme actúan el léxico, el sintáctico y el semántico.  
-¿Quieres que lo haga?

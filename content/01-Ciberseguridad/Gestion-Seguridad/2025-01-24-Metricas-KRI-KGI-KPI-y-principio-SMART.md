@@ -5,19 +5,12 @@ tags:
   - ciberseguridad
   - gestion-seguridad
 ---
-Actividad:
-1.3
+# Métricas KRI, KGI, KPI y principio SMART
 
-Gestionar permisos mirar fallos de dar la baja 
-revisar cual están de baja y cuales no
-Gracias por compartir el texto. A continuación te presento una versión corregida, con mejor redacción, formato más claro y expansión de la información para darle mayor profundidad y coherencia, en un estilo técnico y formal:
-
----
-
-### Métricas
+## Métricas
 
 
-> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[01-Ciberseguridad/Herramientas/Reconocimiento/FOCA|FOCA]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]].
+> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[01-Ciberseguridad/Herramientas/Reconocimiento/FOCA|FOCA]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]].
 
 Las **métricas** permiten medir el grado de cumplimiento de un procedimiento o proceso dentro de una organización. Mientras que un **control** se centra en revisar un conjunto de reglas y asegurar que se implementen conforme a lo establecido en un procedimiento, la métrica evalúa si esas reglas están correctamente definidas, configuradas y aplicadas, proporcionando datos cuantitativos que permiten tomar decisiones informadas.
 

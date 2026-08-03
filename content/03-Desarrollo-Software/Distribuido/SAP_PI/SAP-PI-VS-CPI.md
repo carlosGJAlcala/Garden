@@ -12,8 +12,6 @@ tags:
 SAP **PI** (_Process Integration_, antes llamado SAP XI — Exchange Infrastructure) y **SAP CPI** (_Cloud Platform Integration_, ahora **SAP Integration Suite**) cumplen el mismo objetivo general: integrar aplicaciones y datos entre sistemas SAP y no SAP.  
 Pero están diseñados para épocas, arquitecturas y necesidades distintas.
 
-Te lo explico de forma detallada para que veas la evolución y las diferencias clave.
-
 ---
 
 **1. Enfoque y arquitectura**
@@ -79,5 +77,3 @@ Te lo explico de forma detallada para que veas la evolución y las diferencias c
 
 En resumen, **PI es el middleware tradicional on-premise** que todavía se usa en entornos muy controlados, mientras que **CPI es la evolución cloud**, más flexible, escalable y preparada para integraciones híbridas y SaaS.
 
-Si quieres, puedo prepararte una **tabla comparativa PI vs CPI** que te dejaría todas las diferencias resumidas en un solo vistazo.  
-¿Quieres que te la haga?

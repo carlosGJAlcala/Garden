@@ -8,7 +8,7 @@ tags:
 ##  Fases de una auditoría de seguridad de la información (expandidas)
 
 
-> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Alcance|Alcance]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/COBIT|COBIT]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
+> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Alcance|Alcance]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/COBIT|COBIT]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]].
 
 ---
 
@@ -107,11 +107,7 @@ tags:
 
 ---
 
-Excelente. Vamos a desarrollar de forma clara y profesional las **fases de una auditoría de seguridad de la información**, tanto si es **interna** como **externa**, alineada con normas como **ISO/IEC 27001**, **ENS**, **NIST**, **COBIT** o el enfoque de ISACA (CISA).
-
----
-
-##  ¿Qué es una auditoría de seguridad?
+## Que es una auditoria de seguridad
 
 Una **auditoría de seguridad** es un proceso estructurado para:
 
@@ -241,4 +237,3 @@ Incluye:
 
 ---
 
-¿Quieres que te prepare una plantilla de cronograma y checklist para una auditoría tipo ENS o ISO 27001? ¿O un esquema visual de las fases para una presentación profesional o informe?

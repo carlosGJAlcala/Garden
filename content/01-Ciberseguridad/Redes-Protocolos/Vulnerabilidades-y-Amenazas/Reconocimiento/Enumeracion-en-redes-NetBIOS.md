@@ -155,5 +155,3 @@ Users         Disk             Carpeta de usuarios
 La enumeración en redes NetBIOS es una técnica sencilla pero poderosa para **obtener visibilidad interna en entornos Windows**, especialmente si no se han aplicado buenas prácticas de seguridad. Aunque NetBIOS está en desuso, **su presencia en redes reales sigue siendo común**. Por eso, tanto su análisis como su mitigación son críticos en cualquier auditoría o ejercicio de hardening.
 
 ---
-
-¿Quieres que prepare un ejemplo práctico con `enum4linux` o un escaneo con Nmap y scripts NSE específicos para NetBIOS/SMB?

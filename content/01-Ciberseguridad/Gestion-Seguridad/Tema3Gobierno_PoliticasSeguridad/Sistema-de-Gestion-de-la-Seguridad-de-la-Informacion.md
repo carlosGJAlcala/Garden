@@ -13,7 +13,7 @@ A continuación te explico cada uno de los elementos con mayor profundidad:
 
 ---
 
-##  ¿Qué es un SGSI?
+## ¿Qué es un SGSI?
 
 
 > **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/Controles|Controles]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]].
@@ -119,5 +119,3 @@ Un SGSI sigue el ciclo **Plan-Do-Check-Act**:
 > Su propósito es lograr que la organización **piense, actúe y mejore de forma segura**, con criterios medibles, repetibles y auditables.
 
 ---
-
-¿Quieres que te prepare un esquema visual ampliado de esta jerarquía (política → norma → procedimiento → evidencia) para usar en un trabajo, presentación o manual interno?

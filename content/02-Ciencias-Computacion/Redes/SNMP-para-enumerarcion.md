@@ -10,7 +10,7 @@ En el contexto de ciberseguridad, un atacante podría intentar aprovechar el **p
 ### 1. **Exploración de dispositivos a través de SNMP**
 
 
-> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Criptografia/2025-04-20-Computacion-Cuantica-y-Criptografia-Post-Cuantica|2025 04 20 Computacion Cuantica y Criptografia Post Cuantica]].
+> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Criptografia/2025-04-20-Computacion-Cuantica-y-Criptografia-Post-Cuantica|2025 04 20 Computacion Cuantica y Criptografia Post Cuantica]].
 
 Los atacantes podrían usar herramientas como **snmpget**, **snmpwalk** y **snmpwalk -v1** para escanear redes en busca de dispositivos vulnerables que expongan información a través de SNMP. Si los dispositivos no están configurados correctamente o usan configuraciones predeterminadas (como la comunidad `public`), el atacante puede obtener fácilmente información valiosa sobre la infraestructura de red.
 

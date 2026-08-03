@@ -6,7 +6,6 @@ tags:
   - comunicaciones-seguras
 ---
 
-
 # Seguridad dispositivo de red
 
 
@@ -158,14 +157,3 @@ Medidas recomendadas:
     
 
 ---
-
-Si quieres puedo incluir:
-
-- **Una cronología detallada de FortiJump**
-    
-- **Resumen técnico de la vulnerabilidad CVE-2024-47575**
-    
-- **Buenas prácticas específicas para proteger dispositivos Fortinet frente a este tipo de fallos**
-    
-
-Solo dime. 

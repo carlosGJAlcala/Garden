@@ -9,13 +9,13 @@ tags:
 ### Pila de Protocolos TCP/IP – Nota Expandida
 
 
-> **Relacionado**: [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[02-Ciencias-Computacion/Lenguajes-Programacion/Python/socket/socket-interfaz-de-red-de-bajo-nivel-documentacion-de-Python-31015|socket interfaz de red de bajo nivel documentacion de Python 31015]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Fundamentos/ARP-SPOOFING|ARP SPOOFING]]. [[01-Ciberseguridad/Fundamentos/SSLTRIP|SSLTRIP]].
+> **Relacionado**: [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[02-Ciencias-Computacion/Lenguajes-Programacion/Python/socket/socket-interfaz-de-red-de-bajo-nivel-documentacion-de-Python-31015|socket interfaz de red de bajo nivel documentacion de Python 31015]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Fundamentos/ARP-SPOOFING|ARP SPOOFING]]. [[01-Ciberseguridad/Fundamentos/SSLTRIP|SSLTRIP]].
 
 La pila de protocolos TCP/IP es el modelo de referencia fundamental sobre el que se basa Internet. Aunque se suele comparar con el modelo OSI de siete capas, el modelo TCP/IP tiene **cuatro capas**, cada una con funciones bien definidas y protocolos específicos. A continuación se explican las capas, sus funciones y su relación con la seguridad.
 
 ---
 
-####  1. **Capa de Aplicación**
+#### 1. **Capa de Aplicación**
 
 Es la más cercana al usuario y contiene los protocolos que permiten la comunicación entre aplicaciones finales.
 
@@ -38,7 +38,7 @@ Es la más cercana al usuario y contiene los protocolos que permiten la comunica
 
 ---
 
-####  2. **Capa de Transporte**
+#### 2. **Capa de Transporte**
 
 Esta capa asegura la comunicación de extremo a extremo entre dispositivos.
 
@@ -59,7 +59,7 @@ Esta capa asegura la comunicación de extremo a extremo entre dispositivos.
 
 ---
 
-####  3. **Capa de Red (Internet)**
+#### 3. **Capa de Red (Internet)**
 
 Su función es el **encaminamiento** de paquetes a través de redes interconectadas.
 
@@ -82,7 +82,7 @@ Su función es el **encaminamiento** de paquetes a través de redes interconecta
 
 ---
 
-####  4. **Capa de Enlace (Link Layer)**
+#### 4. **Capa de Enlace (Link Layer)**
 
 Gestiona la comunicación directa entre nodos en la misma red física.
 
@@ -111,7 +111,7 @@ Gestiona la comunicación directa entre nodos en la misma red física.
 
 ---
 
-###  Encapsulamiento y Desencapsulamiento
+### Encapsulamiento y Desencapsulamiento
 
 Cuando se envían datos:
 
@@ -128,7 +128,7 @@ Al llegar al destino, se invierte el proceso (desencapsulamiento), hasta que la 
 
 ---
 
-###  Seguridad en la pila TCP/IP
+### Seguridad en la pila TCP/IP
 
 La pila TCP/IP no fue diseñada con seguridad como prioridad. Muchos ataques explotan precisamente esta falta de diseño seguro. Algunos mecanismos para reforzarla son:
 
@@ -153,5 +153,3 @@ La pila TCP/IP no fue diseñada con seguridad como prioridad. Muchos ataques exp
 |Enlace|Ethernet, Wi-Fi|Comunicación directa en la red local|
 
 ---
-
-¿Quieres que haga un esquema visual o que profundice en cómo se aplican estas capas en ciberseguridad ofensiva o defensiva?

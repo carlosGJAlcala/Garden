@@ -12,7 +12,7 @@ Cobalt Strike es una herramienta comercial de **red teaming** y **simulación de
 ###  ¿Qué es exactamente?
 
 
-> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/Sistema-de-Gestion-de-la-Seguridad-de-la-Informacion|Sistema de Gestion de la Seguridad de la Informacion]].
+> **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/Sistema-de-Gestion-de-la-Seguridad-de-la-Informacion|Sistema de Gestion de la Seguridad de la Informacion]].
 
 Cobalt Strike proporciona una interfaz gráfica que permite a los atacantes o simuladores lanzar y gestionar ataques sofisticados, realizar movimientos laterales, establecer persistencia, robar credenciales y controlar sistemas comprometidos.
 
@@ -76,4 +76,3 @@ Esto ha llevado a que muchas empresas de seguridad consideren su tráfico como a
 
 ---
 
-Si quieres, puedo darte ejemplos reales de uso, cómo funciona un Beacon paso a paso, o cómo se puede detectar en un entorno defensivo. ¿Te interesa algún enfoque más específico?

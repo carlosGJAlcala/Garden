@@ -6,9 +6,6 @@ tags:
   - distribuido
   - weblogic
 ---
-Te lo explico con el mismo enfoque de **programación distribuida** y enlazándolo con SAP PI, SOA y microservicios, porque **Oracle WebLogic Server** encaja en ese ecosistema como **middleware de aplicaciones empresariales**.
-
----
 
 ## **1. Qué es Oracle WebLogic**
 
@@ -112,5 +109,3 @@ Como cualquier middleware crítico, **WebLogic es un objetivo frecuente** de ata
 
 ---
 
-Si quieres, puedo prepararte **un mapa visual de middleware** donde aparezcan SAP PI, WebLogic, MuleSoft y Kafka, mostrando cómo se comunican en una arquitectura distribuida con capas de seguridad.  
-¿Quieres que te lo arme?

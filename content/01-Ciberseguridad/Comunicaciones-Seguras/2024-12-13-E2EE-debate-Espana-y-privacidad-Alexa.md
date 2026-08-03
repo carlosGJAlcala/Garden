@@ -8,7 +8,7 @@ tags:
 ##  Leaked Government Document: España plantea prohibir el cifrado de extremo a extremo
 
 
-> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/RGPD|RGPD]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Criptografia/2025-04-20-Computacion-Cuantica-y-Criptografia-Post-Cuantica|2025 04 20 Computacion Cuantica y Criptografia Post Cuantica]].
+> **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/RGPD|RGPD]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Criptografia/2025-04-20-Computacion-Cuantica-y-Criptografia-Post-Cuantica|2025 04 20 Computacion Cuantica y Criptografia Post Cuantica]].
 
 Se filtró un documento gubernamental que muestra que el **Gobierno de España** participó en un debate dentro de la Unión Europea sobre la **prohibición o limitación del cifrado de extremo a extremo (E2EE)**. Esta medida afectaría a aplicaciones como **Signal**, **WhatsApp** o **Telegram**, donde las comunicaciones están cifradas de forma que solo el emisor y el receptor pueden acceder al contenido.
 
@@ -77,5 +77,3 @@ Desde la filosofía, el debate sobre privacidad y vigilancia puede analizarse co
     
 
 ---
-
-¿Quieres que integre todo esto en una presentación o documento más extenso sobre privacidad digital y políticas públicas? Puedo ayudarte a estructurarlo como artículo, informe técnico o ensayo.

@@ -132,7 +132,6 @@ Las ecuaciones diferenciales aparecen **formalmente en el siglo XVII** con **New
 
 Las **ecuaciones diferenciales cambiaron la historia del pensamiento humano**, permitiendo **formalizar las leyes del cambio**. Son esenciales para modelar cualquier sistema físico, económico o biológico que evolucione en el tiempo. Su aplicación es universal: desde el diseño de un dron o un motor eléctrico, hasta la predicción del clima o la simulación del corazón humano. En la ingeniería moderna, son **la columna vertebral del modelado matemático y el análisis dinámico**.
 
-¿Quieres que te muestre cómo se resuelve una ED de primer o segundo orden con condiciones iniciales? ¿O cómo se representa gráficamente en MATLAB o Python?
 Una **ecuación diferencial** es una relación matemática que involucra una **función desconocida** y sus **derivadas** respecto a una o más variables independientes. En el contexto de **sistemas de control**, las ecuaciones diferenciales describen el **comportamiento dinámico** de sistemas físicos, eléctricos, mecánicos, térmicos, etc., relacionando la entrada u(t)u(t), la salida y(t)y(t), y sus derivadas.
 
 ---
@@ -160,7 +159,7 @@ $$
 
 ##  Ejemplos por orden
 
-### 1️⃣ Primer orden
+### 1. Primer orden
 
 Sistema RC (carga de un condensador):
 $$
@@ -175,7 +174,7 @@ $$
 
 ---
 
-### 2️⃣ Segundo orden
+### 2. Segundo orden
 
 Sistema masa-resorte-amortiguador:
 $$
@@ -198,7 +197,7 @@ $$
 
 ---
 
-### 3️⃣ Tercer orden
+### 3. Tercer orden
 
 Sistema eléctrico con RLC + controlador:
 $$
@@ -247,4 +246,3 @@ Una ecuación diferencial es:
 
 Las **ecuaciones diferenciales** son el lenguaje matemático natural para describir **sistemas dinámicos físicos**. Su análisis permite entender cómo un sistema responde a estímulos (entradas) y cómo evoluciona su estado (salida). En sistemas de control, se usan para obtener funciones de transferencia, diseñar controladores y predecir estabilidad y rendimiento.
 
-¿Te gustaría que resuelva un ejemplo paso a paso partiendo de una ecuación diferencial real y obteniendo su función de transferencia o su solución temporal?

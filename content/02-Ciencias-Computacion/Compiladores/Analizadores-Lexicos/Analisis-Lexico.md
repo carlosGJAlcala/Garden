@@ -117,5 +117,3 @@ Un analizador léxico puede construirse de distintas formas:
 En todos los casos, la base técnica descansa sobre **expresiones regulares** y su traducción a **autómatas finitos deterministas o no deterministas**, que modelan el reconocimiento de patrones sobre la entrada.
 
 ---
-
-Si quieres, puedo ahora ampliar este mismo apartado incluyendo **ejemplos visuales con autómatas** y **diagramas de transición** que aparecen en el documento para que quede como una sección más didáctica y visual. ¿Quieres que lo haga?

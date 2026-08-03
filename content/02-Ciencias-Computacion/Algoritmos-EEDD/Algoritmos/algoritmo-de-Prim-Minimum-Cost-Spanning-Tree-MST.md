@@ -6,14 +6,17 @@ tags:
   - algoritmos-eedd
   - algoritmos
 ---
-Perfecto. Vamos a desarrollar completamente el algoritmo de **Prim** para encontrar un **Minimum-Cost Spanning Tree (MST)** en un grafo no dirigido y conexo. Este algoritmo es fundamental en optimización de redes, telecomunicaciones, planificación de infraestructuras y algoritmos de grafos.
+
+# Algoritmo de Prim (Minimum-Cost Spanning Tree)
+
+El algoritmo de **Prim** encuentra un **Minimum-Cost Spanning Tree (MST)** en un grafo no dirigido y conexo. Fundamental en optimización de redes, telecomunicaciones, planificación de infraestructuras y algoritmos de grafos.
 
 ---
 
-##  ¿Qué es un Spanning Tree?
+## ¿Qué es un Spanning Tree?
 
 
-> **Relacionado**: [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Criptografia/2025-04-20-Computacion-Cuantica-y-Criptografia-Post-Cuantica|2025 04 20 Computacion Cuantica y Criptografia Post Cuantica]].
+> **Relacionado**: [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Criptografia/2025-04-20-Computacion-Cuantica-y-Criptografia-Post-Cuantica|2025 04 20 Computacion Cuantica y Criptografia Post Cuantica]].
 
 Un **árbol de expansión** (_spanning tree_) de un grafo **conexo y no dirigido** es un **subgrafo acíclico** que:
 
@@ -182,5 +185,3 @@ graph = {
 > Es especialmente útil cuando trabajas con **grafos densos** y puedes mantener una cola de prioridad eficiente.
 
 ---
-
-¿Quieres que lo visualicemos paso a paso con una matriz de adyacencia? ¿O que lo compare con Kruskal con un grafo real? También puedo implementarlo en C, Java o Python, según prefieras.

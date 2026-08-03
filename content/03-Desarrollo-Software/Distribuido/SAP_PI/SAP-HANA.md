@@ -101,7 +101,3 @@ SAP Data Intelligence: orquesta y transforma datos conectados a HANA.
 
 
 ---
-
-Si quieres, puedo prepararte un esquema visual que muestre la arquitectura interna de SAP HANA y cómo maneja datos en memoria, almacenamiento columnar y procesamiento OLTP/OLAP al mismo tiempo.
-¿Quieres que lo haga?
-

@@ -5,14 +5,11 @@ tags:
   - ciencias-computacion
   - percepcion-control
 ---
-Las **partes principales de un sistema robótico** —actuadores, sensores y procesadores— son fundamentales tanto en la robótica como en sistemas de control en general. A continuación, te explico con mayor profundidad y contexto cómo se relacionan entre sí, cómo funcionan y cómo pueden ser aprovechadas o incluso atacadas desde un punto de vista de ciberseguridad.
 
----
-
-###  **Actuadores**
+### **Actuadores**
 
 
-> **Relacionado**: [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/Sistema-de-Gestion-de-la-Seguridad-de-la-Informacion|Sistema de Gestion de la Seguridad de la Informacion]].
+> **Relacionado**: [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/Sistema-de-Gestion-de-la-Seguridad-de-la-Informacion|Sistema de Gestion de la Seguridad de la Informacion]].
 
 Son los dispositivos que ejecutan acciones físicas en el mundo real, basadas en las órdenes que reciben del sistema de control. Por ejemplo:
 
@@ -86,4 +83,3 @@ Son el "cerebro". Reciben la información de los sensores, la procesan y generan
 
 ---
 
-Si quieres, puedo seguir con ejemplos específicos en código, en ROS, o con ataques conocidos como **Stuxnet**, que manipulaba sensores y actuadores industriales. ¿Deseas que explore alguno de estos escenarios?

@@ -6,7 +6,7 @@ tags:
   - comunicaciones-seguras
 ---
 
-> **Relacionado**: [[03-Desarrollo-Software/Distribuido/SAP_PI/Facturae|Facturae]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/Sistema-de-Gestion-de-la-Seguridad-de-la-Informacion|Sistema de Gestion de la Seguridad de la Informacion]].
+> **Relacionado**: [[03-Desarrollo-Software/Distribuido/SAP_PI/Facturae|Facturae]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/Sistema-de-Gestion-de-la-Seguridad-de-la-Informacion|Sistema de Gestion de la Seguridad de la Informacion]].
 
 La **Red SARA** (Sistema de Aplicaciones y Redes para las Administraciones) es, en esencia, la **columna vertebral de las comunicaciones electrónicas entre las Administraciones Públicas españolas**. Su misión no es solo “conectar” técnicamente, sino también estandarizar, securizar y agilizar el intercambio de información para trámites administrativos y servicios electrónicos.
 

@@ -6,11 +6,8 @@ tags:
   - herramientas
   - reconocimiento
 ---
-¡Perfecto! Vamos a explicar **`nslookup` y `dig`**, dos herramientas fundamentales para **reconocimiento y enumeración DNS en pentesting**. Aquí tienes unas **notas detalladas y útiles para tu estudio**:
 
----
-
-###  **Nslookup / Dig**
+## Nslookup / Dig
 
 
 > **Relacionado**: [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[02-Ciencias-Computacion/IA/Notas|Notas]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[01-Ciberseguridad/Fundamentos/shred|shred]].
@@ -144,12 +141,3 @@ tags:
 >  **`nslookup` y `dig`: herramientas fundamentales de reconocimiento DNS.**  
 > Permiten consultar registros, descubrir información sensible y detectar configuraciones incorrectas (como zone transfer abierto).  
 > Clave en la **fase de reconocimiento en pentesting**.
-
----
-
-Si quieres puedo prepararte:
-
--  **Checklist de comandos útiles de nslookup/dig para pentesting.**
-- ️ **Ejemplo práctico paso a paso de reconocimiento DNS de un dominio real (en laboratorio).**
-
-Solo dime .

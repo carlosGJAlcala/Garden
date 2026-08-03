@@ -8,7 +8,7 @@ tags:
 ##  Ingeniería Inversa
 
 
-> **Relacionado**: [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[01-Ciberseguridad/Criptografia/12-Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Criptografia/2025-04-20-Computacion-Cuantica-y-Criptografia-Post-Cuantica|2025 04 20 Computacion Cuantica y Criptografia Post Cuantica]]. [[01-Ciberseguridad/Forense/guia/Forense-de-memoria-de-sistema-completo|Forense de memoria de sistema completo]]. [[01-Ciberseguridad/Herramientas/Rootkits-y-Hooking|Rootkits y Hooking]].
+> **Relacionado**: [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[Introduccion-a-la-Criptografiaseguridad|12 Introduccion a la Criptografiaseguridad]]. [[01-Ciberseguridad/Criptografia/2025-04-20-Computacion-Cuantica-y-Criptografia-Post-Cuantica|2025 04 20 Computacion Cuantica y Criptografia Post Cuantica]]. [[01-Ciberseguridad/Forense/guia/Forense-de-memoria-de-sistema-completo|Forense de memoria de sistema completo]]. [[01-Ciberseguridad/Herramientas/Rootkits-y-Hooking|Rootkits y Hooking]].
 
 La **ingeniería inversa** consiste en analizar un programa o archivo binario para comprender su funcionamiento interno, su lógica y su comportamiento, sin tener acceso al código fuente original.
 
@@ -89,5 +89,3 @@ El análisis en Android es especialmente complejo por varios factores:
     
 
 ---
-
-¿Quieres que continúe con una guía paso a paso de reversing o un caso práctico con alguna muestra de malware o binario PE?

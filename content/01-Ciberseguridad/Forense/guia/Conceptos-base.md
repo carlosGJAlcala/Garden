@@ -6,11 +6,8 @@ tags:
   - forense
   - guia
 ---
-Aquí tienes el apartado ampliado y con más detalle:
 
----
-
-### **Conceptos base (qué debes dominar primero)**
+# Conceptos base (qué debes dominar primero)
 
 
 > **Relacionado**: [[02-Ciencias-Computacion/Algoritmos-EEDD/Estructuras/Puntero|Puntero]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[01-Ciberseguridad/Forense/guia/Forense-de-memoria-de-sistema-completo|Forense de memoria de sistema completo]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]].

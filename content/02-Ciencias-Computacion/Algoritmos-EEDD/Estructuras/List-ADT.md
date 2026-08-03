@@ -6,11 +6,14 @@ tags:
   - algoritmos-eedd
   - estructuras
 ---
-Perfecto. Vamos ahora con el **List ADT (Tipo Abstracto de Datos Lista)**, uno de los ADT más fundamentales y flexibles que existen. Las listas permiten **almacenar secuencias ordenadas de elementos** y realizar **operaciones dinámicas** como inserción, borrado, recorrido y búsqueda.
+
+# List ADT (Tipo Abstracto de Datos Lista)
+
+El List ADT es uno de los ADT más fundamentales y flexibles. Las listas permiten **almacenar secuencias ordenadas de elementos** y realizar **operaciones dinámicas** como inserción, borrado, recorrido y búsqueda.
 
 ---
 
-##  ¿Qué es una Lista?
+## ¿Qué es una Lista?
 
 
 > **Relacionado**: [[02-Ciencias-Computacion/Algoritmos-EEDD/Estructuras/Puntero|Puntero]]. [[02-Ciencias-Computacion/Sistemas-Operativos/UNIX/comandos/Locate|Locate]]. [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]].
@@ -204,5 +207,3 @@ class Lista:
 > Su riqueza de operaciones la hace **ideal para estructuras base en compiladores, procesamiento de texto, interpretes, motores de búsqueda, entornos gráficos, IA y más**.
 
 ---
-
-¿Quieres que prepare un ejemplo más complejo como una lista doblemente enlazada en C o Python? ¿O un caso real como una implementación de una lista de historial de navegación o lista de tareas con pseudocódigo y código?

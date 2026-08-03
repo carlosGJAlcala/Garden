@@ -145,13 +145,15 @@ Content-Type: text/xml; charset=utf-8
 
 ---
 
- En resumen: **Apache Axis (Java)** es un framework que permite crear y consumir servicios web basados en **SOAP**, funcionando principalmente sobre **HTTP POST**, y gestionando automáticamente la traducción entre llamadas Java y mensajes XML.
+En resumen: **Apache Axis (Java)** es un framework que permite crear y consumir servicios web basados en **SOAP**, funcionando principalmente sobre **HTTP POST**, y gestionando automáticamente la traducción entre llamadas Java y mensajes XML.
 
 ---
 
-¡Claro! Aquí tienes un **ejemplo detallado** de cómo funciona **Apache Axis en Java** para consumir un servicio SOAP a través de HTTP. Vamos a simular que tienes un servicio web de **calculadora** con una operación llamada `suma(a, b)` y vamos a ver cómo consumirlo usando Axis.
+## Ejemplo: Consumir servicio SOAP con Apache Axis
 
-### 1. **Pasos Iniciales: Preparar el WSDL**
+Ejemplo de cómo funciona **Apache Axis en Java** para consumir un servicio SOAP a través de HTTP. Simularemos un servicio web de **calculadora** con una operación `suma(a, b)`.
+
+### 1. Preparar el WSDL
 
 El servicio web tiene un archivo **WSDL** (Web Services Description Language) que describe el servicio, cómo funciona y qué métodos ofrece. En este caso, nuestro servicio de **Calculadora** tiene una operación `suma(a, b)` que devuelve el resultado de sumar dos números.
 

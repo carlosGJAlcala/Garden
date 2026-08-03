@@ -7,14 +7,9 @@ tags:
   - reconocimiento
 ---
 
+# HTML Linting
+
 > **Relacionado**: [[02-Ciencias-Computacion/IA/Notas|Notas]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[01-Ciberseguridad/Forense/guia/Forense-de-memoria-de-sistema-completo|Forense de memoria de sistema completo]]. [[01-Ciberseguridad/Desarrollo-Seguro/2025-02-20-Seguridad-iOS-memoria-permisos-y-sandboxing|2025 02 20 Seguridad iOS memoria permisos y sandboxing]].
-
-Perfectísimo, vamos a explicar HTML Linting, una práctica muy importante tanto para desarrolladores como para pentesters que buscan identificar problemas de calidad en código web. Aquí tienes unas notas detalladas y claras para tu material de estudio:
-
-
----
-
- HTML Linting
 
  ¿Qué es el linting?
 
@@ -149,13 +144,3 @@ Falta de type="password" en campos que deberían ocultar información.
 
 
 ---
-
-Si quieres puedo prepararte:
-
- Lista de comandos con htmlhint y htmllint.
-
-️ Guía para usar W3C Validator en workflows manuales y automatizados.
-
-
-Solo dime .
-

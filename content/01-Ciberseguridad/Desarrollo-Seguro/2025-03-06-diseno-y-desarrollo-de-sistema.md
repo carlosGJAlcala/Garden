@@ -247,7 +247,6 @@ Para responder ante ataques de **BlackBasta**, podemos mapear su actividad en la
 
 Utilizar frameworks como **MITRE ATT&CK** y la **Kill Chain** nos permite estructurar una defensa efectiva contra adversarios como **BlackBasta**. La clave está en diseñar una estrategia de seguridad por capas, donde cada fase del ataque represente una oportunidad para detenerlo antes de que cumpla su objetivo.
 
-¿Quieres que detalle algún punto más sobre la emulación de adversarios o medidas específicas de detección y respuesta?
 ### **BlackBasta y su Evolución en Técnicas de Ataque**
 
 BlackBasta ha ido **evolucionando** y adaptando sus tácticas, integrando herramientas previamente utilizadas en otros tipos de malware, como **Aakbot**, que originalmente era un troyano bancario.

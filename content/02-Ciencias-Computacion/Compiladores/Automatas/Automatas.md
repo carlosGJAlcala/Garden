@@ -6,11 +6,8 @@ tags:
   - compiladores
   - automatas
 ---
-Aquí tienes el apartado **Autómatas** reescrito y ampliado usando tanto el contenido del Tema 2 como el Tema 3 que me pasaste para que quede más técnico, coherente y completo:
 
----
-
-## **Autómatas en el análisis léxico**
+# Autómatas en el análisis léxico
 
 En el contexto de los compiladores, un **autómata** es un modelo matemático que permite reconocer patrones de entrada, siendo la herramienta fundamental para implementar analizadores léxicos. Estos modelos procesan una secuencia de caracteres de entrada, cambiando de estado según reglas de transición predefinidas, hasta determinar si la cadena es aceptada o rechazada según el lenguaje que representan.
 
@@ -178,12 +175,4 @@ En términos formales, lo que ocurre es algo así:
 
 ---
 
-Si quieres, puedo hacerte un **diagrama paso a paso** mostrando cómo una regex como
-
-scss
-
-CopiarEditar
-
-`[a-zA-Z]([a-zA-Z]|[0-9])*`
-
-se convierte en un AFND, luego en AFD y finalmente en el autómata que realmente se ejecuta cuando la llamas en un lenguaje de alto nivel
+**Ejemplo de conversión**: una regex como `[a-zA-Z]([a-zA-Z]|[0-9])*` se convierte en un AFND, luego en AFD y finalmente en el autómata que se ejecuta cuando se llama en un lenguaje de alto nivel.

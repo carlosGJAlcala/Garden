@@ -5,11 +5,8 @@ tags:
   - ciberseguridad
   - herramientas
 ---
-¡Excelente elección! Vamos a explicar **HTTP Parameter Pollution (HPP)** de forma **muy extensa, densa y técnica**, ideal para tus apuntes avanzados de pentesting y como recurso de estudio profesional.
 
----
-
-###  **HTTP Parameter Pollution (HPP)**
+# HTTP Parameter Pollution (HPP)
 
 
 > **Relacionado**: [[01-Ciberseguridad/Fundamentos/owasp|owasp]]. [[01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[01-Ciberseguridad/Malware/Apuntes|Apuntes]]. [[03-Desarrollo-Software/Concurrencia/servlets|servlets]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]].
@@ -67,12 +64,12 @@ GET /login?user=admin&user=guest HTTP/1.1
 ####  **Superficie de ataque**
 
 HPP puede explotarse en distintos contextos:  
-1️⃣ **En validaciones de lado cliente/server:**
+1. **En validaciones de lado cliente/server:**
 
 - La aplicación revisa `user=admin` pero luego usa `user=guest` en lógica interna.
     
 
-2️⃣ **Bypasseo de filtros de seguridad:**
+2. **Bypasseo de filtros de seguridad:**
 
 - Un WAF o proxy puede validar el primer parámetro pero no todos.
     
@@ -83,19 +80,19 @@ HPP puede explotarse en distintos contextos:
     - Backend usa `1000`.
         
 
-3️⃣ **Combinado con ataques multi-vectoriales:**
+3. **Combinado con ataques multi-vectoriales:**
 
 - Inyección SQL: `id=1&id=1 UNION SELECT ...`
     
 - XSS: `q=hello&q=<script>`
     
 
-4️⃣ **HPP en cookies:**
+4. **HPP en cookies:**
 
 - `Cookie: session=abc; session=malicious`
     
 
-5️⃣ **Path parameter pollution:**
+5. **Path parameter pollution:**
 
 - No solo querystring: puede ser usado en `POST`, `PUT` o incluso `multipart/form-data`.
     
@@ -238,12 +235,3 @@ user=juan&role=user&role=admin
 > Detalle clave: comportamiento ante duplicados varía según backend/framework/proxy → obliga al pentester a probar de forma exhaustiva.
 
 ---
-
-Si quieres puedo prepararte:
-
--  **Checklist avanzada de pasos prácticos para detectar HPP en un engagement real.**
-    
-- ️ **Script en Python para enviar solicitudes con parámetros duplicados automáticamente y analizar respuestas.**
-    
-
-Solo dime  y lo preparo.

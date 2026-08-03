@@ -156,5 +156,3 @@ G(s)=K(s+a)(s2+2ζωns+ωn2)G(s) = \frac{K}{(s + a)(s^2 + 2\zeta \omega_n s + \o
     
 
 En diseño de control, entender el **orden del sistema** es clave para elegir el tipo de controlador (P, PI, PID, compensador en frecuencia o espacio de estados).
-
-¿Quieres que te prepare gráficas comparativas de respuestas al escalón para distintos órdenes en MATLAB o Python?

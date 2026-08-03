@@ -7,18 +7,13 @@ tags:
   - reconocimiento
 ---
 
+# Pass-the-Hash (PtH) / Pass-the-Ticket (PtT)
+
 > **Relacionado**: [[01-Ciberseguridad/Gestion-Seguridad/Tema4Auditoria/AuditoriaTecnica/Pivoting|Pivoting]]. [[02-Ciencias-Computacion/IA/Notas|Notas]]. [[02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[08-Personal/Cuidado-Personal/Pelo/resumen|resumen]]. [[01-Ciberseguridad/Gestion-Seguridad/Tema3Gobierno_PoliticasSeguridad/Sistema-de-Gestion-de-la-Seguridad-de-la-Informacion|Sistema de Gestion de la Seguridad de la Informacion]].
 
-¡Muy bien! Vamos a explicar en detalle y de forma comparada estas cuatro técnicas, porque son fundamentales en auditorías de Active Directory y pentesting avanzado. Aquí tienes unas notas bien estructuradas:
-
-
 ---
 
- 
-
----
-
- 1️⃣ Pass-the-Hash (PtH)
+## 1. Pass-the-Hash (PtH)
 
  ¿Qué es?
 
@@ -50,7 +45,7 @@ Solo funciona en entornos que acepten autenticación NTLM.
 
 ---
 
- 2️⃣ Pass-the-Ticket (PtT)
+2. Pass-the-Ticket (PtT)
 
  ¿Qué es?
 
@@ -79,7 +74,7 @@ TGT tiene una validez limitada (usualmente 10 horas por defecto).
 
 ---
 
- 3️⃣ Over-Pass-the-Hash (OPtH)
+3. Over-Pass-the-Hash (OPtH)
 
  ¿Qué es?
 
@@ -87,7 +82,7 @@ Variante avanzada de Pass-the-Hash que combina NTLM y Kerberos.
 
 
  Cómo funciona:
-1️⃣ El atacante tiene hash NTLM de la cuenta objetivo. 2️⃣ En vez de autenticarse directamente vía NTLM, usa ese hash para solicitar un TGT al KDC:
+1. El atacante tiene hash NTLM de la cuenta objetivo. 2. En vez de autenticarse directamente vía NTLM, usa ese hash para solicitar un TGT al KDC:
 
 Autenticación Kerberos, pero utilizando NTLM hash como prueba de posesión. 3️⃣ El atacante obtiene un TGT legítimo de Kerberos y puede usarlo en el dominio.
 
@@ -108,7 +103,7 @@ mimikatz con el comando sekurlsa::pth.
 
 ---
 
- 4️⃣ Over-Pass-the-Ticket (OPtT)
+4. Over-Pass-the-Ticket (OPtT)
 
  ¿Qué es?
 
@@ -198,13 +193,3 @@ Monitorizar uso sospechoso de tickets (Event ID 4769).
 
 
 ---
-
-Si quieres puedo prepararte:
-
- Guía práctica para realizar cada técnica en un laboratorio controlado.
-
- Checklist de mitigación paso a paso en entornos Active Directory modernos.
-
-
-Solo dime .
-

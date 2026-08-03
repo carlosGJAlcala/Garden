@@ -154,5 +154,3 @@ def lerp(a, b, t):
 La **interpolación permite construir o estimar datos continuos a partir de valores discretos**, y es una técnica omnipresente en programación moderna. Desde **animación, gráficos, predicción, cifrado, hasta diseño CAD o inteligencia artificial**, es una herramienta **simple en principio, pero potentísima en la práctica**.
 
 ---
-
-¿Quieres que prepare un ejemplo visual en Python con interpolación lineal y polinómica usando `matplotlib` para mostrar cómo cambia la curva según los puntos?

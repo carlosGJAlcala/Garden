@@ -185,5 +185,3 @@ Name Servers: ns1.hackdns.biz, ns2.hackdns.biz
 La base de datos WHOIS es una herramienta poderosa para **reconocer, rastrear y atribuir** tanto activos legítimos como maliciosos. Aunque su alcance ha sido limitado por cuestiones legales y de privacidad, **sigue siendo esencial en auditorías, análisis de amenazas y ciberinteligencia**.
 
 ---
-
-¿Quieres que te prepare un script en Python para automatizar consultas WHOIS y correlacionarlas con reputación de dominios o feeds de amenazas?

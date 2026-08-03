@@ -5,7 +5,7 @@ tags:
   - ciberseguridad
   - gestion-seguridad
 ---
-![[Pasted image 20250228170014.png]]
+![[assets/Pasted image 20250228170014.png]]
 	Estas son las políticas que tiene que llevar cada uno
 
 

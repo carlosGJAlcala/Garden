@@ -6,9 +6,6 @@ tags:
   - ingles
   - academia
 ---
-Aquí tienes todas las frases de las imágenes traducidas al español:
-
----
 
 ###  **Expressions for Making, Accepting, and Refusing a Request**
 
@@ -110,5 +107,3 @@ Aquí tienes todas las frases de las imágenes traducidas al español:
     
 
 ---
-
-¿Quieres que te las organice en una tabla o que las convierta en tarjetas de estudio (flashcards) para practicar?

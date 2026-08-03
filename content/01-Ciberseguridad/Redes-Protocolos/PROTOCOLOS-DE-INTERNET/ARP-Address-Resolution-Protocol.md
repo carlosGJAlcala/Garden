@@ -130,5 +130,3 @@ Aunque sigue siendo esencial, ARP está siendo reemplazado o reforzado por alter
 El protocolo ARP es un componente fundamental pero inseguro en las redes modernas. Entender su funcionamiento y sus debilidades permite aplicar contramedidas efectivas y prevenir ataques de red locales. Las organizaciones deben monitorizar y segmentar correctamente sus redes para minimizar su exposición a estas amenazas.
 
 ---
-
-¿Te gustaría que escriba un script o te muestre cómo detectar un ataque ARP con Wireshark o Python?

@@ -6,11 +6,10 @@ tags:
   - algoritmos-eedd
   - algoritmos
 ---
-Perfecto. Vamos ahora con **Merge Sort**, otro de los algoritmos de ordenamiento más importantes y potentes, especialmente por su rendimiento **consistente** y su **estabilidad**.
 
----
+# Merge Sort
 
-##  ¿Qué es Merge Sort?
+## ¿Qué es Merge Sort?
 
 
 > **Relacionado**: [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/Quick-Sort|Quick Sort]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/algoritmos-de-ordenamiento|algoritmos de ordenamiento]].
@@ -195,5 +194,3 @@ def merge(left, right):
 >     
 
 ---
-
-¿Te gustaría que prepare una visualización paso a paso del proceso de merge? ¿O que compare en tiempo real el rendimiento de Merge Sort vs Quick Sort con datos aleatorios en Python?

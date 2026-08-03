@@ -6,11 +6,10 @@ tags:
   - algoritmos-eedd
   - algoritmos
 ---
-Perfecto. Vamos a desarrollar en detalle **Insertion Sort**, uno de los algoritmos de ordenamiento más simples pero mucho más útil que Bubble o Selection Sort en algunos contextos.
 
----
+# Insertion Sort
 
-##  ¿Qué es Insertion Sort?
+## ¿Qué es Insertion Sort?
 
 
 > **Relacionado**: [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/Bubble-Sort|Bubble Sort]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/Merge-Sort|Merge Sort]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/Selection-Sort|Selection Sort]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/algoritmos-de-ordenamiento|algoritmos de ordenamiento]].
@@ -142,5 +141,3 @@ def insertion_sort(arr):
 > Es **estable, simple y muy eficiente en esos casos**, aunque no escala bien para listas largas desordenadas.
 
 ---
-
-¿Quieres que lo compare gráficamente con Bubble o Merge Sort? ¿O que te prepare una versión optimizada con conteo de movimientos?

@@ -126,7 +126,6 @@ Así se logra lo mejor de ambos mundos: privacidad perfecta hacia el futuro **y 
 
 ---
 
-¿Quieres que añada ejemplos de cómo esto se implementa en TLS o Signal? También puedo ayudarte a comparar ECDH con otras variantes como ECDHE o X3DH.
 
 ![[Pasted image 20241129165947 1.png]]
 
@@ -172,16 +171,16 @@ El protocolo realiza **tres intercambios Diffie-Hellman más uno adicional**, qu
 
 Los detalles son:
 
-1️⃣ **Diffie-Hellman entre la clave de identidad de Alice y la clave de sesión efímera de Bob**.  
+1. **Diffie-Hellman entre la clave de identidad de Alice y la clave de sesión efímera de Bob**.  
 Esto permite autenticar a Alice ante Bob, porque implica el uso de la clave privada de identidad de Alice.
 
-2️⃣ **Diffie-Hellman entre la clave efímera de Alice y la clave de identidad de Bob**.  
+2. **Diffie-Hellman entre la clave efímera de Alice y la clave de identidad de Bob**.  
 Autentica a Bob ante Alice.
 
-3️⃣ **Diffie-Hellman entre las claves efímeras de Alice y Bob**.  
+3. **Diffie-Hellman entre las claves efímeras de Alice y Bob**.  
 Contribuye a la confidencialidad y forward secrecy.
 
-4️⃣ **Diffie-Hellman adicional entre la clave de identidad de Alice y la clave de identidad de Bob** (en algunas versiones se incluye para fortalecer la autenticación mutua de largo plazo).
+4. **Diffie-Hellman adicional entre la clave de identidad de Alice y la clave de identidad de Bob** (en algunas versiones se incluye para fortalecer la autenticación mutua de largo plazo).
 
 El resultado de estos cuatro intercambios es una colección de secretos compartidos que se concatenan y pasan a través de una función derivadora de claves (KDF), produciendo la clave maestra que servirá para iniciar la sesión de mensajería segura.
 
@@ -202,13 +201,9 @@ si porque hay que tener en cuenta el MIT
 
 ![[Pasted image 20241129171936 1.png]]
 
-Gracias por toda la información y las imágenes. Estás describiendo conceptos avanzados del protocolo **Signal**, especialmente sobre cómo protege contra suplantaciones, ataques de replay, y cómo se logra **forward secrecy** y **asynchronous messaging** con el **Double Ratchet**.
-
-A continuación te presento el contenido reescrito, corregido y expandido en **Markdown**, con todas las imágenes **mantenidas tal cual las has referenciado** (`![[]]`), y con explicaciones técnicas claras y estructuradas.
-
 ---
 
-##  Verificación con código QR: autenticidad de claves
+## Verificación con código QR: autenticidad de claves
 
 En el protocolo **Signal**, la autenticación del interlocutor **no se basa solo en firmas digitales**. Esto se debe a que el servidor podría **falsificar claves públicas** (por ejemplo, IKA o PKA) si actuara de forma maliciosa o estuviera comprometido.
 
@@ -297,4 +292,3 @@ En tus apuntes usas “carretas” para referirte a los dos caminos que avanzan 
 
 ---
 
-¿Quieres que te prepare un esquema visual con todo esto o una presentación de resumen para clase o exposición? También puedo explicarte cómo Signal usa esto dentro del protocolo X3DH.

@@ -6,11 +6,10 @@ tags:
   - algoritmos-eedd
   - algoritmos
 ---
-Perfecto. Vamos a detallar **Bubble Sort**, uno de los algoritmos de ordenamiento más simples y conocidos, ideal para aprendizaje y análisis básico, aunque **ineficiente en la práctica**.
 
----
+# Bubble Sort
 
-##  ¿Qué es Bubble Sort?
+## ¿Qué es Bubble Sort?
 
 
 > **Relacionado**: [[06-Infraestructura/Servidores/DispositivosOT/CENT|CENT]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/Insertion-Sort|Insertion Sort]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/Selection-Sort|Selection Sort]]. [[02-Ciencias-Computacion/Algoritmos-EEDD/Algoritmos/algoritmos-de-ordenamiento|algoritmos de ordenamiento]].
@@ -138,5 +137,3 @@ def bubble_sort(arr):
 > **No es adecuado para producción**, pero es una buena forma de **introducir comparaciones, intercambios y eficiencia algorítmica**.
 
 ---
-
-¿Quieres que prepare una animación o simulación paso a paso con arrays reales? ¿O comparar su tiempo con Insertion y Selection Sort en Python o C?
