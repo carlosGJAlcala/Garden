@@ -14,8 +14,6 @@ Si quieres más información sobre alguna de estas conexiones, avísame.
 
 ---
 
-### **Pasos para usar theHarvester:**
-
 #### 1. **Instalación:**
 Si no tienes **theHarvester** instalado, puedes hacerlo fácilmente. A menudo, ya está incluido en distribuciones como **Kali Linux**. Si no, puedes instalarlo manualmente:
 

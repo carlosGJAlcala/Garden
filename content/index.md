@@ -10,8 +10,6 @@ tags:
 
 ---
 
-## Areas de Conocimiento
-
 ### [[01-Ciberseguridad/MOC-Ciberseguridad|Ciberseguridad]]
 Todo sobre seguridad informatica: fundamentos, herramientas de hacking, criptografia, analisis de malware, forense digital y mas.
 
@@ -21,24 +19,13 @@ Fundamentos teoricos: algoritmos, estructuras de datos, sistemas operativos, red
 ### [[03-Desarrollo-Software/MOC-Desarrollo|Desarrollo de Software]]
 Programacion y arquitectura: paradigmas, concurrencia, sistemas distribuidos, bases de datos y herramientas de desarrollo.
 
-### [[04-Idiomas/MOC-Idiomas|Idiomas]]
-Aprendizaje de ingles: vocabulario, gramatica y recursos.
-
-### [[05-Profesional/MOC-Profesional|Desarrollo Profesional]]
-Cursos, certificaciones y formacion continua.
-
-### [[06-Infraestructura/MOC-Infraestructura|Infraestructura]]
+### [[04-Infraestructura/MOC-Infraestructura|Infraestructura]]
 Servidores, cloud (Azure) y administracion de sistemas.
-
-### [[07-Investigacion/MOC-Investigacion|Investigacion]]
-TFM, computacion cuantica y proyectos de investigacion.
-
-
 
 ---
 
 ## Navegacion Rapida
 
 - **Apuntes recientes**: Ver notas con fecha en cada seccion
-- **Por herramienta**: [[01-Ciberseguridad/Herramientas/|Herramientas de Hacking]]
+- **Por herramienta**: Herramientas de Hacking
 - **Por tema**: Usa la busqueda (Ctrl+K)

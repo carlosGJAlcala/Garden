@@ -13,7 +13,7 @@ lang: es
 
 Examen **open-book + hands-on**, 5 retos, 2 h, entornos que **se resetean** (la DevSecOps-Box no
 guarda estado). Objetivo: leer el reto → saltar aquí → copiar el bloque → ejecutar → guardar el
-JSON/XML. El mapa conceptual está en [[00-Mapa-Mental-CAISP]].
+JSON/XML. El mapa conceptual está en 00-Mapa-Mental-CAISP.
 
 > [!warning] Verifica versiones
 > Los snippets y versiones cambian entre curso y examen. Confirma versión de cada herramienta
@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 ## 1. Escanear / inyectar / troyanizar MODELOS — modelscan
 
-Nota: [[Escaneando Modelos e Inyectando Código Malicioso]]
+Nota: Escaneando Modelos e Inyectando Código Malicioso
 
 ```bash
 pip install modelscan==0.8.5
@@ -53,7 +53,7 @@ python3 keras-model-consumer.py             # consumir → el código se ejecuta
 
 ## 2. Escanear PICKLE — Picklescan
 
-Nota: [[Scanning a Malicious Pickle File using Picklescan]]
+Nota: Scanning a Malicious Pickle File using Picklescan
 
 ```bash
 pip install picklescan==0.0.20
@@ -66,7 +66,7 @@ picklescan --huggingface ykilcher/totally-harmless-model
 
 ## 3. SBOM — Syft
 
-Nota: [[Creando SBOM para Proyectos de IA con Syft]]
+Nota: Creando SBOM para Proyectos de IA con Syft
 
 ```bash
 curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin v1.37.0
@@ -80,7 +80,7 @@ syft dir:. -o spdx-json      > sbom_spdx.json
 
 ## 4. CVEs — Grype
 
-Nota: [[Escaneando CVEs con Grype]]
+Nota: Escaneando CVEs con Grype
 
 ```bash
 curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
@@ -97,7 +97,7 @@ grype pytorch/pytorch:2.2.0-cuda12.1-cudnn8-runtime   # imagen docker
 
 ## 5. Dependencias Python — Safety
 
-Nota: [[Escaneando Proyectos de IA con Safety]]
+Nota: Escaneando Proyectos de IA con Safety
 
 ```bash
 safety check -r requirements.txt --json | tee safety-output.json
@@ -109,7 +109,7 @@ safety check -r requirements.txt -i 78828          # ignorar un ID
 
 ## 6. Firmar / verificar modelos — Cosign
 
-Notas: [[Firmando y Verificando Modelos con Cosign]] · [[Firmando LLMs con Cosign en GitLab]]
+Notas: Firmando y Verificando Modelos con Cosign · Firmando LLMs con Cosign en GitLab
 
 ```bash
 wget "https://github.com/sigstore/cosign/releases/download/v2.6.1/cosign-linux-amd64" -O /usr/local/bin/cosign && chmod +x /usr/local/bin/cosign
@@ -122,14 +122,11 @@ cosign verify-blob --key cosign.pub --signature model.sig pytorch_model.bin
 
 ## 7. Sistema RAG + extracción de info sensible (prompt injection)
 
-Notas: [[Building a RAG System]] · [[Extracting Sensitive Information Through an LLM]]
+Notas: Building a RAG System · Extracting Sensitive Information Through an LLM
 
 ```bash
 apt update && apt install python3-pip -y
 mkdir llm-chatbot && cd llm-chatbot
-# requirements.txt del examen de práctica (ojo versiones):
-#   transformers==4.48.3 torch==2.6.0 langchain==0.3.26 langchain-community==0.3.26
-#   faiss-cpu==1.11.0 sentence-transformers==4.1.0 accelerate==1.8.1 einops==0.8.1
 #   jinja2==3.1.6 tensorflow==2.16.1 tf-keras==2.16.0
 mkdir documents && cd documents
 wget -O - https://gitlab.practical-devsecops.training/-/snippets/67/raw/main/TechCorpXYZFiles.sh | bash
@@ -146,7 +143,7 @@ los campos"). Guarda captura de la respuesta filtrada.
 
 ## 8. Defensa: sanitizar I/O — LLM Guard
 
-Notas: [[Sanitizando Prompts con LLM Guard]] · [[Protegiendo Entrada y Salida de LLM]]
+Notas: Sanitizando Prompts con LLM Guard · Protegiendo Entrada y Salida de LLM
 
 ```bash
 pip install -r requirements.txt
@@ -158,7 +155,7 @@ python3 llm-chatbot-with-prompt-protection.py
 
 ## 9. Escáner de vulnerabilidades LLM — Garak
 
-Nota: [[Scanning an LLM for Agent Based Vulnerabilities]]
+Nota: Scanning an LLM for Agent Based Vulnerabilities
 
 ```bash
 apt update && apt install python3 python3.10-venv python3-pip openjdk-11-jdk -y
@@ -174,7 +171,7 @@ python3 -m garak --model_type huggingface --model_name distilbert/distilgpt2 \
 
 ## 10. Threat modeling
 
-Notas: [[Threat Modeling with StrideGPT]] · [[AI Threat Modeling with IriusRisk]] · [[Rating Risks with OWASP Risk Rating Methodology]]
+Notas: Threat Modeling with StrideGPT · AI Threat Modeling with IriusRisk · Rating Risks with OWASP Risk Rating Methodology
 
 ```bash
 git clone https://github.com/mrwadams/stride-gpt.git && cd stride-gpt
@@ -190,7 +187,7 @@ OWASP Risk = **Likelihood × Impact** (factores Threat Agent / Vulnerability / T
 
 ## 11. Abusar de agentes de IA
 
-Nota: [[Abusing AI Agents]]
+Nota: Abusing AI Agents
 
 ```bash
 python3 -m venv venv && source venv/bin/activate
@@ -209,4 +206,4 @@ python3 agentic.py
 - [ ] Conclusión: qué detectó / qué se explotó / cómo se mitiga
 
 ## Relacionado
-- [[00-Mapa-Mental-CAISP]] · [[CAISP Practice Exam]] · [[Resumen-Temas-2-9-CAISP]]
+- 00-Mapa-Mental-CAISP · CAISP Practice Exam · Resumen-Temas-2-9-CAISP

@@ -111,8 +111,6 @@ BGP fue diseñado en una época en la que la confianza entre operadores de red e
 
 ---
 
-### 🛡️ Mecanismos de defensa
-
 #### 1. **Prefix filtering**
 
 - Solo aceptar rutas que se sabe que debe anunciar un vecino.

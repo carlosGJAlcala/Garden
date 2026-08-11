@@ -6,14 +6,11 @@ tags:
 ---
 # Grimorios - Jardín del Conocimiento
 
-
-> **Relacionado**: [[../01-Ciberseguridad/Herramientas/IDOR|IDOR]]. [[../01-Ciberseguridad/Malware/Apuntes|Apuntes]]. [[../02-Ciencias-Computacion/IA/Notas|Notas]]. [[../02-Ciencias-Computacion/Redes/Herramientas|Herramientas]]. [[../01-Ciberseguridad/Forense/guia/Forense-de-memoria-de-sistema-completo|Forense de memoria de sistema completo]].
+> **Relacionado**: IDOR. Apuntes. Notas. Herramientas. Forense de memoria de sistema completo.
 
 > Un jardín digital de notas interconectadas sobre ciberseguridad, computación y desarrollo.
 
 ---
-
-## Áreas de Conocimiento
 
 ### [[../01-Ciberseguridad/MOC-Ciberseguridad|Ciberseguridad]]
 Todo sobre seguridad informática: fundamentos, herramientas de hacking, criptografía, análisis de malware, forense digital y más.
@@ -24,24 +21,21 @@ Fundamentos teóricos: algoritmos, estructuras de datos, sistemas operativos, re
 ### [[../03-Desarrollo-Software/MOC-Desarrollo|Desarrollo de Software]]
 Programación y arquitectura: paradigmas, concurrencia, sistemas distribuidos, bases de datos y herramientas de desarrollo.
 
-
-### [[../04-Profesional/MOC-Profesional|Desarrollo Profesional]]
+### Desarrollo Profesional
 Cursos, certificaciones y formación continua.
 
 ### [[../05-Infraestructura/MOC-Infraestructura|Infraestructura]]
 Servidores, cloud (Azure) y administración de sistemas.
 
-### [[../06-Investigacion/MOC-Investigacion|Investigación]]
+### Investigación
 TFM, computación cuántica y proyectos de investigación.
-
-
 
 ---
 
 ## Navegación Rápida
 
 - **Apuntes recientes**: Ver notas con fecha en cada sección
-- **Por herramienta**: [[../01-Ciberseguridad/Herramientas/|Herramientas de Hacking]]
+- **Por herramienta**: Herramientas de Hacking
 - **Por tema**: Usa la búsqueda de Obsidian (Ctrl+O)
 
 ---

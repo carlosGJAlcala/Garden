@@ -65,8 +65,6 @@ Cuando escribes `www.uc3m.es` en tu navegador, ocurre:
 
 ---
 
-### ⚠️ Vulnerabilidades en DNS
-
 #### 1. **DNS Spoofing / Cache Poisoning**
 
 - El atacante **inyecta información falsa** en la caché del resolver.
@@ -92,8 +90,6 @@ Cuando escribes `www.uc3m.es` en tu navegador, ocurre:
     
 
 ---
-
-### 🔐 Defensas contra ataques a DNS
 
 #### 1. **DNSSEC (Domain Name System Security Extensions)**
 

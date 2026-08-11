@@ -28,8 +28,6 @@ Son extremadamente comunes y peligrosos, ya que permiten:
 
 ---
 
-### 🔍 Tipos principales de ataques basados en datos
-
 #### 1. **Errores de validación de entrada**
 
 Aplicaciones que no verifican si los datos introducidos tienen el formato, longitud o contenido esperado.
@@ -124,8 +122,6 @@ memcpy(buf + len1, data2, len2);
     
 
 ---
-
-### 🛡️ Contramedidas para prevenir ataques basados en datos
 
 #### En desarrollo seguro:
 

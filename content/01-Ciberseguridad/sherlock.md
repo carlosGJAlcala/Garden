@@ -4,8 +4,6 @@
 
 ---
 
-### **Cómo usar Sherlock**
-
 #### 1. **Instalación**
 Puedes instalar **Sherlock** en sistemas que tengan Python instalado. Sigue estos pasos:
 
