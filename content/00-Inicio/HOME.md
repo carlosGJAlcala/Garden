@@ -1,14 +1,14 @@
 ---
-title: "Grimorios - Jardín del Conocimiento"
+title: "Inicio"
 date: 2026-01-26
 tags:
   - inicio
 ---
-# Grimorios - Jardín del Conocimiento
+# Objetivo del blog
 
-> **Relacionado**: IDOR. Apuntes. Notas. Herramientas. Forense de memoria de sistema completo.
+> **Objetivo**: Presentar y compartir apuntes, que he ido adquiriendo con el trascurso del tiempo para poder divulgar el concimiento.
 
-> Un jardín digital de notas interconectadas sobre ciberseguridad, computación y desarrollo.
+> **¿Qué es?**: Es unn jardín digital de notas interconectadas sobre ciberseguridad, computación, electronica, desarrollo y otros temas.
 
 ---
 
@@ -21,10 +21,7 @@ Fundamentos teóricos: algoritmos, estructuras de datos, sistemas operativos, re
 ### [[../03-Desarrollo-Software/MOC-Desarrollo|Desarrollo de Software]]
 Programación y arquitectura: paradigmas, concurrencia, sistemas distribuidos, bases de datos y herramientas de desarrollo.
 
-### Desarrollo Profesional
-Cursos, certificaciones y formación continua.
-
-### [[../05-Infraestructura/MOC-Infraestructura|Infraestructura]]
+### [[../04-Infraestructura/MOC-Infraestructura|Infraestructura]]
 Servidores, cloud (Azure) y administración de sistemas.
 
 ### Investigación
@@ -48,12 +45,10 @@ Grimorios/
 ├── 01-Ciberseguridad/  # Master + Seguridad
 ├── 02-Ciencias-Computacion/  # Grado
 ├── 03-Desarrollo-Software/   # Programación
-├── 04-Idiomas/
-├── 05-Profesional/
-├── 06-Infraestructura/
-└── 07-Investigacion/
+├── 04-Infraestructura/       # Nube personal
+└── 05-Investigacion/         # Trabajos personales, y de fin de grado.
 ```
 
 ---
 
-*Última actualización: 2026-01-25*
+*Última actualización: 2026-08-20*
