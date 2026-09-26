@@ -1,4 +1,5 @@
 ---
+title: "Sockets en Python"
 created: 2024-11-22T11:10:15 (UTC +01:00)
 tags: []
 source: https://docs.python.org/es/3.10/library/socket.html

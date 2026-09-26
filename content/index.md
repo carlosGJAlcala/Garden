@@ -22,6 +22,12 @@ Programacion y arquitectura: paradigmas, concurrencia, sistemas distribuidos, ba
 ### [[04-Infraestructura/MOC-Infraestructura|Infraestructura]]
 Servidores, cloud (Azure) y administracion de sistemas.
 
+### [[05-Electronica/MOC-Electronica|Electronica]]
+Circuitos analogicos y sistemas digitales, microprocesadores y ensamblador, arquitectura de computadores, teoria de control y electromagnetismo.
+
+### [[06-Proyectos/MOC-Proyectos|Proyectos]]
+Trabajo Fin de Grado sobre una aplicacion web conectada a un sistema SCADA, y Trabajo Fin de Master sobre simulacion de circuitos cuanticos.
+
 ---
 
 ## Navegacion Rapida

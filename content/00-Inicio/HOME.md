@@ -1,5 +1,5 @@
 ---
-title: "Inicio"
+title: "HOME"
 date: 2026-01-26
 tags:
   - inicio
