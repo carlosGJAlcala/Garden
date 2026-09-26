@@ -2,7 +2,7 @@
 title: "Programación concurrente de memoria común"
 ---
 
-# Tema 3. Programación concurrente de memoria común
+# Programación concurrente de memoria común
 
 Concurrencia de memoria común
 

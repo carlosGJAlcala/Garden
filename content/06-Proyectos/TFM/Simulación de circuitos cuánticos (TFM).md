@@ -201,7 +201,7 @@ $$z \begin{bmatrix}
 
 En los sistemas cuánticos, un qubit es representado por un vector columna de dos elementos que, al sumar sus cuadrados, debe ser igual a uno. Cada elemento del sistema representa la probabilidad de que colapse a un estado u otro.
 
-La notación de Dirac, también conocida como la notación *bra-ket*, es el estándar en la mecánica cuántica, utilizada para describir los estados cuánticos dentro de la mecánica cuántica. Su nombre viene porque el producto de dos estados se nombra con los paréntesis angulares “angle bracket”: (Castillo Gómez 2024) $$\langle \phi | \psi \rangle$$ Consistiendo $\phi$ en la parte izquierda (bra) y $\psi$ en la parte derecha (ket).
+La notación de Dirac, también conocida como la notación *bra-ket*, es el estándar en la mecánica cuántica, utilizada para describir los estados cuánticos dentro de la mecánica cuántica. Su nombre viene porque el producto de dos estados se nombra con los paréntesis angulares “angle bracket”: (Castillo Gómez 2024) $\langle \phi | \psi \rangle$ Consistiendo $\phi$ en la parte izquierda (bra) y $\psi$ en la parte derecha (ket).
 
 - El ket representa una matriz columna dentro del espacio de Hilbert.
 
@@ -213,7 +213,7 @@ $$|0\rangle =
 \begin{bmatrix}
     1 \\
     0
-\end{bmatrix}$$ El vector $|j\rangle$ es aquel cuyo componente $j$ tiene el valor 1 y el resto de los componentes son 0. La siguiente convención se usa para representar *qubits* que codifican los valores de cero y uno: $$\begin{bmatrix}
+\end{bmatrix}$ El vector $|j\rangle$ es aquel cuyo componente $j$ tiene el valor 1 y el resto de los componentes son 0. La siguiente convención se usa para representar *qubits* que codifican los valores de cero y uno: $\begin{bmatrix}
     1 \\
     0
 \end{bmatrix}
@@ -222,7 +222,7 @@ $$|0\rangle =
     0 \\
     1
 \end{bmatrix}
-= |1\rangle$$ Un *qubit* puede representarse de la siguiente forma: $$a =
+= |1\rangle$ Un *qubit* puede representarse de la siguiente forma: $a =
 \begin{bmatrix}
     a_0 \\
     a_1
@@ -239,13 +239,13 @@ a_0
     1
 \end{bmatrix}$$ Las propiedades que tiene son las siguientes:
 
-- Dado cualquier *bra* $\langle \phi |$ y *kets* $|\psi_1\rangle$ y $|\psi_2\rangle$, y números complejos $c_1$ y $c_2$, entonces, puesto que los núcleos son *funcionales lineales*, $$\langle \phi | \left( c_1 |\psi_1\rangle + c_2 |\psi_2\rangle \right) = c_1 \langle \phi | \psi_1 \rangle + c_2 \langle \phi | \psi_2 \rangle.$$
+- Dado cualquier *bra* $\langle \phi |$ y *kets* $|\psi_1\rangle$ y $|\psi_2\rangle$, y números complejos $c_1$ y $c_2$, entonces, puesto que los núcleos son *funcionales lineales*, $\langle \phi | \left( c_1 |\psi_1\rangle + c_2 |\psi_2\rangle \right) = c_1 \langle \phi | \psi_1 \rangle + c_2 \langle \phi | \psi_2 \rangle.$
 
-- Dado cualquier *ket* $|\psi\rangle$, núcleos $\langle \phi_1 |$ y $\langle \phi_2 |$, y números complejos $c_1$ y $c_2$, entonces, por la definición de la adición y la *multiplicación escalar* de funcionales lineales, $$\left( c_1 \langle \phi_1 | + c_2 \langle \phi_2 | \right) |\psi\rangle = c_1 \langle \phi_1 | \psi \rangle + c_2 \langle \phi_2 | \psi \rangle.$$
+- Dado cualquier *ket* $|\psi\rangle$, núcleos $\langle \phi_1 |$ y $\langle \phi_2 |$, y números complejos $c_1$ y $c_2$, entonces, por la definición de la adición y la *multiplicación escalar* de funcionales lineales, $\left( c_1 \langle \phi_1 | + c_2 \langle \phi_2 | \right) |\psi\rangle = c_1 \langle \phi_1 | \psi \rangle + c_2 \langle \phi_2 | \psi \rangle.$
 
-- Dados cualesquiera *kets* $|\psi_1\rangle$ y $|\psi_2\rangle$, y números complejos $c_1$ y $c_2$, de las propiedades del producto interno (con $c^*$ denotando la *conjugación compleja* de $c$), $$c_1 |\psi_1\rangle + c_2 |\psi_2\rangle$$ es dual a $$c_1^* \langle \psi_1 | + c_2^* \langle \psi_2 |.$$
+- Dados cualesquiera *kets* $|\psi_1\rangle$ y $|\psi_2\rangle$, y números complejos $c_1$ y $c_2$, de las propiedades del producto interno (con $c^*$ denotando la *conjugación compleja* de $c$), $c_1 |\psi_1\rangle + c_2 |\psi_2\rangle$ es dual a $c_1^* \langle \psi_1 | + c_2^* \langle \psi_2 |.$
 
-- Dado cualquier *bra* $\langle \phi |$ y el *ket* $|\psi\rangle$, una propiedad axiomática del producto interno da $$\langle \phi | \psi \rangle = \langle \psi | \phi \rangle^*.$$
+- Dado cualquier *bra* $\langle \phi |$ y el *ket* $|\psi\rangle$, una propiedad axiomática del producto interno da $\langle \phi | \psi \rangle = \langle \psi | \phi \rangle^*.$
 
 Los *bra-ket* son bastante útiles porque facilitan los cálculos en la mecánica cuántica. Permiten expresar operadores y proyecciones entre estados. Es independiente de la base específica.
 
@@ -265,18 +265,18 @@ Resumiendo, en la computación cuántica, los espacios de Hilbert se utilizan pa
 
 ##### Producto interior. Normas.
 
-También es conocido como producto escalar; es una operación algebraica que toma dos vectores y retorna un valor numérico. Dados dos vectores $\mathbf{u} = (u_1, u_2, \ldots, u_n)$ y $\mathbf{v} = (v_1, v_2, \ldots, v_n)$, su **producto escalar** se define como: $$\mathbf{u} \cdot \mathbf{v} = u_1 \cdot v_1 + u_2 \cdot v_2 + \ldots + u_n \cdot v_n$$ Cumple las siguientes propiedades:
+También es conocido como producto escalar; es una operación algebraica que toma dos vectores y retorna un valor numérico. Dados dos vectores $\mathbf{u} = (u_1, u_2, \ldots, u_n)$ y $\mathbf{v} = (v_1, v_2, \ldots, v_n)$, su **producto escalar** se define como: $\mathbf{u} \cdot \mathbf{v} = u_1 \cdot v_1 + u_2 \cdot v_2 + \ldots + u_n \cdot v_n$ Cumple las siguientes propiedades:
 
 1.  **Linealidad:** $$\langle au + bv, w \rangle = a \langle u, w \rangle + b \langle v, w \rangle,
         \quad \forall a,b \in \mathbb{K}.$$
 
-2.  **Simetría (o hermiticidad en el caso complejo):** $$\langle u, v \rangle = \overline{\langle v, u \rangle}.$$
+2.  **Simetría (o hermiticidad en el caso complejo):** $\langle u, v \rangle = \overline{\langle v, u \rangle}.$
 
 3.  **Positividad:** $$\langle v, v \rangle \geq 0 
         \quad \text{y} \quad 
         \langle v, v \rangle = 0 \iff v = 0.$$
 
-A partir del producto interior se define una **norma inducida**: $$\|v\| = \sqrt{\langle v, v \rangle}.$$
+A partir del producto interior se define una **norma inducida**: $\|v\| = \sqrt{\langle v, v \rangle}.$
 
 Esta norma permite medir la longitud de los vectores y definir conceptos como convergencia y ortogonalidad dentro del espacio.
 
@@ -395,7 +395,7 @@ Su representación matricial es la siguiente: $$Y =
 \begin{bmatrix}
     0 & -i \\
     i & 0
-\end{bmatrix}$$ Y los vectores en notación de Dirac son: $$|0\rangle =
+\end{bmatrix}$ Y los vectores en notación de Dirac son: $|0\rangle =
 \begin{bmatrix}
     1 \\
     0
@@ -407,7 +407,7 @@ Su representación matricial es la siguiente: $$Y =
     1
 \end{bmatrix}$$ Su acción sobre los estados es la siguiente:
 
-$$Y|0\rangle = i|1\rangle$$ $$Y|1\rangle = -i|0\rangle$$ La transformación que realiza es la siguiente: $$Y(\alpha|0\rangle + \beta|1\rangle) = -i\beta|0\rangle + i\alpha|1\rangle$$
+$Y|0\rangle = i|1\rangle$ $Y|1\rangle = -i|0\rangle$ La transformación que realiza es la siguiente: $Y(\alpha|0\rangle + \beta|1\rangle) = -i\beta|0\rangle + i\alpha|1\rangle$
 
 #### Puerta S
 
@@ -415,7 +415,7 @@ Si es cero no cambia su estado pero si es uno lo multiplica por el número imagi
 \begin{bmatrix}
     1 & 0 \\
     0 & i
-\end{bmatrix}$$ La transformación que realiza es la siguiente: $$S(\alpha|0\rangle + \beta|1\rangle) = \alpha|0\rangle + i\beta|1\rangle$$ Es una puerta bastante útil porque permite controlar la fase sin alterar las probabilidades de estas. También, tiene la propiedad curiosa de que aplicar dos veces la misma puerta resulta en una puerta Z. $$S^2 =
+\end{bmatrix}$ La transformación que realiza es la siguiente: $S(\alpha|0\rangle + \beta|1\rangle) = \alpha|0\rangle + i\beta|1\rangle$ Es una puerta bastante útil porque permite controlar la fase sin alterar las probabilidades de estas. También, tiene la propiedad curiosa de que aplicar dos veces la misma puerta resulta en una puerta Z. $S^2 =
 \begin{bmatrix}
     1 & 0 \\
     0 & i
@@ -454,7 +454,7 @@ Es la puerta identidad que se corresponde a la matriz identidad por lo tanto no 
 
 Esta puerta pone en superposición el *qubit*; es de las más importantes, si no la más importante, ya que para el empleo de dichos algoritmos cuánticos es necesaria. Esta puerta realiza la siguiente operación dentro de la esfera de Bloch:
 
-$$|0\rangle \rightarrow \frac{|0\rangle + |1\rangle}{\sqrt{2}} \equiv |+\rangle$$ $$|1\rangle \rightarrow \frac{|0\rangle - |1\rangle}{\sqrt{2}} \equiv |-\rangle,$$ La rotación en la esfera de Bloch se realiza a uno de los siguientes estados: $\{|+\rangle, |-\rangle\}$ . Si es cero, lo pone en estado positivo; si es uno, lo pone en estado negativo. Haciendo que el qubit esté en estado de superposición tanto para 0 como para 1 y solo cuando se mide en uno de estos estados, colapse en uno de los dos.
+$|0\rangle \rightarrow \frac{|0\rangle + |1\rangle}{\sqrt{2}} \equiv |+\rangle$ $|1\rangle \rightarrow \frac{|0\rangle - |1\rangle}{\sqrt{2}} \equiv |-\rangle,$ La rotación en la esfera de Bloch se realiza a uno de los siguientes estados: $\{|+\rangle, |-\rangle\}$ . Si es cero, lo pone en estado positivo; si es uno, lo pone en estado negativo. Haciendo que el qubit esté en estado de superposición tanto para 0 como para 1 y solo cuando se mide en uno de estos estados, colapse en uno de los dos.
 
 Se representa de la siguiente manera: $$H = \frac{1}{\sqrt{2}} \begin{bmatrix} 
     1 & 1 \\
@@ -476,7 +476,7 @@ Su tabla de verdad sería la siguiente: $$\begin{array}{cc|c}
     |0\rangle & |1\rangle & |0\rangle|1\rangle \\
     |1\rangle & |0\rangle & |1\rangle|1\rangle \\
     |1\rangle & |1\rangle & |1\rangle|0\rangle \\
-\end{array}$$ Su matriz es la siguiente: $$\text{CNOT} =
+\end{array}$ Su matriz es la siguiente: $\text{CNOT} =
 \begin{bmatrix}
     1 & 0 & 0 & 0 \\
     0 & 1 & 0 & 0 \\
@@ -497,7 +497,7 @@ Es una de las puertas más conocidas y más importantes, también conocida como 
     |1\rangle & |0\rangle & |1\rangle & |1\rangle|0\rangle|1\rangle \\
     |1\rangle & |1\rangle & |0\rangle & |1\rangle|1\rangle|1\rangle \\
     |1\rangle & |1\rangle & |1\rangle & |1\rangle|1\rangle|0\rangle \\
-\end{array}$$ Su matriz es la siguiente: $$\text{Toffoli} =
+\end{array}$ Su matriz es la siguiente: $\text{Toffoli} =
 \begin{bmatrix}
     1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
     0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\

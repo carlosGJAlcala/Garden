@@ -4,7 +4,7 @@ tags: [universidad, 4anyo, pyc]
 date: 2026-08-12
 lang: es
 ---
-# Tema 1. Introducción a los sistemas de Percepción y Control
+# Introducción a los sistemas de Percepción y Control
 Grado en Ingeniería de Computadores - Percepción y Control
 Manuel Ocaña Miguel / Ángel Llamazares Llamazares
 1. Introducción a los sistemas de Percepción y Control

@@ -9,7 +9,7 @@ title: "Arquitectura de computadores - Fundamentos"
 - "Digital Design and Computer Architecture, RISC-V Edition, First Edition", Sarah Harris y David Harris, Morgan Kaufmann 2021. Capítulo 6.
 - "Organización y Diseño Informático. Edición RISC-V", David A. Patterson, John Hennessy. Segunda edición, Morgan-Kaufman 2021. Capítulo 2.
 
-## Capítulo 2: Temas
+## Temas
 
 - Introducción
 - Lenguaje ensamblador

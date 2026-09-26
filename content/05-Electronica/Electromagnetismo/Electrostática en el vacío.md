@@ -2,7 +2,7 @@
 title: "Electrostática en el vacío"
 ---
 
-# Tema 1 — Electrostática en el vacío
+# Electrostática en el vacío
 
 Física ( 780000) — Grado en Ingeniería de Computadores ( grupo 1ºA, lunes mañana)
 Curso 2020/2021 – Primer Cuatrimestre

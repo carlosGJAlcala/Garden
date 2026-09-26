@@ -4,7 +4,6 @@ title: "Árboles"
 
 # Árboles
 
-
 ## Índice
 
 - Terminología básica

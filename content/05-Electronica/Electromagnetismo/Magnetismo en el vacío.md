@@ -2,7 +2,7 @@
 title: "Magnetismo en el vacío"
 ---
 
-# Tema 4: Magnetismo en el vacío
+# Magnetismo en el vacío
 
 Física ( 780000). Grado en Ingeniería de Computadores ( grupo 1ºA, lunes mañana). Curso 2020/2021 – Primer Cuatrimestre. R. Gómez Herrero. Departamento de Física y Matemáticas.
 
@@ -236,7 +236,7 @@ De hecho el resultado es esencialmente el mismo que si consideramos el toroide c
 - IV) En el exterior del cable coaxial ($r > R_3$): $B ( r) = 0$ ( el exterior queda apantallado).
 Gráfico cualitativo de B frente a r, con los tramos delimitados por $R_1$, $R_2$ y $R_3$.
 
-## Tema 4 ( Apéndices): resumen de algunos casos prácticos frecuentes
+## ( Apéndices): resumen de algunos casos prácticos frecuentes
 
 Física ( 780000). Grado en Ingeniería de Computadores ( grupo 1ºA, lunes mañana). Curso 2019/2020 – Primer Cuatrimestre. R. Gómez Herrero. Departamento de Física y Matemáticas.
 

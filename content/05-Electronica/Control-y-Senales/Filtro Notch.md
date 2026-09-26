@@ -56,8 +56,11 @@ legend('Señal original', 'Filtrada (Notch)');``
 
 La respuesta en frecuencia de un filtro notch ideal puede representarse como:
 
-$$∣H(ejω)∣={0,ω=ω01,ω≠ω0|H(e^{j\omega})| = \begin{cases} 0, & \omega = \omega_0 \\ 1, & \omega \neq \omega_0 \end{cases}∣H(ejω)∣={0,1,​ω=ω0​ω=ω0​​$$
-En la práctica, la atenuación en ω0\omega_0ω0​ es finita y la transición alrededor de la frecuencia de rechazo depende de rrr.
+$$
+|H(e^{j\omega})| = \begin{cases} 0, & \omega = \omega_0 \\ 1, & \omega \neq \omega_0 \end{cases}
+$$
+
+En la práctica, la atenuación en $\omega_0$ es finita y la transición alrededor de la frecuencia de rechazo depende de $r$.
 
 ## 6. Consideraciones
 

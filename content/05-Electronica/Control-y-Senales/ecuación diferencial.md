@@ -9,7 +9,7 @@ Una **ecuación diferencial** es una relación matemática entre una función de
 Por ejemplo:
 $$
 
-dydt=ky\frac{dy}{dt} = ky
+\frac{dy}{dt} = ky
 $$
 
 Dice: “la tasa de cambio de yy respecto al tiempo es proporcional a su valor actual”, lo que da lugar al crecimiento exponencial. Esto modela desde **poblaciones biológicas** hasta **intereses bancarios** o **procesos radiactivos**.
@@ -94,7 +94,7 @@ Los sistemas dinámicos se modelan mediante ecuaciones diferenciales **ordinaria
 ### Forma general (lineal e invariante en el tiempo):
 $$
 
-andny(t)dtn+an−1dn−1y(t)dtn−1+⋯+a1dy(t)dt+a0y(t)=bmdmu(t)dtm+⋯+b0u(t)a_n \frac{d^n y(t)}{dt^n} + a_{n-1} \frac{d^{n-1} y(t)}{dt^{n-1}} + \dots + a_1 \frac{dy(t)}{dt} + a_0 y(t) = b_m \frac{d^m u(t)}{dt^m} + \dots + b_0 u(t)
+a_n \frac{d^n y(t)}{dt^n} + a_{n-1} \frac{d^{n-1} y(t)}{dt^{n-1}} + \dots + a_1 \frac{dy(t)}{dt} + a_0 y(t) = b_m \frac{d^m u(t)}{dt^m} + \dots + b_0 u(t)
 $$
 
 - y(t)y(t): salida del sistema
@@ -109,7 +109,7 @@ $$
 Sistema RC (carga de un condensador):
 $$
 
-RCdy(t)dt+y(t)=u(t)RC \frac{dy(t)}{dt} + y(t) = u(t)
+RC \frac{dy(t)}{dt} + y(t) = u(t)
 $$
 
 - Entrada: voltaje aplicado

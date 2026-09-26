@@ -2,7 +2,7 @@
 title: "Requisitos de seguridad en votación electrónica"
 ---
 
-### Tema 2: Requisitos de Seguridad en Sistemas de Votación Electrónica
+### Requisitos de Seguridad en Sistemas de Votación Electrónica
 
 #### 1. Requisitos Fundamentales de Seguridad
 
@@ -42,7 +42,7 @@ No todos los sistemas de votación electrónica logran todos los requisitos de s
 - **Accesibilidad vs. Secreto del Voto**: En sistemas diseñados para brindar accesibilidad a votantes con discapacidades, se pueden introducir ayudas adicionales (auditivas o visuales) que podrían comprometer parcialmente el secreto del voto. En estos casos, se deben implementar salvaguardas adicionales para minimizar el riesgo sin afectar la usabilidad del sistema.
 
 La implementación de estos compromisos depende del contexto específico de cada elección, buscando siempre equilibrar la seguridad con la funcionalidad del sistema【4†source】 .
-### Tema 3: Esquemas de Votación Verificables
+### Esquemas de Votación Verificables
 
 Los esquemas de votación verificables están diseñados para garantizar la integridad y transparencia en el proceso electoral, permitiendo que tanto los votantes como observadores externos verifiquen que los votos se han emitido, registrado y contado correctamente. A continuación, se detallan los tipos de esquemas de votación verificables, sus componentes y técnicas de implementación.
 
@@ -84,7 +84,7 @@ Existen varios esquemas de votación que emplean estas técnicas y que son ampli
 - **Scantegrity II**: Diseñado para sistemas de votación de escaneo óptico, Scantegrity II utiliza códigos secretos en las papeletas de voto. Estos códigos permiten a los votantes verificar que su voto fue correctamente registrado y contado en el sistema, sin revelar el contenido del voto.
 - **JCJ/Civitas**: Este sistema utiliza técnicas avanzadas de registro y cifrado para asegurar la privacidad y verificar el recuento, resistiendo tanto la coacción como la manipulación del proceso de votación. Los votantes pueden obtener credenciales que se utilizan para emitir votos en entornos controlados, protegiendo así la integridad del sistema en situaciones de alto riesgo de coacción.
 
-### Tema 4: Bloques Constructivos en Sistemas de Votación Verificable
+### Bloques Constructivos en Sistemas de Votación Verificable
 
 Los bloques constructivos o "building blocks" son los componentes criptográficos fundamentales que permiten la implementación segura y verificable de sistemas de votación electrónica. Estos bloques incluyen técnicas de cifrado, mecanismos de verificación, y sistemas de mezcla (mixnets), entre otros. Su uso es clave para garantizar la privacidad, integridad y verificabilidad de cada voto en el proceso electoral.
 
@@ -123,7 +123,7 @@ Los esquemas de cifrado RSA, ElGamal y Paillier permiten construir sistemas de v
 2. **Verificación de Votos**: Las propiedades homomórficas de estos esquemas permiten realizar verificaciones de la suma o el producto de votos cifrados sin comprometer el secreto de cada voto individual.
 3. **Eficiencia**: Cada esquema se adapta a distintos requisitos del sistema de votación. ElGamal, por ejemplo, permite operaciones probabilísticas y es útil para entornos donde el anonimato debe mantenerse durante el proceso de mezcla de votos.
 
-### Tema 4.2: Técnicas de Compartición de Secretos y Umbrales
+### 2: Técnicas de Compartición de Secretos y Umbrales
 
 Las técnicas de **secret sharing** y **umbral** son esenciales en sistemas de votación verificables, donde la clave secreta (por ejemplo, la clave de descifrado) se distribuye entre múltiples participantes. Este enfoque permite que un subconjunto específico (quórum) de participantes coopere para recuperar el secreto sin que ninguna de las partes individuales tenga acceso completo a él. A continuación, se presentan los métodos y técnicas clave de esta categoría:
 
@@ -161,7 +161,7 @@ El **Threshold ElGamal** es una variante del cifrado ElGamal en la cual la clave
 3. **Proceso de Descifrado Umbral**: Solo se requiere que un subconjunto de participantes coopere para descifrar un mensaje cifrado sin necesidad de reconstruir la clave completa, garantizando tanto la seguridad como la eficiencia .
 
 Estos métodos ición y umbral son fundamentales en el contexto de la votación verificable, ya que protegen el acceso a la clave de descifrado y aseguran que el sistema pueda operar incluso si algunos participantes no están disponibles o son comprometidos.
-### Tema 4.3: Pruebas de Conocimiento Cero (Zero-Knowledge Proofs)
+### 3: Pruebas de Conocimiento Cero (Zero-Knowledge Proofs)
 
 Las pruebas de conocimiento cero permiten a un **proponente** demostrar un hecho al **verificador** sin revelar la información secreta subyacente. Estas pruebas son cruciales en sistemas de votación verificables, ya que permiten la verificación de propiedades de los votos sin comprometer su privacidad. Una prueba de conocimiento cero debe cumplir con las siguientes propiedades:
 
@@ -207,7 +207,7 @@ Este protocolo también permite verificar que un voto cifrado ha sido correctame
 
 Este protocolo asegura que un voto es válido sin que se revele por quién o qué opción se votó .
 
-### Tema 4.3 - 4.5: Técnicas de Conocimiento Cero, Mixnets y Otras Técnicas Útiles en Sistemas de Votación Verificable
+### 3 - 4.5: Técnicas de Conocimiento Cero, Mixnets y Otras Técnicas Útiles en Sistemas de Votación Verificable
 
 ### 4.3 Pruebas de Conocimiento Cero (Zero-Knowledge Proofs)
 

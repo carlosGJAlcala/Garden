@@ -2,8 +2,7 @@
 title: "Análisis sintáctico"
 ---
 
-
-# Tema 4 — Análisis Sintáctico: Introducción, Gramáticas y Métodos
+# Análisis Sintáctico: Introducción, Gramáticas y Métodos
 
 ## Contenidos
 - Objetivos y contexto

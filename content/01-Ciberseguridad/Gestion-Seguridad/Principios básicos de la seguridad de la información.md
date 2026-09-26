@@ -5,7 +5,7 @@ title: "Principios básicos de la seguridad de la información"
 # Máster Universitario en Ciberseguridad ( M179)
 ## Fundamentos de la Gestión de la Seguridad de la Información
 **2024 – 2025**
-## Tema 1: Principios Básicos de la Seguridad de la Información
+## Principios Básicos de la Seguridad de la Información
 ## # Contenidos
 1. Aclaraciones Previas: Datos, Información y Conocimiento
 2. Definición e Implicaciones de la Seguridad de la Información

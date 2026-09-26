@@ -6,7 +6,6 @@ lang: es
 ---
 # Patrones GRASP ext
 
-
 ## patrones grasp
 
 PATRONES GRASP

@@ -3,7 +3,7 @@ title: "Fundamentos de la Gestión de la Seguridad de la Información"
 ---
 
 ## Fundamentos de la Gestión de la Seguridad de la Información
-## # Tema 1: GRC ( Governance, Risk & Compliance)
+## GRC ( Governance, Risk & Compliance)
 **Máster Universitario en Ciberseguridad**
 ---
 ## Introducción

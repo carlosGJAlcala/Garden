@@ -4,7 +4,7 @@ tags: [universidad, 4anyo, pyc]
 date: 2026-08-12
 lang: es
 ---
-# Tema 2. Sistemas de Percepción
+# Sistemas de Percepción
 Grado en Ingeniería de Computadores - Percepción y Control. Manuel Ocaña Miguel, Ángel Llamazares.
 1. Introducción a los sistemas de medida
 2. Circuitos de acondicionamiento

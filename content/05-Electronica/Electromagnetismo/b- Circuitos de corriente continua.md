@@ -2,7 +2,7 @@
 title: "b- Circuitos de corriente continua"
 ---
 
-# Tema 3b: Circuitos de corriente continua
+# B: Circuitos de corriente continua
 
 Física ( 780000). Grado en Ingeniería de Computadores ( grupo 1ºA, lunes mañana). Curso 2020/2021 – Primer Cuatrimestre. R. Gómez Herrero. Departamento de Física y Matemáticas.
 

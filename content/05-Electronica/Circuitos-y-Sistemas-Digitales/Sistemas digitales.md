@@ -2,8 +2,7 @@
 title: "Sistemas digitales"
 ---
 
-
-# Tema 1. Sistemas digitales
+# Sistemas digitales
 ## Índice
 1. Introducción
 2. Sistemas embebidos

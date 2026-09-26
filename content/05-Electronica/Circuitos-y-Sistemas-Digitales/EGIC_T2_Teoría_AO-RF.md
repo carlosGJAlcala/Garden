@@ -4,7 +4,7 @@ tags: [universidad, 1cuatri, electronica]
 date: 2026-08-14
 lang: es
 ---
-# Tema 2: Amplificadores Operacionales - Respuesta en Frecuencia
+# Amplificadores Operacionales - Respuesta en Frecuencia
 Electrónica
 ## Índice
 **1. Introducción**

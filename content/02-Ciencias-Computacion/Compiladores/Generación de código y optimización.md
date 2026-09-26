@@ -1,4 +1,8 @@
-# Compiladores - Tema 10: Generación de código y optimización
+---
+title: "Generación de código y optimización"
+---
+
+# Generación de código y optimización
 
 ## Contenidos
 - Introducción

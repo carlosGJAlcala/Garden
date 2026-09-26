@@ -2,7 +2,7 @@
 title: "Análisis semántico"
 ---
 
-# Compiladores - Tema 7: Análisis semántico
+# Análisis semántico
 
 ## Contenidos
 - Introducción

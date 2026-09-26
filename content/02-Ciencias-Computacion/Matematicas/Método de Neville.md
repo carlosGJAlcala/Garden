@@ -10,7 +10,7 @@ $$
 (x_0, y_0), (x_1, y_1), ..., (x_n, y_n)
 $$
 
-el método de Neville calcula una aproximación del valor de la función en un punto $$x$$ usando interpolación de forma recursiva.
+el método de Neville calcula una aproximación del valor de la función en un punto $x$ usando interpolación de forma recursiva.
 
 ## Fórmula de Neville
 
@@ -22,16 +22,16 @@ $$
 
 donde:
 
-- $$P_{i,i}(x) = y_i$$ (los valores conocidos)
-- $$P_{0,n}(x)$$ es el valor interpolado final
+- $P_{i,i}(x) = y_i$ (los valores conocidos)
+- $P_{0,n}(x)$ es el valor interpolado final
 
 ## ¿Cómo funciona?
 
 Se construye una **tabla triangular** donde:
 
-- La primera columna contiene los $$y_i$$ (valores conocidos).
+- La primera columna contiene los $y_i$ (valores conocidos).
 - Cada columna siguiente usa la fórmula de Neville para combinar valores anteriores.
-- El valor en la esquina superior derecha es la **interpolación final en $$x$$**.
+- El valor en la esquina superior derecha es la **interpolación final en $x$**.
 
 ## Aplicaciones prácticas
 

@@ -2,7 +2,7 @@
 title: "Seguridad en redes"
 ---
 
-# Cap 8. Seguridad en Redes
+# Seguridad en Redes
 
 Cap 8. Seguridad en Redes
 

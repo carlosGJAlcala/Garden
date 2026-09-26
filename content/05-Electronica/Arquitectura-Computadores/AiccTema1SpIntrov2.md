@@ -1,4 +1,4 @@
-# Capítulo 1 - Introducción
+# Introducción
 
 *Computer Organization and Design: The Hardware/Software Interface — Arquitectura e Ingeniería de Computadores*
 

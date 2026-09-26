@@ -4,19 +4,22 @@ La **interpolación** es una técnica matemática para **estimar valores interme
 
 ## ¿Qué es la interpolación?
 
-Dado un conjunto de puntos conocidos$$ (x0,y0),(x1,y1),...,(xn,yn)$$$$(x_0, y_0), (x_1, y_1), ..., (x_n, y_n),$$ la **interpolación** busca una función f(x)f(x) tal que:$$
+Dado un conjunto de puntos conocidos $(x_0, y_0), (x_1, y_1), \dots, (x_n, y_n)$, la **interpolación** busca una función $f(x)$ tal que:
 
-f(xi)=yipara todo if(x_i) = y_i \quad \text{para todo } i
 $$
-Y que además permita **estimar valores intermedios**: f(x)f(x) para xx entre los xix_i.
+f(x_i) = y_i \quad \text{para todo } i
+$$
+
+Y que además permita **estimar valores intermedios**: $f(x)$ para $x$ entre los $x_i$.
 
 ## Tipos comunes de interpolación
 
 ### 1. Interpolación lineal (la más básica y usada)
 
-Entre dos puntos:$$
+Entre dos puntos:
 
-f(x)=y0+y1−y0x1−x0(x−x0)f(x) = y_0 + \frac{y_1 - y_0}{x_1 - x_0}(x - x_0)
+$$
+f(x) = y_0 + \frac{y_1 - y_0}{x_1 - x_0}(x - x_0)
 $$
 #### Programación:
 
@@ -38,7 +41,9 @@ Encuentra un polinomio P(x)P(x) que pase por todos los puntos.
 
 #### Ejemplo (Lagrange):
 
-P(x)=∑i=0nyi⋅ℓi(x)con ℓi(x)=∏j≠ix−xjxi−xjP(x) = \sum_{i=0}^n y_i \cdot \ell_i(x) \quad \text{con } \ell_i(x) = \prod_{j \ne i} \frac{x - x_j}{x_i - x_j}
+$$
+P(x) = \sum_{i=0}^n y_i \cdot \ell_i(x) \quad \text{con } \ell_i(x) = \prod_{j \ne i} \frac{x - x_j}{x_i - x_j}
+$$
 
 #### Usos:
 

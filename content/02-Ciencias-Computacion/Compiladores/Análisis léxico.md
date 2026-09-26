@@ -1,5 +1,8 @@
+---
+title: "Análisis léxico"
+---
 
-# Compiladores - Tema 2: Análisis Léxico
+# Análisis Léxico
 ## Contenidos
 - Objetivos y contexto
 - Introducción a los Analizadores Léxicos

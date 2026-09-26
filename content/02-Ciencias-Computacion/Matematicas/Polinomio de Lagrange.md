@@ -7,22 +7,24 @@ El **polinomio de Lagrange** es una técnica de [[Interpolación|interpolación]
 
 ## Definición matemática
 
-Dado un conjunto de n+1n+1 puntos $$ (x0,y0),(x1,y1),...,(xn,yn)(x_0, y_0), (x_1, y_1), ..., (x_n, y_n) $$con $$xi≠xjx_i \ne x_j para i≠ji \ne j, $$el polinomio interpolador de Lagrange es:$$
+Dado un conjunto de $n+1$ puntos $(x_0, y_0), (x_1, y_1), \dots, (x_n, y_n)$ con $x_i \ne x_j$ para $i \ne j$, el polinomio interpolador de Lagrange es:
 
-P(x)=∑i=0nyi⋅ℓi(x)P(x) = \sum_{i=0}^{n} y_i \cdot \ell_i(x)$$
+$$
+P(x) = \sum_{i=0}^{n} y_i \cdot \ell_i(x)
+$$
 
-donde cada ℓi(x)\ell_i(x) es el **polinomio base de Lagrange**:
+donde cada $\ell_i(x)$ es el **polinomio base de Lagrange**:
+
 $$
-ℓi(x)=∏j=0j≠inx−xjxi−xj\ell_i(x) = \prod_{\substack{j=0 \\ j \ne i}}^{n} \frac{x - x_j}{x_i - x_j}
+\ell_i(x) = \prod_{\substack{j=0 \\ j \ne i}}^{n} \frac{x - x_j}{x_i - x_j}
 $$
+
 Este polinomio cumple que:
-$$
-- ℓi(xj)=0\ell_i(x_j) = 0 si i≠ji \ne j
-$$   $$
-- ℓi(xi)=1\ell_i(x_i) = 1
 
-$$
-- Así, cada término yi⋅ℓi(x)y_i \cdot \ell_i(x) "activa" su valor solo en xix_i y contribuye a la suma total.
+- $\ell_i(x_j) = 0$ si $i \ne j$
+- $\ell_i(x_i) = 1$
+
+Así, cada término $y_i \cdot \ell_i(x)$ "activa" su valor solo en $x_i$ y contribuye a la suma total.
 
 ## Implementación en programación (Python)
 
@@ -55,9 +57,9 @@ print(lagrange_interpolation(x_vals, y_vals, 2.5))  # ≈ 4.0
 
 En Shamir's Secret Sharing, se usa interpolación de Lagrange sobre un **campo finito** para recuperar el secreto:
 $$
-s=∑i=1tyi⋅∏j=1j≠itxjxj−ximod  ps = \sum_{i=1}^{t} y_i \cdot \prod_{\substack{j=1 \\ j \ne i}}^{t} \frac{x_j}{x_j - x_i} \mod p
+s = \sum_{i=1}^{t} y_i \cdot \prod_{\substack{j=1 \\ j \ne i}}^{t} \frac{x_j}{x_j - x_i} \mod p
 $$
-Se trabaja con enteros módulo pp usando aritmética modular.
+Se trabaja con enteros módulo $p$ usando aritmética modular.
 
 ### 2. Gráficos y animación
 
