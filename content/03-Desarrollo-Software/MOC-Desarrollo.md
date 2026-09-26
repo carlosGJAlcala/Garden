@@ -16,10 +16,10 @@ tags:
 
 ## Bases de Datos
 
+- [[03-Desarrollo-Software/Bases-de-Datos/Diseño conceptual - Modelo E-R|Diseño conceptual - Modelo E-R]]
 - [[03-Desarrollo-Software/Bases-de-Datos/Lenguaje PL-SQL|Lenguaje PL-SQL]]
 - [[03-Desarrollo-Software/Bases-de-Datos/Lenguaje SQL|Lenguaje SQL]]
 - [[03-Desarrollo-Software/Bases-de-Datos/Objetos SQL_teoria|Objetos SQL teoria]]
-- [[03-Desarrollo-Software/Bases-de-Datos/Tema_2|Tema 2]]
 
 ## Patrones
 

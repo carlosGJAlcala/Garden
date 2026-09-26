@@ -16,15 +16,15 @@ title: "Fundamentos de la Gestión de la Seguridad de la Información"
  - Equipos técnicos, legales, de comunicación, etc.
 ---
 ## Ciberseguridad
-## # Definición del Término
+## Definición del Término
 **Ciber** - Del inglés cyber-, acortamiento de cybernetic 'cibernético'.
 Elemento compositivo que indica relación con redes informáticas. Ciberespacio, cibernauta.
-## # Definiciones Formales
-### # Recomendación UIT–T X.1205 ( 04/2008)
+## Definiciones Formales
+### Recomendación UIT–T X.1205 ( 04/2008)
 La ciberseguridad es el conjunto de herramientas, políticas, conceptos de seguridad, salvaguardas de seguridad, directrices, métodos de gestión de riesgos, acciones, formación, prácticas idóneas, seguros y tecnologías que pueden utilizarse para proteger los activos de la organización y los usuarios en el ciberentorno.
-### # GUÍA DE SEGURIDAD ( CCN-STIC-401) - GLOSARIO Y ABREVIATURAS
+### GUÍA DE SEGURIDAD ( CCN-STIC-401) - GLOSARIO Y ABREVIATURAS
 Conjunto de actividades dirigidas a proteger el ciberespacio contra el uso indebido del mismo, defendiendo su infraestructura tecnológica, los servicios que prestan y la información que manejan.
-### # ISO ( International Standardization Organization)
+### ISO ( International Standardization Organization)
 Es la preservación de la confidencialidad, integridad y disponibilidad ( abreviadamente CIA) en el ciberespacio. A su vez el ciberespacio se define como el entorno complejo que resulta de la interacción de personas, software, firmware, hardware y servicios sobre Internet por medio de dispositivos tecnológicos y redes conectadas que no existen en forma física.
 ---
 ## Gestión Estratégica de la Seguridad
@@ -37,7 +37,7 @@ Es fundamental pues adoptar una visión holística e integrada de la Seguridad d
  - GRC Capability Model ( Red Book)
 - Su director ( Scott L. Mitchel) plantea en 2007 un framework GRC basado en la eficiencia
  - Framework GRC360
-## # Trabajo Multidepartamental
+## Trabajo Multidepartamental
 El GRC es un trabajo desarrollado por múltiples departamentos:
 - Auditoría interna
 - Cumplimiento
@@ -46,11 +46,11 @@ El GRC es un trabajo desarrollado por múltiples departamentos:
 - TIC
 - RRHH
 - Otras líneas de negocio ( dirección)
-## # Modelos de Implantación
+## Modelos de Implantación
 Existen dos modelos de implantación:
-### # Horizontal
+### Horizontal
 Integración de las tres disciplinas
-### # Vertical
+### Vertical
 Integración de GRC en los procesos de negocio.
 ---
 ## Drivers de GRC
@@ -66,36 +66,36 @@ Las actividades de gobierno deben asegurar que la dirección recibe la informaci
 - Herramientas
 - Procedimientos
 - Métricas
-## # Temas Relacionados
+## Temas Relacionados
 - T3: Gobierno de la Seguridad: Políticas de Seguridad
 - T4: Auditoría de seguridad
 ---
 ## Risk ( Management)
 Identificación, análisis y respuesta a los riesgos a los que está expuesta la organización.
-## # Tratamiento del Riesgo
+## Tratamiento del Riesgo
 - Aceptación
 - Eliminación
 - Mitigación
 - Transferencia
-## # Tipos de Riesgo
+## Tipos de Riesgo
 - Tecnológico
 - Legal
 - Financiero
-## # Tema Relacionado
+## Tema Relacionado
 - T5: Análisis de riesgos
 ---
 ## Compliance
 Detectar regulaciones, leyes, contratos y políticas aplicables a los procesos de negocio.
 - Estudia el riesgo del no-cumplimiento.
-## # Tema Relacionado
+## Tema Relacionado
 - T6: Cumplimiento normativo
 ---
 ## Integración GRC
 "Si piensas que la tecnología puede solucionar tus problemas de seguridad, está claro que ni entiendes los problemas ni entiendes la tecnología." - Bruce Schneier
-## # Papel de la Tecnología
+## Papel de la Tecnología
 - El software juega un papel crucial en la integración de estas tres disciplinas ( Racz & Panitz. GRC Status Quo & Software Use: Survey Results)
 - Sin embargo, las herramientas automatizan procesos, no los crean
-## # Orden de Implantación
+## Orden de Implantación
 1. Gestionar correctamente
 2. Automatizar procesos
 ---
@@ -117,9 +117,9 @@ Según Gartner, sus principales usos son:
 - Análisis avanzado de riesgos
 ---
 ## Modelo GRC
-## # Admin. Organizativa / Control Interno
+## Admin. Organizativa / Control Interno
 "A practical GRC model" ( Paul Helmic. Governance, Risk & Compliance: A practical approach. ISACA Curaçao Conference)
-## # Modelo en Cloud
+## Modelo en Cloud
 "Achieving cyber governance risk & compliance in the cloud" ( Aaaron Brown et al., Deloitte)
 ---
 ## Estándares de Soporte
@@ -136,21 +136,21 @@ Según Gartner, sus principales usos son:
  - El núcleo de IRM es el Riesgo
 - Procesos similares
  - Análisis de riesgos, comunicación, monitorización, etc.
-## # IRM vs. GRC
+## IRM vs. GRC
 John A. Wheeler. Gartner's New IRM Magic Quadrant Signals End of GRC Era.
 ---
 ## IRM: Componentes Principales
-## # Digital Risk Management ( DRM)
+## Digital Risk Management ( DRM)
 Gestión de riesgos asociados a tecnologías digitales ( dispositivos, tratamiento de datos, inteligencia artificial, etc.)
-## # Vendor Risk Management ( VRM)
+## Vendor Risk Management ( VRM)
 Gestión de riesgos derivados de relaciones con terceros ( e.g. analizando el impacto que un proveedor puede tener en la continuidad del negocio)
-## # Business Continuity Management ( BCM)
+## Business Continuity Management ( BCM)
 Diseño de estrategias de recuperación y continuidad de negocio
-## # Audit Management ( AM)
+## Audit Management ( AM)
 Creación de equipos de auditoría interna que asesoren a los propietarios de los activos acerca de riesgos que no son capaces de identificar
-## # Corporate Compliance & Oversight ( CCO)
+## Corporate Compliance & Oversight ( CCO)
 La cantidad y complejidad de las normativas, sobre todo referentes a uso de TICs, y su constante cambio, hacen de la gestión ejecutiva del cumplimiento un requisito.
-## # Enterprise Legal Management ( ELM)
+## Enterprise Legal Management ( ELM)
 Soporte software para departamento legal. Poseer las herramientas adecuadas facilita la detección de riesgos derivados de incumplimiento, y reduce costes de gestión.
 ---
 ## Referencias ( 1/2)

@@ -3,58 +3,13 @@ title: "Lenguaje SQL"
 ---
 
 # Lenguaje SQL
-[1.1 INTRODUCCIÓN 3](#introducción)
-[1.1.1 Tipos de sentencias SQL 3](#tipos-de-sentencias-sql)
-[1.2 TIPOS DE DATOS 3](#tipos-de-datos)
-[1.3 CREACIÓN DE UNA BASE DE DATOS 5](#creación-de-una-base-de-datos)
-[1.3.1 Crear una tabla 6](#crear-una-tabla)
-[1.3.2 Restricciones sobre una tabla 7](#restricciones-sobre-una-tabla)
-[1.3.3 Modificar una tabla 13](#modificar-una-tabla)
-[1.3.4 Modificar restricciones. ALTER TABLE 15](#modificar-restricciones.-alter-table)
-[1.3.5 Eliminar una tabla. DROP TABLE 16](#eliminar-una-tabla.-drop-table)
-[1.3.6 Insertar datos en una tabla. INSERT 16](#insertar-datos-en-una-tabla.-insert)
-[1.3.7 Borrar datos de una tabla. DELETE y TRUNCATE 17](#borrar-datos-de-una-tabla.-delete-y-truncate)
-[1.3.8 Actualización de tablas. UPDATE 17](#actualización-de-tablas.-update)
-[1.3.9 Transacciones. ROLLBACK, COMMIT, AUTOCOMMIT 18](#transacciones.-rollback-commit-autocommit)
-[1.4 CONSULTA DE DATOS 19](#consulta-de-datos)
-[1.4.1 Cláusula SELECT 19](#cláusula-select)
-[1.4.2 Cláusula WHERE 20](#cláusula-where)
-[1.4.3 Cláusula ORDER BY 21](#cláusula-order-by)
-[1.4.4 Alias de columnas 22](#alias-de-columnas)
-[1.4.5 Uso de operadores aritméticos: +, -, **, / 22](#uso-de-operadores-aritméticos--)
-[1.4.6 Coincidencia de patrones. LIKE y NOT LIKE 22](#coincidencia-de-patrones.-like-y-not-like)
-[1.4.7 NULL y NOT NULL 23](#null-y-not-null)
-[1.4.8 Cláusula BETWEEN…AND 23](#cláusula-betweenand)
-[1.4.9 Cláusula IN 24](#cláusula-in)
-[1.4.10 Conteo de filas. COUNT 24](#conteo-de-filas.-count)
-[1.4.11 Cláusula para la agrupación de elementos: GROUP BY y HAVING TO 25](#cláusula-para-la-agrupación-de-elementos-group-by-y-having-to)
-[1.4.12 Combinación de tablas 26](#combinación-de-tablas)
-[1.4.13 Consultas anidadas: subconsultas 28](#consultas-anidadas-subconsultas)
-[1.4.14 Union, Intersect y Minus 29](#union-intersect-y-minus)
-[1.5 CREAR TABLAS CON DATOS RECUPERADOS DE UNA CONSULTA 32](#crear-tablas-con-datos-recuperados-de-una-consulta)
-[1.6 CREACIÓN Y USO DE VISTAS. CREATE VIEW 32](#creación-y-uso-de-vistas.-create-view)
-[1.6.1 Crear una vista. CREATE VIEW 32](#crear-una-vista.-create-view)
-[1.6.2 Consultar las vistas existentes. USER_VIEWS 33](#consultar-las-vistas-existentes.-user_views)
-[1.6.3 Borrar una vista. DROP VIEW 33](#borrar-una-vista.-drop-view)
-[1.6.4 Operaciones sobre vistas 33](#operaciones-sobre-vistas)
-[1.6.5 Vistas definidas sobre más de una tabla 34](#vistas-definidas-sobre-más-de-una-tabla)
-[1.6.6 Manejo de expresiones y de funciones en vistas 35](#manejo-de-expresiones-y-de-funciones-en-vistas)
-[1.7 SECUENCIAS 36](#secuencias)
-[1.7.1 Crear secuencias 36](#crear-secuencias)
-[1.7.2 Borrar secuencias 38](#borrar-secuencias)
-[1.8 FUNCIONES 38](#funciones)
-[1.8.1 Funciones aritméticas 38](#funciones-aritméticas)
-[1.8.2 Funciones de cadenas de caracteres 40](#funciones-de-cadenas-de-caracteres)
-[1.8.3 Funciones de manejo de fechas 43](#funciones-de-manejo-de-fechas)
-[1.8.4 Funciones de conversión 43](#funciones-de-conversión)
-[1.9 OTRAS FUNCIONES 46](#otras-funciones)
 ## INTRODUCCIÓN 
 Una vez analizado un problema y diseñada la solución informática que lo resuelve a través de los modelos conceptual, lógico y físico, llega el momento de construir una solución. Empieza ahora la **fase de implementación**. A partir de ahora se realiza:
 - Programación de las funciones del sistema
 - Creación y poblado de la Base de Datos
 - Programación de accesos a la Base de Datos
 Al final de las de las etapas de diseño ( y fundamentalmente con la ayuda de alguna herramienta CASE) se obtuvo la estructura de las tablas que conformarán nuestra Base de Datos. Esta estructura deberá ser *incorporada* al sistema, para posteriormente *poblarla* con información y realizar las *consultas* y *actualizaciones* necesarias y propias de la labor empresarial.
-## # Tipos de sentencias SQL
+## Tipos de sentencias SQL
 **<u>DDL</u>** (*Lenguaje de Descripción de Datos*) sirven para crear y mantener la estructura de la BD.
 Con ellas podremos:
 - Crear** un objeto de BD: tablas, vistas, procedimientos, ... ( orden **CREATE**)
@@ -122,8 +77,7 @@ Primero crearemos una tabla que contenga un registro para cada uno de los emplea
 - Sexo
 - Fecha de ingreso
 - Código de Departamento
-## # 
-## # Crear una tabla
+## Crear una tabla
 Para crear una tabla[^1] en SQL usaremos la sentencia ***CREATE TABLE*** cuya sintaxis general es:
 > ***CREATE TABLE** NOMBRETABLA (*
 >
@@ -188,7 +142,7 @@ Podemos comprobar que la tabla ha sido creada mediante la siguiente consulta:
 > SQL\> ***select** table_name **from** user_tables;*
 Y que además ha sido creada con el formato que realmente queríamos:
 > SQL\> ***desc** empleados*
-## # Restricciones sobre una tabla
+## Restricciones sobre una tabla
 La orden CREATE TABLE permite definir distintos tipos de **restricciones** sobre una tabla, con ayuda de la cláusula ***CONSTRAINT** nombrerestricción restriccion*:
 - Claves primarias ( PRIMARY KEY)
 - Claves ajenas ( FOREIGN KEY)
@@ -219,26 +173,21 @@ Existen dos modos de especificar restricciones:
 > ***CONSTRAINT** CLAVE_P PRIMARY KEY ( nombre),*
 >
 > *...*
-### # La restricción PRIMARY KEY
+### La restricción PRIMARY KEY
 *<u>Una **clave primaria** es una columna o conjunto de columnas que el diseñador ha elegido para identificar de manera única una fila de una tabla</u>*.
 Las claves proporcionan una manera rápida y eficiente de buscar datos en una tabla, además de que permiten preservar la integridad de los datos. <u>Cuando se crea una clave primaria, automáticamente se crea un índice que facilita el acceso a la tabla</u>.
 La restricción PRIMARY KEY se usa para definir una **clave primaria** dentro de una tabla.
-> *CREATE TABLE empleados (*
->
-> *Cod_Empl CHAR ( 5) ,*
->
-> *...)*
->
-> *CREATE TABLE empleados (*
->
-> *Cod_Empl CHAR ( 5) ,*
->
-> *...*
->
-> ***CONSTRAINT** CLAVE_P PRIMARY KEY ( Cod_Empl)*
->
-> *…)*
-### # La restricción FOREIGN KEY
+```sql
+CREATE TABLE empleados (
+Cod_Empl CHAR ( 5) ,
+...)
+CREATE TABLE empleados (
+Cod_Empl CHAR ( 5) ,
+...
+CONSTRAINT CLAVE_P PRIMARY KEY ( Cod_Empl)
+…)
+```
+### La restricción FOREIGN KEY
 En la mayoría de las ocasiones es necesario relacionar dos o más tablas. Es algo intrínseco a la vida real y que ya quedó reflejado en el esquema relacional ( grafo relacional) dentro del diseño lógico.
 Para poder relacionar dos tablas, es necesario asignar un ***<u>campo en común</u>*** a las dos tablas. En nuestro ejemplo, el campo *Cod_Depto* existe tanto en la tabla *empleados* como en la tabla *departamentos*.
 *<u>Una **clave foránea** o **ajena** es una columna en una tabla que se corresponde con la clave primaria de otra tabla</u>*. En nuestro ejemplo, la columna *Cod_Depto* en la tabla *empleados* es la clave foránea y se debe corresponder con la clave primaria de la tabla Departamentos.
@@ -265,25 +214,18 @@ que se puede usar en dos formatos distintos:
 ***REFERENCES** nombretabla [( col)]*
 ***[ON DELETE CASCADE]|[ON SET NULL]**)*
 A continuación se muestra cómo definir dos tablas de ejemplo con una clave foránea. Las tablas se van a llamar: clientes y ventas
-> *CREATE TABLE clientes (*
->
-> *id_cliente NUMBER ( 5),*
->
-> *nombre VARCHAR2 ( 40),*
->
-> *PRIMARY KEY ( id_cliente));*
->
-> *CREATE TABLE ventas (*
->
-> *id_factura NUMBER ( 5),*
->
-> *id_cliente NUMBER ( 5) NOT NULL,*
->
-> *cantidad NUMBER ( 5),*
->
-> *PRIMARY KEY ( id_factura),*
->
-> ***FOREIGN KEY** ( id_cliente) **REFERENCES** clientes ( id_cliente));*
+```sql
+CREATE TABLE clientes (
+id_cliente NUMBER ( 5),
+nombre VARCHAR2 ( 40),
+PRIMARY KEY ( id_cliente));
+CREATE TABLE ventas (
+id_factura NUMBER ( 5),
+id_cliente NUMBER ( 5) NOT NULL,
+cantidad NUMBER ( 5),
+PRIMARY KEY ( id_factura),
+FOREIGN KEY ( id_cliente) REFERENCES clientes ( id_cliente));
+```
 **<u>Acciones de creación y borrado.</u>**
 - En el ejemplo, se debe crear primero la tabla CLIENTES y después la tabla VENTAS, ya que VENTAS referencia a CLIENTES. Si lo hacemos al revés, Oracle dará un error.
 - Si queremos borrar las tablas, comenzamos borrando la tabla VENTAS y después, la tabla CLIENTE. Si lo hacemos al revés, Oracle dará un mensaje de error.
@@ -296,7 +238,7 @@ Se pueden agregar restricciones de clave foránea a una tabla con el uso de la s
 ***ALTER TABLE** nombre_tabla*
 *ADD [CONSTRAINT símbolo]*
 ***FOREIGN KEY**(...) **REFERENCES** otra_tabla (...) [**ON DELETE CASCADE**]*
-### # La restricción de obligatoriedad NOT NULL
+### La restricción de obligatoriedad NOT NULL
 Esta restricción asociada a una columna significa que no puede tener valores nulos, es decir que ha de tener obligatoriamente un valor. En caso contrario, causa una excepción.
 *CREATE TABLE persona*
 *(*
@@ -304,7 +246,7 @@ Esta restricción asociada a una columna significa que no puede tener valores nu
 *...*
 *EDAD NUMBER ( 2) **CONSTRAINT** Edad_nonula **NOT NULL***
 *);*
-### # Valores por defecto. DEFAULT
+### Valores por defecto. DEFAULT
 En el momento de crear una tabla podemos asignar valores por defecto a las columnas, es decir, un valor por omisión cuando el valor de la columna no se especifica al insertar una tupla.
 En la especificación **DEFAULT** es posible incluir varias expresiones: constantes, funciones SQL y variables UID y SYSDATE.
 *CREATE TABLE altaempleado*
@@ -318,7 +260,7 @@ En la especificación **DEFAULT** es posible incluir varias expresiones: constan
 Si insertamos una fila en la tabla dando valores a todas las columnas salvo a DIRECCION y FECHA:
 *INSERT INTO altaempleado ( DNI, NOMBRE, EDAD) VALUES (´1234´, ´PEPA´, 21);*
 Al visualizar el contenido de la tabla, en la columna FECHA se almacenará la fecha del sistema ya que no se dio valor a la columna FECHA *( SELECT ** FROM altaempleados;)*
-### # La restricción UNIQUE
+### La restricción UNIQUE
 <u>Evita valores repetidos en una o más columnas</u>. La diferencia con la restricción PRIMARY KEY es que ésta es única y en cambio puede haber varias restricciones **UNIQUE** definidas en una misma tabla. Al igual que en PRIMARY KEY, cuando se define una restricción UNIQUE se crea un índice automáticamente.
 Restricción de columna sin nombre:
 *CREATE TABLE alumnos (*
@@ -329,7 +271,7 @@ Restricción de tabla con nombre:
 *CREATE TABLE columnas (*
 *…..*
 ***CONSTRAINT** R_UNI **UNIQUE** ( nmat))*
-### # La restricción CHECK
+### La restricción CHECK
 La restricción **CHECK** nos permite definir los dominios de los campos. La siguiente restricción va a impedir que el campo sexo admita un valor distinto a F ( Femenino) o M ( masculino).
 > *CREATE TABLE mascotas*
 >
@@ -358,7 +300,7 @@ Algunos ejemplos de uso de CHECK:
 > CHECK ( NOMBRE=UPPER ( NOMBRE))
 >
 > CHECK ( A IS NOT NULL) equivale a la restricción NOT NULL.
-## # Modificar una tabla
+## Modificar una tabla
 Para modificar la estructura de una tabla utilizamos la sentencia **ALTER TABLE.** Su sintaxis es la siguiente:
 ```
 ALTER TABLE nombretabla
@@ -382,7 +324,7 @@ Para <u>cambiar el nombre de una columna</u> de la tabla:
 Para c<u>ambiar el nombre</u> de la tabla:
 *ALTER TABLE empleados*
 ***RENAME TO** colaboradores;*
-## # Modificar restricciones. ALTER TABLE
+## Modificar restricciones. ALTER TABLE
 ```
 Con **ALTER TABLE** también se pueden añadir, modificar y borrar restricciones en una tabla y/o índices. Para consultar las restricciones asociadas a la tabla empleados:
 *SELECT table_name, constraint_name, constraint_type*
@@ -409,13 +351,13 @@ Un ejemplo para añadir una restricción check sería la siguiente:
 ***ADD** **CONSTRAINT** check_sexo*
 ***CHECK** ( sexo=‘H’ OR sexo=‘M’)*
 <u>Esta restricción también se pueden especificar en la sentencia CREATE TABLE dando o no nombre a la restricción.</u>
-## # Eliminar una tabla. DROP TABLE
+## Eliminar una tabla. DROP TABLE
 La orden **DROP TABLE** la estructura de una tabla, es decir, la elimina del diccionario de datos. Además elimina todos los datos pudiera contener la tabla.
 ***DROP TABLE** [usuario].nombre_tabla*
 Para eliminar una tabla a la que se haga referencia con una restricción FOREIGN KEY:
 ***DROP TABLE** nombre_tabla **CASCADE CONSTRAINTS**;*
 Esta opción suprime todas las restricciones de integridad referencial que se refieran a claves de la tabla borrada.
-## # Insertar datos en una tabla. INSERT
+## Insertar datos en una tabla. INSERT
 Con la sentencia **INSERT** se añaden filas de datos en una tabla.
 ***INSERT INTO** NombreTabla [ ( col [,col] …)] **VALUES** ( valor [,valor] …);*
 Si los nombres de columnas no se especifican, se consideran, por defecto, todas las columnas de la tabla.
@@ -425,7 +367,7 @@ Un ejemplo para insertar datos en la tabla empleado podría ser:
 *INSERT INTO empleados* VALUES ('S0001', '50237441L', 'Ana García', 23, 'M', '29/07/97', NULL);
 *INSERT INTO empleados* VALUES ('S0002', '01837441M', 'Rafael Gómez', NULL, 'H', '01/03/04', ‘523’);
 Los valores de cadenas y fechas deben estar encerrados entre comillas. Podemos insertar el valor NULL directamente para representar un valor que no conocemos.
-## # Borrar datos de una tabla. DELETE y TRUNCATE
+## Borrar datos de una tabla. DELETE y TRUNCATE
 Se pueden eliminar registros de una tabla usamos la sentencia **DELETE**
 ***DELETE FROM** empleados*
 ***WHERE** nombre = ‘Ana’*;
@@ -434,14 +376,13 @@ Sin la cláusula WHERE, borrará todas las filas de la tabla:
 También disponemos de la orden **TRUNCATE**, que nos permite suprimir todas las filas de una tabla y liberar el espacio ocupado para otros usos sin que desaparezca la definición de la tabla de la BD.
 Es una orden DDL que no genera información de retroceso ( ROLLBACK), es decir, una sentencia TRUNCATE no se puede anular. Por eso su ejecución es más rápida que DELETE.
 ***TRUNCATE TABLE** [usuario.]nombretabla*
-## # 
-## # Actualización de tablas. UPDATE
+## Actualización de tablas. UPDATE
 La sentencia **UPDATE** sirve para actualizar datos de las tablas de una BD.
 ***UPDATE** empleados*
 ***SET** Direccion=‘Gran Vía 241’, Sexo=‘M’ **WHERE** Nombre=‘Ana García’;*
 Si se omite WHERE, se actualizan todas las filas de la tabla destino.
 ***UPDATE** empleados SET Sexo=‘M’;*
-## # Transacciones. ROLLBACK, COMMIT, AUTOCOMMIT
+## Transacciones. ROLLBACK, COMMIT, AUTOCOMMIT
 Si por error o descuido borráramos datos de una tabla, esto no sería un problema ya que Oracle permite dar marcha atrás a un trabajo realizado usando la orden **ROLLBACK** siempre y cuando no hayamos validado los cambios en la BD mediante la orden **COMMIT**.
 <u>Cuando hacemos transacciones sobre la BD ( insertamos, actualizamos y eliminamos datos en las tablas) los cambios no serán efectivos en la BD hasta que no hagamos un COMMIT</u>. Si durante el tiempo que hemos estado haciendo transacciones, no hemos hecho ningún *commit* y de pronto se va la luz, todo nuestro trabajo se habrá perdido y las tablas quedarán en la situación de partida.
 Para <u>validar cambios</u> en la BD ejecutaremos:
@@ -474,7 +415,7 @@ Hay varias órdenes SQL que fuerzan la ejecución de un COMMIT sin necesidad de 
 Si después de haber realizado cambios en nuestras tablas, se produce un fallo del sistema ( ej. se va la luz) y no hemos validado el trabajo, Oracle hace un ROLLBACK automático sobre cualquier trabajo no validado. Tendremos que repetir el trabajo al poner de nuevo en marcha la BD.
 ## CONSULTA DE DATOS
 ```
-## # Cláusula SELECT
+## Cláusula SELECT
 <u>Se usa para recuperar información de una tabla</u>. Sintaxis genérica es:
 ***SELECT** LaInformaciónQueDeseamos*
 ***FROM** DeQueTabla*
@@ -491,7 +432,7 @@ Por ejemplo, para conocer a qué departamento pertenece un empleado, hacemos la 
 La consulta anterior recupera el código de departamento de cada empleado. Sin embargo, en la salida cada departamento aparecerá tantas veces como empleados tenga, lo cual no es muy adecuado. Para evitar esto y recuperar sólo las filas que son distintas, agregamos la palabra clave **DISTINCT**:
 *SELECT **DISTINCT** Cod_Depto*
 *FROM empleados;*
-## # Cláusula WHERE
+## Cláusula WHERE
 Para obtener las filas que cumplen una determinada condición usamos la cláusula **WHERE**:
 *SELECT ** FROM empleados*
 > ***WHERE** nombre=‘Ana García’;*
@@ -511,7 +452,7 @@ Otros ejemplos:
 > *WHERE ( NOTA\>=10) AND ( CURSO=1)*
 >
 > *WHERE ( NOTA IS NULL) OR ( UPPER ( NOM_ALUM)=‘PEDRO’)*
-## # Cláusula ORDER BY
+## Cláusula ORDER BY
 Para ordenar los resultados de una consulta, usamos la cláusula **ORDER BY**, tal y como se muestra a continuación.
 *SELECT Nombre, F_Ingr*
 *FROM empleados*
@@ -524,20 +465,19 @@ Podemos ordenar múltiples columnas:
 > *SELECT Nombre, Direccion, Cod_Depto, F_Ingr FROM empleados*
 >
 > *ORDER BY Cod_Depto, F_Ingr DESC;*
-## # Alias de columnas
+## Alias de columnas
 Cuando realizamos una consulta, las cabeceras de la salida coinciden con el nombre que tiene la columna cuando ésta fue creada. Como este nombre no siempre es suficientemente descriptivo, xxiste la posibilidad de cambiarlo con la misma sentencia SQL de consulta creando un **ALIAS**. <u>El ALIAS se pone entre comillas dobles, a la derecha de la columna</u>.
 > *SELECT nombre “Nombre empleado”,*
 >
 > *F_Ingr “Fecha de Ingreso”*
 >
 > *FROM empleados;*
-## # Uso de operadores aritméticos: +, -, **, /
+## Uso de operadores aritméticos: +, -, **, /
 Sirven para formar expresiones con constantes, valores de columnas y funciones de valores de columnas. Por ejemplo:
 *SELECT col1**col2, col1-col2*
 *FROM tabla1*
 *WHERE col1+col2=34;*
-## # 
-## # Coincidencia de patrones. LIKE y NOT LIKE
+## Coincidencia de patrones. LIKE y NOT LIKE
 Oracle proporciona métodos de coincidencia de patrones basados en SQL estándar: operador **LIKE**. <u>En Oracle, los patrones SQL son sensibles al uso de mayúsculas y minúsculas</u>. La coincidencia de patrones basada en SQL nos permite usar:
 - \_ ( guión bajo) para un solo carácter
 - % para un arbitrario número de caracteres ( cadena de 0 o más caracteres)
@@ -548,13 +488,13 @@ Para encontrar los nombres que comienzan con *b*:
 Para encontrar nombres cuyo penúltimo carácter no sea una *a*:
 *SELECT ** FROM empleados*
 *WHERE Nombre **NOT LIKE** ‘%a\_’;*
-## # NULL y NOT NULL
+## NULL y NOT NULL
 Una columna de una fila es NULL si está completamente vacía. Para comprobar si el valor de una columna es nulo, usamos **IS NULL.** Para saber si el valor de una columna no es nulo usamos **IS NOT NULL.**
 Por ejemplo para consultar los nombres de empleados que no tienen departamento asociado:
 *SELECT Nombre*
 *FROM empleados*
 *WHERE Cod_Depto **IS NULL**;*
-## # Cláusula BETWEEN…AND
+## Cláusula BETWEEN…AND
 El operador **BETWEEN** comprueba si un valor está comprendido o no ( NOT) dentro de un rango de valores, desde un valor inicial a un valor final.
 Para obtener la información de los empleados que han ingresado en la empresa entre los años 2001 y 2005
 *SELECT ** FROM empleados*
@@ -563,7 +503,7 @@ Para obtener la información de los empleados que han ingresado en la empresa en
 Para obtener la información de los empleados que no han ingresado en la empresa entre los años 1999 y 2003:
 *SELECT ** FROM empleados*
 *WHERE TO_CHAR ( F_Ingr, ‘yyyy’) **NOT BETWEEN** ‘1999’ **AND** ‘2003’;*
-## # Cláusula IN
+## Cláusula IN
 Comprueba si un valor dado coincide con uno de una lista de valores especificada.
 Para tener la información de todos los empleados cuyo departamento sea ‘001’, ‘004’ o ‘009’:
 *SELECT ** FROM empleados*
@@ -571,7 +511,7 @@ Para tener la información de todos los empleados cuyo departamento sea ‘001�
 Empleados que no sean de los departamentos ‘001’ ni ‘005’:
 *SELECT ** FROM empleados*
 *WHERE Cod_Depto **NOT IN** (‘001’, ‘005’ );*
-## # Conteo de filas. COUNT
+## Conteo de filas. COUNT
 Para contar las filas de una tabla usaremos la palabra **COUNT**. A continuación se muestra un ejemplo que nos devolverá el número de filas que hay en la tabla empleados.
 *SELECT **COUNT (**)** FROM empleados;*
 El operador COUNT puede tener distintos usos:
@@ -587,7 +527,7 @@ Para saber cuántos empleados tienen informado el dato *Edad* emplearemos cualqu
 *SELECT COUNT (**)*
 *FROM empleados*
 *WHERE Edad IS NOT NULL;*
-## # Cláusula para la agrupación de elementos: GROUP BY y HAVING TO
+## Cláusula para la agrupación de elementos: GROUP BY y HAVING TO
 La cláusula **GROUP BY** posibilita agrupar uno o más conjuntos de filas por las columnas en la sentencia SELECT.
 Por ejemplo, para saber cuántos empleados tiene cada uno de los departamentos, realizaremos la siguiente consulta.
 *SELECT Cod_Depto, COUNT (**)*
@@ -607,7 +547,7 @@ Esta consulta obtiene el número de empleados por departamento siempre que haya 
 - GROUP BY: Agrupa estas filas
 - HAVING: Filtra los grupos. Selecciona y elimina los grupos
 - ORDER BY: Clasifica la salida. Ordena los grupos.
-## # Combinación de tablas
+## Combinación de tablas
 En las consultas realizadas hasta ahora sólo se ha utilizado una tabla. Hay veces que una consulta necesita columnas de varias tablas:
 *SELECT columnas de las tablas deseadas*
 *FROM tabla1, tabla2, …*
@@ -626,18 +566,16 @@ Existe una variedad de combinación de tablas que se llama **OUTER JOIN** que <u
 *FROM tabla1, tabla2*
 *WHERE tabla1.col1 = tabla2.col1**(+)**;*
 Se seleccionan todas las filas de la *tabla1* aunque no tengan correspondencia con las filas de la *tabla2*. El resto de columnas de la *tabla2* se rellena con NULL
-## # Consultas anidadas: subconsultas
+## Consultas anidadas: subconsultas
 A veces, para realizar alguna operación de consulta, necesitamos los datos devueltos por otra consulta.
 La forma de resolverlo es utilizar una **subconsulta**, es decir, una sentencia SELECT que forma parte de una cláusula WHERE de una sentencia SELECT anterior.
-> *SELECT .....*
->
-> *FROM ....*
->
-> *WHERE columna operador_comparativo ( SELECT ...*
->
-> *FROM ...*
->
-> *WHERE ...);*
+```sql
+SELECT .....
+FROM ....
+WHERE columna operador_comparativo ( SELECT ...
+FROM ...
+WHERE ...);
+```
 La subconsulta se ejecutará primero y, posteriormente, el valor extraído es “introducido” en la consulta principal.
 Por ejemplo, para obtener todos los datos del empleado más antiguo:
 *SELECT ** FROM empleados*
@@ -651,7 +589,7 @@ Por ejemplo, para obtener los datos de los departamentos que tienen algún emple
 *( **SELECT DISTINCT Cod_Depto***
 ***FROM empleados***
 ***WHERE Edad IN ( 22, 25));***
-## # Union, Intersect y Minus
+## Union, Intersect y Minus
 Comencemos con un ejemplo. Supongamos tres tablas:
 - ALUM: contiene los nombres de los alumnos que hay actualmente en el centro
 - NUEVOS: contiene los nombres de los futuros alumnos.
@@ -724,7 +662,7 @@ o también:
 *( SELECT nombre FROM NUEVOS)*
 *AND nombre **NOT IN***
 *( SELECT NOMBRE FROM ANTIGUOS);*
-### # Reglas de utilización de operadores de conjuntos
+### Reglas de utilización de operadores de conjuntos
 Para la utilización de los operadores de conjuntos se deben seguir las siguientes reglas:
 - Las columnas de las dos consultas se relacionan en orden, de izquierda a derecha.
 - Los nombres de columna de la primera select no tienen por qué ser los mismos que los nombres de la segunda
@@ -746,7 +684,7 @@ La consulta puede contener una subconsulta, una combinación de tablas o cualqui
 ## CREACIÓN Y USO DE VISTAS. CREATE VIEW
 Una **vista** es una tabla lógica que permite acceder a la información de una o de varias tablas. No contiene información por sí misma, su información está basada en la que contienen otras tablas ( tablas base).
 <u>Permiten, a partir de una consulta simple, obtener datos de una consulta compleja. Tienen la misma estructura que una tabla: filas y columnas, y se tratan de igual forma que una tabla.</u>
-## # Crear una vista. CREATE VIEW
+## Crear una vista. CREATE VIEW
 ***CREATE** [OR REPLACE] **VIEW** nombrevista*
 *[( columna [, columna])*
 ***AS** consulta;*
@@ -754,30 +692,28 @@ Donde:
 - AS consulta**: determina las columnas y las tablas que aparecerán en la vista.
 - [OR REPLACE]** crea de nuevo la vista si ya existía.
 Un ejemplo de creación de una vista sería la que contiene únicamente aquellos empleados que son comerciales.
-> *CREATE VIEW comerciales*
->
-> *AS SELECT Cod_Empl, Nombre*
->
-> *FROM empleados*
->
-> *WHERE Cod_Depto=‘007’;*
+```sql
+CREATE VIEW comerciales
+AS SELECT Cod_Empl, Nombre
+FROM empleados
+WHERE Cod_Depto=‘007’;
+```
 También podríamos haber creado la vista dando nombre a las columnas, por ejemplo, CNOM, CCOD.
-> *CREATE VIEW comerciales ( CCOD, CNOM)*
->
-> *AS SELECT Cod_Empl, Nombre*
->
-> *FROM empleados*
->
-> *WHERE Cod_Depto=‘007’;*
-## # Consultar las vistas existentes. USER_VIEWS
+```sql
+CREATE VIEW comerciales ( CCOD, CNOM)
+AS SELECT Cod_Empl, Nombre
+FROM empleados
+WHERE Cod_Depto=‘007’;
+```
+## Consultar las vistas existentes. USER_VIEWS
 Para consultar las vistas creadas se dispone de la vista **USER_VIEWS**. Podemos visualizar los nombres de vistas con sus textos de la manera:
 *SELECT VIEW_NAME, TEXT*
 *FROM **USER_VIEWS**;*
 <u>Si borramos la tabla *empleados,* la vista creada (*comerciales*) seguiría existiendo pero quedaría inutilizada. Por eso, es preferible borrarla.</u>
-## # Borrar una vista. DROP VIEW
+## Borrar una vista. DROP VIEW
 Para borrar una vista utilizaremos la siguiente sentencia:
 > ***DROP VIEW** nombre_vista;*
-## # Operaciones sobre vistas
+## Operaciones sobre vistas
 Las operaciones que se pueden realizar sobre vistas son las mismas que las que se llevan a cabo sobre las tablas: SELECT, INSERT, UPDATE y DELETE, aunque se han de tener en cuenta ciertas restricciones.
 Las **consultas** siguen la misma sintaxis que sobre tablas:
 *SELECT ( col1, col2, …|**)*
@@ -790,7 +726,7 @@ Para **borrar** una fila a través de una vista, ésta debe haber sido creada:
 - Sin usar funciones de grupo o referencias a pseudocolumnas.
 Para la **actualización** de filas a través de una vista: además de las restricciones anteriores, ninguna de las columnas que se va a actualizar se habrá definido como una expresión
 En el caso de la **inserción** de filas a través de una vista: además de las restricciones anteriores, todas las columnas obligatorias de la tabla asociada deben estar presentes en la vista.
-## # Vistas definidas sobre más de una tabla
+## Vistas definidas sobre más de una tabla
 Se pueden crear vistas definidas sobre el número de tablas que se deseen. Un ejemplo sería:
 *CREATE VIEW empl_deptos*
 *( CODEMPL, NOMBRE, NOMDEPTO, FINGRESO)*
@@ -802,7 +738,7 @@ Si intentamos insertar una fila en la vista creada obtenemos error ya que la vis
 *INSERT INTO empl_deptos (‘007’, ’Marga Solano’, ‘RRHH’, ‘27/10/2006’);*
 *ORA-01776: no se puede modificar más de una tabla base a través de una vista de unión*
 Los borrados y modificaciones también producirán errores.
-## # Manejo de expresiones y de funciones en vistas
+## Manejo de expresiones y de funciones en vistas
 Se pueden crear vistas usando funciones, expresiones en columnas y consultas avanzadas, pero únicamente se podrán consultar esas vistas. Por ejemplo:
 *CREATE VIEW empl ( NOMBRE, DEPTO, FINGRESO)*
 *AS*
@@ -818,7 +754,7 @@ En la **inserción** tampoco es posible introducir filas si las columnas de la v
 da el error: ORA-01733: columna virtual no permitida aquí
 ## SECUENCIAS
 Una **SECUENCIA** es un objeto de Base de Datos que sirve para generar enteros únicos. <u>Son muy útiles para generar automáticamente valores para claves primarias</u>.
-## # Crear secuencias
+## Crear secuencias
 <u>Para crear una secuencia en el esquema propio es necesario tener el privilegio</u> **CREATE SEQUENCE**. Se crea una secuencia en cualquier otro esquema con el privilegio CREATE ANY SEQUENCE.
 La sentencia de creación de secuencias tiene la siguiente sintaxis:
 ***CREATE SEQUENCE** nombresecuencia*
@@ -852,7 +788,7 @@ Insertamos varias filas en la tabla frutas obteniendo el código de la fruta de 
 El resultado de esta inserciones serán tres filas, la primera con código 1 y nombre *perro*, la segunda con código 2 y nombre *gato* y la tercera con código 3 y nombre *tigre*.
 Para saber el valor actual de la secuencia utilizaremos:
 *SELECT CODIGOS.CURRVAL FROM DUAL;*
-## # Borrar secuencias
+## Borrar secuencias
 Para eliminar una secuencia se usa la orden **DROP SEQUENCE**:
 ***DROP SEQUENCE** CODIGOS;*
 ## FUNCIONES
@@ -863,11 +799,11 @@ Existen cinco tipos de funciones:
 - De manejo de fechas
 - De conversión
 - Otras funciones.
-## # Funciones aritméticas
+## Funciones aritméticas
 Las funciones aritméticas trabajan con datos de tipo numérico NUMBER.
 Trabajan con tres clases de números: valores simples, grupos de valores y listas de valores.
 Algunas funciones modifican los valores sobre los que actúan; otras dan información sobre los valores.
-### # Funciones aritméticas: DE VALORES SIMPLES
+### Funciones aritméticas: DE VALORES SIMPLES
 Trabajan con un número, una variable o una columna de una tabla. Usaremos para probar estas funciones la tabla **DUAL**, que es una tabla pequeña de trabajo de Oracle creada para probar funciones o para hacer cálculos simples.
 **ABS ( n):** devuelve el valor absoluto de n. Es siempre un nº positivo.
 *SELECT ABS (-20) “ABSOLUTO” FROM DUAL;*
@@ -894,7 +830,7 @@ Trabajan con un número, una variable o una columna de una tabla. Usaremos para 
 *SELECT SQLR ( 25) FROM DUAL;*
 **TRUNC ( número [,m]):** trunca los números para que tengan una cierta cantidad de dígitos de precisión. Devuelve el número truncado a *m* decimales; si *m* es negativo trunca por la izquierda del punto decimal. Si se omite *m* devuelve el número con cero decimales
 *SELECT TRUNC ( 1.5634,1) FROM DUAL;*
-### # Funciones aritméticas: DE GRUPOS DE VALORES
+### Funciones aritméticas: DE GRUPOS DE VALORES
 Estas funciones actúan sobre un grupo de filas para obtener un valor.
 **AVG ( n):** Calcula el valor medio de “n” ignorando valore negativos.
 **COUNT (**| expresion):** Cuenta el número de veces que la expresión evalúa algún dato con valor no nulo. La opción “**” cuenta todas las filas seleccionadas.
@@ -902,11 +838,11 @@ Estas funciones actúan sobre un grupo de filas para obtener un valor.
 **MIN ( expresion):** Calcula el mínimo valor de la expresión.
 **SUM ( expresion):** obtiene la suma de valores de la expresión.
 <u>Los valores nulos son ignorados por las funciones de grupos de valores, y los cálculos se realizan sin contar con ellos.</u>
-### # Funciones aritméticas: DE LISTAS
+### Funciones aritméticas: DE LISTAS
 Actúan sobre un grupo de columnas dentro de una misma fila: comparan los valores de cada una de las columnas en el interior de una fila para obtener el mayor o el menor valor de la lista.
 **GREATEST ( valor1, valor2, …):** obtiene el mayor valor de la lista
 **LEAST ( valor1, valor2, …):** obtiene el menor valor de la lista
-## # Funciones de cadenas de caracteres
+## Funciones de cadenas de caracteres
 Las funciones de cadenas de caracteres trabajan con datos de tipo CHAR o VARCHAR2. Es posible anidar funciones de cadena y pueden devolver valores carácter o valores numéricos. Entre ella tenemos:
 **CHR ( n):** devuelve el carácter cuyo valor en binario ( ASCCI) es equivalente al número “n”.
 *SELECT CHR ( 75), CHR ( 65) FROM DUAL;*
@@ -943,14 +879,15 @@ FROM DUAL;
 *SELECT (‘ABCDEFG’, -3, 2) FROM DUAL; 🡪 EF*
 *SELECT (‘ABCDEFG’, 4) FROM DUAL; 🡪 DEFG*
 **TRANSLATE ( cad1, cad2, cad3)**: devuelve cad1 con los caracteres encontrados en cad2 y sustituidos por los caracteres de cad3. Cualquier carácter que no esté en la cadena cad2 permanece como estaba.
-> *SELECT TRANSLATE (‘LOS PILARES DE LA TIERRA’, ‘AEIOU’, ‘aeiou’) FROM DUAL; ( sustituye la A por la a, la E por la e, ….)*
->
-> *SELECT TRANSLATE (‘LOS PILARES DE LA TIERRA’, ‘AEIOU’, ‘a’) FROM DUAL; ( sustituye la A por la a, y la E, I, O, U por nada)*
+```sql
+SELECT TRANSLATE (‘LOS PILARES DE LA TIERRA’, ‘AEIOU’, ‘aeiou’) FROM DUAL; ( sustituye la A por la a, la E por la e, ….)
+SELECT TRANSLATE (‘LOS PILARES DE LA TIERRA’, ‘AEIOU’, ‘a’) FROM DUAL; ( sustituye la A por la a, y la E, I, O, U por nada)
+```
 **ASCII ( cad):** devuelve el valor ASCII del primer carácter de cad.
 *SELECT ASCII (‘A’) FROM DUAL;*
 **LENGTH ( cad):** devuelve el nº de caracteres de cad.
 *SELECT Nombre, LENGTH ( Nombre) FROM empleados;*
-## # Funciones de manejo de fechas
+## Funciones de manejo de fechas
 ```
 **SYSDATE**: devuelve la fecha del sistema
 *SELECT SYSDATE FROM DUAL;*
@@ -966,7 +903,7 @@ FROM DUAL;
 **NEXT_DAY ( fecha, cad):** devuelve la fecha del primer día de la semana indicado por “cad” después de la fecha indicada por “fecha”. El día de la semana ( cad) se indica por su nombre.
 *SELECT NEXT_DAY ( SYSDATE, ‘MARTES’)*
 > *FROM DUAL; //¿Qué fecha será el próximo Martes?*
-## # Funciones de conversión
+## Funciones de conversión
 Son funciones que transforman un tipo de dato en otro.
 **TO_CHAR**: transforma un tipo DATE o NUMBER en una cadena de caracteres.
 **TO_DATE:** transforma un tipo NUMBER o CHAR en DATE.

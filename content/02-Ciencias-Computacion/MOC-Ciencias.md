@@ -21,10 +21,10 @@ tags:
 
 ## Compiladores
 
+- [[02-Ciencias-Computacion/Compiladores/Análisis léxico|Análisis léxico]]
 - [[02-Ciencias-Computacion/Compiladores/Análisis semántico|Análisis semántico]]
 - [[02-Ciencias-Computacion/Compiladores/Análisis sintáctico|Análisis sintáctico]]
-- [[02-Ciencias-Computacion/Compiladores/Generación de código y optimización|Compiladores - Tema 10]]
-- [[02-Ciencias-Computacion/Compiladores/Análisis léxico|Compiladores - Tema 2]]
+- [[02-Ciencias-Computacion/Compiladores/Generación de código y optimización|Generación de código y optimización]]
 
 ## Estructura Datos
 

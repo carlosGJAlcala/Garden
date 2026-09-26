@@ -45,7 +45,6 @@ tags:
 
 - [[05-Electronica/Electromagnetismo/b- Circuitos de corriente continua|b- Circuitos de corriente continua]]
 - [[05-Electronica/Electromagnetismo/Electrostática en el vacío|Electrostática en el vacío]]
-- [[05-Electronica/Electromagnetismo/Física - Presentación de la asignatura|Física - Presentación de la asignatura]]
 - [[05-Electronica/Electromagnetismo/Magnetismo en el vacío|Magnetismo en el vacío]]
 
 ## Microprocesadores

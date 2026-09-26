@@ -1247,7 +1247,6 @@ float conseguirhumedad () {
   return porcentaje;
 }
 ```
-#### 
 #### Bomba de agua
 ##### Introducción 
 Una bomba de agua es un motor eléctrico acoplado a un rodete que es el que proporciona, al girar, energía cinética a nuestro fluido.
@@ -1493,7 +1492,6 @@ struct Sensor {
   }
 };
 ```
-### 
 <span id="_Toc177296460" class="anchor"></span>Resultados
 ## Página Web
 ### Vistas de la aplicación

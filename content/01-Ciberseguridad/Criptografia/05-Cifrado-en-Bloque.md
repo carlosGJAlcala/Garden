@@ -7,56 +7,56 @@ Máster en Ciberseguridad | Raúl Durán Díaz | Curso académico 2024–2025
 4. Cifrador AES
 5. Modos de operación
 ## 1. Funciones y permutaciones pseudo-aleatorias
-## # Funciones pseudo-aleatorias
+## Funciones pseudo-aleatorias
 Las funciones pseudo-aleatorias generalizan la idea de los generadores pseudo-aleatorios. Para fijar ideas, nos restringimos a {Func}_n, conjunto de todas las funciones que mapean cadenas de n bits a cadenas de n bits. Si f ∈ {Func}_n, entonces f: {0,1}^n : {0,1}^n.
 El cardinal de {Func}_n es finito y vale:
 ```
 |{Func}_n| = 2^( n·2^n)
 ```
 **Ejemplo 1:** Si n = 3, el número de posibles funciones {0,1}³ : {0,1}³ es, en total, 2^( 3·2³) = 2²⁴ = 16777216.
-## # Definición de función pseudo-aleatoria
+## Definición de función pseudo-aleatoria
 Si extraigo de manera totalmente aleatoria una función f ∈ {Func}_n, puedo hablar de una "función aleatoria". Ahora imagino que tengo una forma de seleccionar funciones de {Func}_n que depende de un parámetro n, ξ: {0,1}^ℓ( n) : {Func}_n, donde ℓ( n) es polinómica en n.
 Si ocurre que, cuando doy valores de manera aleatoria k ∈ {0,1}^ℓ( n), obtengo funciones F_k = ξ( k) de tal manera que esa selección parece aleatoria... entonces hablamos de funciones pseudo-aleatorias.
-## # Formalizando las funciones pseudo-aleatorias
+## Formalizando las funciones pseudo-aleatorias
 Vamos a suponer un discriminador D con acceso a un oráculo O, que es o bien una función f extraída aleatoriamente o bien una función F_k extraída pseudo-aleatoriamente mediante ξ. El discriminador pide al oráculo que evalúe valores x elegidos por él. Puede invocar al oráculo un número de veces polinómico en n.
-## # Definición formal de la función pseudo-aleatoria
+## Definición formal de la función pseudo-aleatoria
 **Definición 2:** Una función F_k: {0,1}^n : {0,1}^n es pseudo-aleatoria si para cualquier discriminador D de tiempo polinómico ocurre que:
 ```
 |Pr[D^( F_k (·))( 1^n) = 1] - Pr[D^( f (·))( 1^n) = 1]| ≤ ng ( n)
 ```
 donde la primera probabilidad se toma sobre la elección uniformemente aleatoria de k ∈ {0,1}^n, la segunda sobre la elección uniformemente aleatoria de f ∈ {Func}_n y para ambas la aleatoriedad propia de D.
-## # Funciones y generadores pseudo-aleatorios
+## Funciones y generadores pseudo-aleatorios
 Podemos usar las funciones pseudo-aleatorias para construir un generador pseudo-aleatorio que tenga una salida de tamaño fácilmente ajustable. Si F_k ( x) es una función pseudo-aleatoria con salida de n bits, podemos construir un generador G que produzca salidas múltiplos de n así:
 ```
 G ( s) := F_s ( IV || ⟨0⟩) || F_s ( IV || ⟨1⟩) || F_s ( IV || ⟨2⟩) || ...
 ```
 es decir, concatenamos las salidas de F_s evaluadas en valores arbitrarios pero distintos.
-## # Propiedades del generador
+## Propiedades del generador
 El generador G así definido puede generar bloques de n bits hasta el agotamiento del contador. El vector IV permite controlar el comienzo de la sucesión generada. G es pseudo-aleatorio: de lo contrario, podríamos construir un discriminador para F_k, que dejaría de ser pseudo-aleatoria.
-## # Permutaciones pseudo-aleatorias
+## Permutaciones pseudo-aleatorias
 Sea ahora {Perm}_n ⊂ {Func}_n el conjunto de las permutaciones de las cadenas de n bits, es decir, las funciones biyectivas. Puesto que existen 2^n posibles cadenas de n bits, el cardinal de ese conjunto será:
 ```
 |{Perm}_n| = ( 2^n)!
 ```
-## # Definición de permutación pseudo-aleatoria
+## Definición de permutación pseudo-aleatoria
 Definimos ahora una permutación pseudo-aleatoria de la misma manera que en el caso de las funciones. Tenemos ahora funciones F_k ∈ {Perm}_n, es decir, permutaciones que dependen de una clave k.
 Informalmente, F_k será una permutación pseudo-aleatoria si está seleccionada de su espacio muestral de tal manera que parece una selección uniformemente aleatoria.
 **Comentario 3:** Observemos que, trivialmente, si F_k es una permutación pseudo-aleatoria, también es una función pseudo-aleatoria.
-## # Algunas propiedades de las permutaciones
+## Algunas propiedades de las permutaciones
 - Dependencia entre bits: cada bit de la permutación es una función compleja de todos los bits de la clave y todos los bits del bloque permutado.
 - Un cambio de un bit del bloque de entrada produce un cambio del 50% de los bits del bloque permutado.
 - Análogamente, un cambio de un bit de la clave produce un cambio del 50% de los bits del bloque permutado.
 ## 2. Cifrado en bloque
-## # Definición de cifrado en bloque
+## Definición de cifrado en bloque
 **Definición 4:** Sistema en el que los símbolos se agrupan en bloques de tamaño dado y se cifran permutando cada bloque por otro con una permutación dependiente de la clave.
 **Comentario 5:** Normalmente los símbolos son bits. Tamaños típicos de bloque son 64, 128 o 256 bits. Observemos que la permutación debe ser de las que consideramos pseudo-aleatorias. Curiosamente, el cifrado por transposición puede considerarse una forma de cifrado en bloque pues es una permutación de símbolos.
-## # Seguridad del cifrado en bloque frente a CPA
+## Seguridad del cifrado en bloque frente a CPA
 De manera ingenua, podríamos fijar un tamaño de bloque n y definir la función de cifrado como una permutación, dependiente de una clave k, de los bits del mensaje:
 ```
 E_k ( m) = F_k ( m)
 ```
 **Comentario 6:** Claramente, así definido el cifrado en bloque no es CPA-seguro, pues cada mensaje da lugar a un único criptograma.
-## # Fortaleciéndose el cifrado en bloque
+## Fortaleciéndose el cifrado en bloque
 Para lograr seguridad frente a CPA, introducimos el cifrado probabilístico, que consta de los siguientes algoritmos:
 1. k ← Gen ( 1^n), que genera una clave uniforme k ∈ {0,1}^n.
 2. c ← E_k ( m, r), donde m ∈ {0,1}^n es el mensaje, r ∈ {0,1}^n es un valor aleatorio y el criptograma se calcula:
@@ -68,20 +68,20 @@ El criptograma c es el par ( s, r).
 ```
 m = F_k ( r) ⊕ s
 ```
-## # Seguridad CPA del cifrado probabilístico
+## Seguridad CPA del cifrado probabilístico
 El esquema anterior es CPA-seguro si F_k es una función pseudo-aleatoria. El valor r está generado también aleatoriamente... y se usa solo una vez!
 **Comentario 7:** La idea es que si un atacante tiene éxito, se podría usar como oráculo para distinguir si F_k es una función pseudo-aleatoria o es verdaderamente aleatoria. Pero esto no puede ocurrir si F_k es verdaderamente pseudo-aleatoria.
 Observemos que F_k no necesita ser una permutación: basta que sea una función pseudo-aleatoria, pues no necesitamos invertirla.
-## # Realización práctica del cifrado en bloque
+## Realización práctica del cifrado en bloque
 Para el cifrado en bloque necesitamos en la práctica un par de "primitivas":
 - Confusión:** Primitiva que trata de ofuscar la relación entre la clave y el criptograma.
 - Difusión:** Primitiva que trata de distribuir la influencia del cambio de un solo símbolo del texto en claro sobre todos los símbolos del criptograma, para disimular las posibles propiedades estadísticas del texto claro.
-## # Paradigma confusión-difusión de Shannon
+## Paradigma confusión-difusión de Shannon
 Para implementar el paradigma confusión-difusión, se utiliza una idea de Shannon:
 - Confusión: se construye una permutación ( pseudo-aleatoria) F con un bloque grande a base de combinar muchas permutaciones {f_i} de bloque pequeño.
 - Difusión: se intercambian los bloques pequeños entre sí.
 Ese esquema se repite varias veces ( lo que llamamos rondas), aplicando en cada ronda una clave distinta, derivada de la clave principal.
-## # Ejemplo de confusión-difusión
+## Ejemplo de confusión-difusión
 Para fijar ideas, supongamos que F tiene una longitud de bloque de 128 bits y supongamos una familia de funciones {f_i} con longitud de bloque 8 bits.
 Introducimos la confusión así:
 ```
@@ -92,7 +92,7 @@ A continuación introducimos la difusión "barajando" los bloques x_i. Dicho má
 x'₁ = x_σ( 1), x'₂ = x_σ( 2), ..., x'₁₆ = x_σ( 16)
 ```
 Ahora los bloques x'_i son de nuevo sometidos a confusión, generando así nuevos bloques que serán "barajados" de nuevo. Cada repetición o ronda puede ser realizada de manera dependiente de una clave distinta, derivada de la clave principal.
-## # Arquitectura práctica del cifrado en bloque
+## Arquitectura práctica del cifrado en bloque
 Lo dicho se puede resumir en estos pasos:
 1. Transformación inicial.
 2. Iteración de una función de cifrado ( no especialmente robusta).
@@ -108,24 +108,24 @@ K ( clave original)
 m ---> Transf --> Cifrado --> Cifrado --> Transf --> c
  inicial vuelta 1 vuelta ℓ final
 ```
-## # Etapas del cifrado en bloque
+## Etapas del cifrado en bloque
 Las transformaciones inicial y final pueden no tener un significado criptográfico. La función que se itera es no lineal y no debe presentar ninguna estructura algebraica para evitar que la ejecución de las ℓ vueltas equivalga a una sola pasada con otros parámetros, lo que facilitaría el criptoanálisis.
 ## 3. Cifrador DES
-## # Sistema DES
+## Sistema DES
 Ganador del concurso que el NIST propuso en los años 70 para definir un sistema criptográfico de clave simétrica. El sistema tenía que poder realizarse sobre un chip microelectrónico. La longitud de clave es de 56 bits.
-## # Estructura del DES
+## Estructura del DES
 La arquitectura del DES es de tipo Feistel, bloque de 64 bits y permutaciones inicial y final ( inversa de la inicial) fijas. Utiliza 16 vueltas, con un tamaño de sub-clave de 48 bits. En total necesita 16×48 = 768 bits de clave, que se derivan mediante una función de expansión de clave, de la clave inicial de 56 bits.
-## # Cifrado múltiple
+## Cifrado múltiple
 A día de hoy, el tamaño de clave de DES es demasiado pequeño. Para intentar aún así sacar partido:
 **Definición 8:** El cifrado múltiple consiste en iterar el cifrado de un texto claro a través de varios cifradores de bloque ( iguales o distintos) aplicando una clave distinta en cada uno de ellos.
-## # Seguridad del cifrado múltiple
+## Seguridad del cifrado múltiple
 Hay que asegurarse que la operación del cifrador no presenta alguna propiedad algebraica tal que, para cierto texto claro m y claves K₁ y K₂, se verifique que:
 ```
 E_K₁( E_K₂( m)) = E_K₃( m)
 ```
 lo que significaría que combinar dos claves equivale a una tercera, lo cual no aumentaría la seguridad.
 **Comentario 9:** En el caso de DES, no se verifica esa propiedad algebraica.
-## # Ataque por encuentro a medio camino
+## Ataque por encuentro a medio camino
 Este ataque provoca una disminución drástica del tamaño efectivo de la clave en un sistema múltiple. Supongamos dos bloques cifrantes E₁ y E₂ con claves K₁ y K₂ de L bits cada una.
 ```
 m ---> E₁( K₁) ---> y ---> E₂( K₂) ---> c
@@ -134,22 +134,22 @@ Supongamos que tenemos la pareja ( m, c). Tomamos m y lo ciframos con todas las 
 Desciframos c con todas las posibles claves de E₂ y hacemos otra lista de parejas ( z[j], K₂[j]) para j = 1, 2, ..., 2^L.
 Necesariamente habrá una pareja ( i, j) tal que y[i] = z[j]. La buscamos, por comparación, y cuando la encontremos, habremos determinado K₁ y K₂ como K₁[i] y K₂[j].
 En total, si tenemos mala suerte, habremos realizado 2^L cifrados y 2^L descifrados, por lo que la seguridad pasa a ser... ¡L+1 bits!
-## # Triple DES
+## Triple DES
 El triple DES ( TDES) presenta la estructura que se ve abajo, y proporciona una seguridad efectiva de 2×56 = 112 bits, aceptable para aplicaciones de seguridad media.
 ```
 m ---> DES ( K₁) ---> DES⁻¹( K₂) ---> DES ( K₃) ---> c
 ```
 **Comentario 10:** Observemos que si el sistema decae a un DES simple de clave K, K₁ = K₂ = K₃ = K, compatible con el sistema antiguo.
 ## 4. Cifrador AES
-## # Cifrador en bloque AES
+## Cifrador en bloque AES
 A finales de los 90, el NIST solicitó propuestas para un nuevo cifrador en bloque, sustituto del DES, al que denominó genéricamente AES. Parte de los requisitos eran:
 - Tamaño de bloque de 128 bits.
 - Longitudes de clave de 128, 192, y 256 bits.
 - Seguridad, eficiencia computacional, simplicidad de diseño, ausencia de patentes.
-## # Andthewinneris...
+## Andthewinneris...
 En el año 2000, el NIST anunció que la propuesta ganadora era el Rijndael, un cifrador de bloque creado por dos jóvenes criptógrafos belgas, Vincent Rijmen y Joan Daemen.
 El Rijndael presenta un tamaño de bloque y un tamaño de clave de 128, 192, y 256 bits. Sin embargo, el NIST solo aceptó como tamaño de bloque 128 bits. Con esa restricción, el Rijndael se convirtió en el AES, nuevo estándar de cifrado en bloque.
-## # Detalles de AES
+## Detalles de AES
 **Comentario 11:** La estructura interna responde también a la iteración de una operación de cifrado. El número de vueltas depende del tamaño de la clave según esta tabla:
 ```
 Longitud de clave Número de vueltas
@@ -157,7 +157,7 @@ Longitud de clave Número de vueltas
 192 bits 12
 256 bits 14
 ```
-## # Estado interno de AES
+## Estado interno de AES
 AES maneja un bloque entero de 128 bits en cada iteración. En cada momento el valor del bloque se conoce con el nombre de estado del algoritmo.
 El bloque se organiza en cuatro filas y cuatro columnas de bytes, que podemos llamar A_i, con i = 0, 1, ..., 15:
 ```
@@ -167,7 +167,7 @@ A₂ A₆ A₁₀ A₁₄
 A₃ A₇ A₁₁ A₁₅
 ```
 El estado A se inicializa con el bloque de entrada y va evolucionando con las transformaciones que se le van aplicando hasta generar el bloque de salida.
-## # Estructura de AES
+## Estructura de AES
 ```
 Texto claro ( 128 bits) Clave de cifrado ( 128, 192, 256 bits)
  | |
@@ -189,19 +189,19 @@ Texto claro ( 128 bits) Clave de cifrado ( 128, 192, 256 bits)
  v
 Criptograma ( 128 bits)
 ```
-## # Transformaciones en cada vuelta
+## Transformaciones en cada vuelta
 La transformación que se aplica en cada vuelta se compone en realidad de cuatro etapas:
 1. **AddRoundKey:** suma módulo 2 del estado con la subclave correspondiente a la vuelta.
 2. **SubBytes:** sustitución no lineal de bytes.
 3. **ShiftRows:** desplazamiento cíclico de las filas del estado, aplicando diversos saltos.
 4. **MixColumns:** mezcla de columnas.
-## # Estructura de AES: detalles
+## Estructura de AES: detalles
 La primera etapa consiste en aplicar una sub-clave, sumándola módulo 2 a la matriz de estado A.
 La segunda etapa corresponde a una función fija, independiente de la clave, aplicada a cada byte de A ( fase de confusión).
 Las dos últimas etapas corresponden a una permutación, también fija, ( de filas primero, de columnas después) de los bytes de A ( fase de difusión).
-## # Última ronda especial
+## Última ronda especial
 **Comentario 12:** Observemos que en la última ronda, se sustituye la etapa MixColumns por AddRoundKey. Así se evita que el atacante pueda deshacer las dos últimas transformaciones pues, como se ha dicho, son fijas.
-## # Cuerpo de Galois GF ( 2⁸)
+## Cuerpo de Galois GF ( 2⁸)
 Matemáticamente, se considera cada A_i como un elemento del cuerpo de Galois GF ( 2⁸) visto como ℤ₂[x]/( p ( x)) y p ( x) = x⁸ + x⁴ + x³ + x + 1.
 Definimos la biyección natural φ_ℓ que asigna a una cadena de ℓ bits un polinomio de grado ℓ en ℤ₂[x] ( y viceversa) de la siguiente manera:
 ```
@@ -209,14 +209,14 @@ Definimos la biyección natural φ_ℓ que asigna a una cadena de ℓ bits un po
 ( b_ℓ-1, b_ℓ-2, ..., b₁, b₀) ↦ b_ℓ-1·x^(ℓ-1) + b_ℓ-2·x^(ℓ-2) + ... + b₁·x + b₀
 ```
 En nuestro caso, ℓ = 8.
-## # Transformación SubBytes
+## Transformación SubBytes
 La operación SubBytes se aplica byte a byte sobre la matriz de estado A. Podemos verla como una única caja S que también es no lineal, de modo que B_i = S ( A_i) para cada i = 0, ..., 15.
 Para ello, calculamos A_i⁻¹, visto como un elemento del cuerpo de Galois GF ( 2⁸), lo expresamos como un vector de dimensión 8 sobre el cuerpo ℤ₂ y, finalmente, le aplicamos en ese cuerpo la siguiente transformación afín:
 ```
 B_i = M × A_i⁻¹ + V
 ```
 donde M y V son una matriz y un vector fijados de una vez por todas.
-## # Transformación SubBytes en bits
+## Transformación SubBytes en bits
 En bits, la transformación se puede escribir así:
 ```
 [b'₀] [1 0 0 0 1 1 1] [a'₀] [1]
@@ -229,7 +229,7 @@ En bits, la transformación se puede escribir así:
 [b'₇] [1 0 0 0 1 1 1] [a'₇] [0]
 ```
 donde A_i⁻¹ = ( a'₇, ..., a'₀), B_i = ( b₇, ..., b₀).
-## # Propiedades de SubBytes
+## Propiedades de SubBytes
 Esta transformación es no lineal, es decir:
 ```
 S ( A₁ + A₂) ≠ S ( A₁) + S ( A₂)
@@ -239,7 +239,7 @@ Pero es perfectamente invertible, para facilitar el descifrado. Como la matriz M
 A_i⁻¹ = M⁻¹ × ( B_i + V)
 ```
 En la práctica no se hacen operaciones, sino se tienen unas tablas preparadas con todos los posibles valores de entrada.
-## # Transformación SubBytes inversa
+## Transformación SubBytes inversa
 La matriz inversa de M es:
 ```
 [0 0 1 0 0 1 0 1]
@@ -251,7 +251,7 @@ La matriz inversa de M es:
 [1 0 0 1 0 1 0 0]
 [0 1 0 0 1 0 1 0]
 ```
-## # Tabla de inversas en GF ( 2⁸)
+## Tabla de inversas en GF ( 2⁸)
 Para ayudar a calcular las inversas de los elementos de GF ( 2⁸), se tiene esta tabla ( valores en hexadecimal):
 ```
  0 1 2 3 4 5 6 7 8 9 A B C D E F
@@ -272,7 +272,7 @@ D: 7A 07 AE 63 C5 DB E2 EA 94 8B C4 D5 9D F8 90 6B
 E: B1 0D D6 EB C6 0E CF AD 08 4E D7 E3 5D 50 1E B3
 F: 5B 23 38 34 68 46 03 8C DD 9C 7D A0 CD 1A 41 1C
 ```
-## # Tabla de transformación S
+## Tabla de transformación S
 Con la tabla anterior, se puede construir la tabla de la transformación S ( valores en hexadecimal):
 ```
  0 1 2 3 4 5 6 7 8 9 A B C D E F
@@ -293,7 +293,7 @@ D: 70 3E B5 66 48 03 F6 0E 61 35 57 B9 86 C1 1D 9E
 E: E1 F8 98 11 69 D9 8E 94 9B 1E 87 E9 CE 55 28 DF
 F: 8C A1 89 0D BF E6 42 68 41 99 2D 0F B0 54 BB 16
 ```
-## # Transformación ShiftRows
+## Transformación ShiftRows
 Esta transformación desplaza cíclicamente las filas de la matriz de estado:
 ```
 Entrada: Salida:
@@ -303,9 +303,9 @@ B₂ B₆ B₁₀ B₁₄ ⇐ B₁₀ B₁₄ B₂ B₆ ( dos celdas a la izquie
 B₃ B₇ B₁₁ B₁₅ ⇐ B₁₅ B₃ B₇ B₁₁ ( tres celdas a la izquierda)
 ```
 Esta transformación tiene por misión lograr la difusión. También es resistente al criptoanálisis diferencial porque no difunde las diferencias.
-## # Transformación MixColumns
+## Transformación MixColumns
 Es una transformación lineal que mezcla entre sí las columnas de la matriz de estado. Cada columna de la matriz de estado se multiplica ( siguiendo la aritmética del GF ( 2⁸)) por una matriz constante. La finalidad es conseguir maximizar la difusión.
-## # Operación MixColumns
+## Operación MixColumns
 En concreto la operación que se realiza es la siguiente:
 ```
 [s'₀,ⱼ] [02 03 01 01] [s₀,ⱼ]
@@ -315,7 +315,7 @@ En concreto la operación que se realiza es la siguiente:
 ```
 donde s_i,j y s'_i,j representan los elementos de la matriz de estado, y el índice j recorre las cuatro columnas.
 Es importante recordar que toda la aritmética se realiza en GF ( 2⁸).
-## # Transformación MixColumns inversa
+## Transformación MixColumns inversa
 La operación anterior se puede invertir usando la siguiente matriz:
 ```
 [0E 0B 0D 09]
@@ -325,12 +325,12 @@ La operación anterior se puede invertir usando la siguiente matriz:
 ```
 donde s_i,j y s'_i,j representan, a igual que antes, los elementos de la matriz de estado, y el índice j recorre las cuatro columnas.
 De nuevo, toda la aritmética se realiza en GF ( 2⁸).
-## # Transformación AddRoundKey
+## Transformación AddRoundKey
 Esta transformación es simplemente una operación de suma módulo 2 de la matriz de estado con una de las sub-claves. Cada sub-clave tiene 16 bytes ( a igual que la matriz de estado) y se deriva, de acuerdo a un cierto esquema, a partir de la clave principal.
-## # Función de derivación de sub-claves
+## Función de derivación de sub-claves
 La clave en AES puede ser de 128, 192 o 256 bits. A partir de ella es necesario generar n_r + 1 sub-claves ( donde n_r es el número de vueltas), cada una de 128 bits.
 En la descripción del algoritmo, usaremos como unidad palabras de 32 bits indexadas en un vector W.
-## # Ecuaciones para la derivación de sub-claves
+## Ecuaciones para la derivación de sub-claves
 Suponemos que usamos el vector W con elementos de 32 bits. Para el caso de una clave de tamaño 128, necesitamos generar n_r + 1 = 11 sub-claves, cada una de 128 bits, que supondremos almacenadas secuencialmente en el vector W.
 Por tanto, los elementos de las sub-claves, k₀ ... k₁₀, son:
 ```
@@ -338,7 +338,7 @@ k₀: W[0], W[1], W[2], W[3]
 k₁: W[4], W[5], W[6], W[7]
 k₁₀: W[40], W[41], W[42], W[43]
 ```
-## # Esquema de derivación de sub-claves para 128 bits
+## Esquema de derivación de sub-claves para 128 bits
 ```
 W[0] W[1] W[2] W[3] ⇒ k₀
  ↓ g () ↓
@@ -346,14 +346,14 @@ W[4] W[5] W[6] W[7] ⇒ k₁
  ↓ g () ↓
 W[8] W[9] W[10] W[11] ⇒ k₂
 ```
-## # Ecuaciones para la derivación de sub-claves ( continuación)
+## Ecuaciones para la derivación de sub-claves ( continuación)
 La primera sub-clave, k₀, se inicializa con la propia clave, K. El resto de sub-claves se computan como:
 ```
 W[4i] = W[4 ( i-1)] ⊕ g ( W[4i-1])
 W[4i+j] = W[4 ( i-1)+j] ⊕ W[4i+j-1]
 para i = {1, ..., 10} y j = {1, 2, 3}
 ```
-## # Función g ( W) para la derivación de sub-claves
+## Función g ( W) para la derivación de sub-claves
 ```
 [b₀ b₁ b₂ b₃]
  ↓ ( rotar)
@@ -363,7 +363,7 @@ para i = {1, ..., 10} y j = {1, 2, 3}
  ↓ (⊕ Rc[j])
 W'
 ```
-## # Función S y vector Rc
+## Función S y vector Rc
 La función S que aparece en g es simplemente la transformación SubBytes que se presentó más arriba. El vector Rc está fijado y tiene estos valores:
 ```
 n 1 2 3 4 5
@@ -371,14 +371,14 @@ Rc[n] 0x01 0x02 0x04 0x08 0x10
 n 6 7 8 9 10
 Rc[n] 0x20 0x40 0x80 0x1B 0x36
 ```
-## # Derivación de sub-claves para 192 bits
+## Derivación de sub-claves para 192 bits
 Para 192 bits, AES usa 12 vueltas y por tanto necesita 13 sub-claves, la original y 12 más. En los pasos de generación de cada sub-clave, AES maneja seis palabras del vector W. Por tanto, con dos vueltas genera 3 sub-claves. Para generar 12 sub-claves, le bastan 8 vueltas de generación.
-## # Derivación de sub-claves para 256 bits
+## Derivación de sub-claves para 256 bits
 Para 256 bits, AES usa 14 vueltas y por tanto necesita 15 sub-claves, la original y 14 más. Ahora, en los pasos de generación de cada sub-clave, AES maneja ocho palabras del vector W. Por tanto, genera dos sub-claves por vuelta. Para generar 14 sub-claves, le bastan 7 vueltas de generación.
-## # Descifrado en AES
+## Descifrado en AES
 AES no utiliza una red de Feistel, que es involutiva, sino que se han de invertir todos los pasos. Pero la derivación de sub-claves no es un proceso invertible: se generan todas en sentido directo y se almacenan para ser usadas en sentido inverso.
 **Comentario 13:** El descifrado es ligeramente más lento que el cifrado pues antes de comenzar a hacer nada se ha de generar la lista completa de sub-claves.
-## # Esquema de descifrado en AES
+## Esquema de descifrado en AES
 ```
 Criptograma ( 128 bits) Clave de cifrado ( 128, 192, 256 bits)
  | |
@@ -400,23 +400,23 @@ Criptograma ( 128 bits) Clave de cifrado ( 128, 192, 256 bits)
  v
 Texto claro ( 128 bits)
 ```
-## # Resumen de seguridad de AES
+## Resumen de seguridad de AES
 - No se conocen ataques analíticos hasta la fecha.
 - Tampoco han triunfado los ataques diferenciales, o de clave relacionada.
 - Interesante: desde 2008 las CPUs de Intel incorporan instrucciones AES, que ejecutan una vuelta del algoritmo si se le proporciona la sub-clave correspondiente.
 ## 5. Modos de operación
-## # Modos de operación
+## Modos de operación
 Los cifradores de bloque se puede usar con seguridad para cifrar pequeñas cantidades de datos: esencialmente, hasta un bloque.
 Para cifrar en volumen hay que recurrir a los llamados modos de operación.
 En todo caso la información para cifrar ha de tener un número de bits múltiplo del tamaño de bloque. Si no es así, se debe completar hasta alcanzarlo ( véase Apéndice).
 **Definición 14:** Un modo de operación es un algoritmo que, utilizando un cifrador de bloque como pieza básica, construye una suerte de cifrador en flujo, apto para cifrar datos en volumen.
-## # Modos disponibles
+## Modos disponibles
 - Libro electrónico de códigos ( ECB: Electronic Code Book)
 - Encadenado de bloques cifrados ( CBC: Cipher Block Chaining)
 - Realimentación de la salida ( OFB: Output Feedback)
 - Realimentación del criptograma ( CFB: Cipher Feedback)
 - Contador ( CTR: Counter Mode)
-## # Modo ECB: Libro electrónico de códigos
+## Modo ECB: Libro electrónico de códigos
 Cada bloque cifrado depende del bloque en claro y de la clave. Cada bloque se cifra independientemente y se pueden cifrar bloques en paralelo. El descifrado se puede hacer en paralelo. No hace falta descifrar bloques anteriores para descifrar un bloque en particular.
 Dos bloques de texto claro iguales producen dos bloques cifrados idénticos: no es CPA-seguro.
 Dada una clave K, y bloques de texto claro, m₁, ..., m_n, los bloques cifrados, c₁, ..., c_n se obtienen:
@@ -427,9 +427,9 @@ Para descifrar:
 ```
 m_i = E_K⁻¹( c_i), i = 1, ..., n
 ```
-## # Modo ECB: advertencia
+## Modo ECB: advertencia
 ¡ECB es inseguro!
-## # Modo CBC: Encadenado de bloques cifrados
+## Modo CBC: Encadenado de bloques cifrados
 Cada bloque se suma con el bloque cifrado anterior antes de cifrarlo. Para cifrar el primer bloque, se usa un bloque inicio aleatorio ( distinto cada vez). Por tanto, cada bloque depende de todos los anteriores ( y del bloque inicio aleatorio). Por ello, bloques iguales no se cifran en iguales criptogramas.
 Para descifrar un criptograma, basta conocer el criptograma anterior.
 Dada una clave K, IV un bloque inicial aleatorio, y bloques de texto claro, m₁, ..., m_n, los bloques cifrados, c₁, ..., c_n se obtienen:
@@ -442,7 +442,7 @@ Para descifrar:
 m₁ = E_K⁻¹( c₁) ⊕ IV
 m_i = E_K⁻¹( c_i) ⊕ c_{i-1}, i = 2, ..., n
 ```
-## # Modo CBC: diagrama
+## Modo CBC: diagrama
 ```
 Cifrado:
 IV/Bloque Texto claro Texto claro Texto claro
@@ -465,7 +465,7 @@ inicial 1 2 n
  Texto Texto Texto
  claro 1 claro 2 claro n
 ```
-## # Modo OFB: Realimentación de la salida
+## Modo OFB: Realimentación de la salida
 Se trata de construir un cifrador en flujo basándose en cifradores de bloque. Se genera una secuencia de bloques que constituyen la secuencia cifrante ( extrayendo un número de bits s de cada uno).
 Cada conjunto de s bits de entrada se cifra sumándolos módulo 2 con la secuencia cifrante.
 El descifrado es totalmente análogo al cifrado.
@@ -480,9 +480,9 @@ Para descifrar:
 O = E_K ( IV), m₁ = O_{( b-1...b-s)} ⊕ c₁
 O_i = E_K ( O), m_i = O_{( b-1...b-s)} ⊕ c_i, i = 2, ..., n
 ```
-## # Modo OFB: diagrama de cifrado y descifrado
+## Modo OFB: diagrama de cifrado y descifrado
 Similar a CFB pero generando la secuencia cifrante de forma independiente del criptograma.
-## # Modo CFB: Realimentación del criptograma
+## Modo CFB: Realimentación del criptograma
 En CFB, de nuevo se trata de generar una réplica de un cifrador en flujo.
 Se elige un valor s tal que 1 ≤ s ≤ b, donde b es el tamaño de bloque.
 Cada bloque cifrado depende de los criptogramas anteriores, de la clave y del texto claro. Se ha de hacer en serie.
@@ -497,7 +497,7 @@ Para descifrar:
 I = IV, m₁ = E_K ( I)_{( b-1...b-s)} ⊕ c₁
 I = I_{( b-1...b-s)} || c_{i-1}, m_i = E_K ( I)_{( b-1...b-s)} ⊕ c_i, i = 2, ..., n
 ```
-## # Modo CTR: Contador
+## Modo CTR: Contador
 Se construye también en este caso una secuencia cifrante que se suma módulo 2 al texto claro.
 La secuencia cifrante se construye cifrando un valor que se va incrementando ( mediante diversas funciones) para cada bloque.
 Es inherentemente paralelizable tanto en cifrado como en descifrado, lo que aconseja su uso cuando son necesarias velocidades altas.
@@ -512,7 +512,7 @@ CTR = IV, m₁ = E_K ( CTR) ⊕ c₁
 CTR = f ( CTR), m_i = E_K ( CTR) ⊕ c_i, i = 2, ..., n
 ```
 La función f puede ser tan sencilla como incrementar el valor del contador de uno en uno ( módulo 2^b).
-## # Comparación cifrado en flujo vs cifrado en bloque
+## Comparación cifrado en flujo vs cifrado en bloque
 **Ventajas del cifrado en flujo:**
 - Operación muy rápida.
 - Sencillez de diseño.
@@ -528,18 +528,18 @@ La función f puede ser tan sencilla como incrementar el valor del contador de u
 **Inconvenientes del cifrado en bloque:**
 - Sistemas más complejos que necesitan más recursos.
 - Poco adecuados para dispositivos de bajas capacidades.
-## # Apéndice: relleno ( padding)
+## Apéndice: relleno ( padding)
 En todos los sistemas de cifrado en bloque, se necesita que el número de bytes para cifrar sea un múltiplo del tamaño de bloque. En caso contrario, se completa con el número de bytes suficientes para alcanzar un múltiplo del tamaño de bloque.
 El relleno se suele realizar de acuerdo a varias posibilidades: una de ellas es el estándar PKCS#5.
-## # Apéndice: relleno PKCS#5
+## Apéndice: relleno PKCS#5
 Este estándar exige que el último byte del último bloque indique el número de bytes de relleno. El relleno consiste en bytes que indican justamente el número de bytes de relleno.
 **Comentario 15:** Si por casualidad, el número de bytes para cifrar es múltiplo del tamaño de bloque, se añade un bloque adicional de puro relleno, donde todos los bytes llevan el valor del tamaño del bloque.
-## # Apéndice: ejemplo de relleno PKCS#5
+## Apéndice: ejemplo de relleno PKCS#5
 **Ejemplo 16:** Supongamos un tamaño de bloque de 8 bytes. Si se han de cifrar 12 bytes, cuyo valor es, por ejemplo, F0 para todos, necesitamos que los 4 últimos bytes del último bloque sean de relleno. Los bloques quedarían así:
 ```
 F0 F0 F0 F0 F0 F0 F0 F0 : F0 F0 F0 F0 04 04 04 04
 ```
-## # Apéndice: ejemplo de relleno PKCS#5 ( caso especial)
+## Apéndice: ejemplo de relleno PKCS#5 ( caso especial)
 **Ejemplo 17:** Supongamos de nuevo un tamaño de bloque de 8 bytes. Si hemos de cifrar justamente 8 bytes ( de valor F0), el último bloque es de puro relleno y todos los bytes llevan el valor del tamaño del bloque:
 ```
 F0 F0 F0 F0 F0 F0 F0 F0 : 08 08 08 08 08 08 08 08

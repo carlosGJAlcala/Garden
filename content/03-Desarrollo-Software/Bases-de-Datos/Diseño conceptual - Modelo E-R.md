@@ -1,27 +1,15 @@
+---
+title: "Diseño conceptual - Modelo E-R"
+---
+
 # Diseño conceptual. Modelo E/R
-[1.1 Introducción 2](#introducción)
-[1.2 Elementos estáticos 2](#elementos-estáticos)
-[1.2.1 Entidades 2](#entidades)
-[1.2.2 Dominios y Valores 3](#dominios-y-valores)
-[1.2.3 Atributos 4](#atributos)
-[1.2.4 Interrelaciones 5](#interrelaciones)
-[1.3 Control de redundancias 8](#control-de-redundancias)
-[1.4 Dimensión temporal 9](#dimensión-temporal)
-[1.5 Notaciones 10](#notaciones)
-[1.6 Ejercicio Resuelto 11](#ejercicio-resuelto)
-[1.7 Ejercicios propuestos. 15](#ejercicios-propuestos)
-[1.7.1 Cursos de formación 15](#cursos-de-formación)
-[1.7.2 Campeonato de Ajedrez 15](#campeonato-de-ajedrez)
-[1.7.3 Energía eléctrica 16](#energía-eléctrica)
-[1.7.4 Conflictos bélicos 17](#conflictos-bélicos)
-[1.7.5 Gestión de nóminas 18](#gestión-de-nóminas)
 ## Introducción
 El modelo entidad-relación es el modelo conceptual más utilizado para el diseño conceptual de bases de datos. Fue introducido por Peter Chen en 1976. El modelo Entidad-Relación está formado por un conjunto de conceptos que permiten describir la realidad mediante un conjunto de representaciones gráficas y lingüísticas.
 Originalmente, el modelo entidad-relación sólo incluía tres clases de objetos: entidades, interrelaciones y atributos. Más tarde, se añadieron al modelo básico un conjunto de constructores que ayudaron a recoger una mayor semántica del universo de discurso ( los atributos compuestos, cardinalidades máximas y mínimas, las jerarquías de generalización, dependencia en existencia y en identificación, etc.) y este nuevo modelo es lo que se ha denominado modelo E/R extendido.
 El Modelo E/R ha tenido una gran difusión en la comunidad informática dedicada a las BD, prueba de ello es que ha sido el modelo más extendido en las herramientas CASE de ayuda al diseño de BD.
 ## Elementos estáticos
 En el Modelo E/R, tal como fue propuesto por Chen, se distinguen los siguientes elementos para la componente estática: Entidad, Interrelación, Dominio y Atributo.
-## # Entidades
+## Entidades
 Las entidades son los objetos principales sobre los que debe recogerse información y generalmente denotan personas, lugares, cosas o eventos de interés. Las entidades aparecerán reflejadas en el enunciado habitualmente como nombres. A cada una de las posibles ocurrencias ( cada persona, lugar, cosa o evento concreto) de la entidad se denomina **ejemplar**.
 Las entidades se representan gráficamente mediante rectángulos y su nombre aparece en el interior. Un nombre de entidad sólo puede aparecer una vez en el esquema conceptual.
 Existen dos categorías de entidades:
@@ -36,14 +24,14 @@ Por esta razón, algunos autores han intentado precisar el concepto de entidad. 
 - cada ejemplar de un tipo de entidad debe poder distinguirse de las demás
 - todos los ejemplares de un tipo de entidad deben tener las mismas propiedades
 Como se puede observar por la propia definición, las entidades débiles nunca cumplirán la primera regla.
-## # Dominios y Valores
+## Dominios y Valores
 Las distintas propiedades o características de un tipo de entidad o de interrelación toman **valores** para cada ejemplar de éstas.
 Un **dominio** se define como un conjunto de valores homogéneos con un nombre que lo identifica. Una cierta característica o propiedad de un objeto toma valores que pertenecen a un determinado dominio.
 Un dominio lleva siempre asociado un predicado que permite comprobar si un determinado valor pertenece al dominio:
 D = { vi : p ( vi) }
 donde D es el dominio, vi es un valor y p es el predicado asociado a dicho dominio.
 Un dominio puede definirse por **intensión**, especificando el tipo de datos ( por ejemplo, carácter 30 para el Nombre); o por **extensión**, enumerando los valores que pertenecen al dominio ( por ejemplo, los días de la semana).
-## # Atributos
+## Atributos
 Los atributos se utilizan para detallar las entidades asignándoles propiedades descriptivas tales como nombre, color y peso. Los atributos son cada una de las propiedades o características que tiene un tipo de entidad o un tipo de interrelación.
 Los atributos toman valores de uno o varios dominios ( si es compuesto). El atributo le da una determinada interpretación al dominio ( o dominios) en el contexto de un tipo de entidad o de un tipo de interrelación. A diferencia de los dominios que existen por sí mismos, la existencia de un atributo está ligada a la del correspondiente tipo ( de entidad o de interrelación).
 Existen dos tipos de atributos: *identificadores* y *descriptores*. Los primeros se utilizan para distinguir de manera única cada una de las ocurrencias de una entidad ( distinguiéndose entre *identificadores principales* e *identificadores alternativos*), mientras que los descriptores de utilizan para describir una ocurrencia de entidad. No sólo es posible especificar atributos en las entidades sino también en las interrelaciones ( en este caso sólo tiene sentido hablar de atributos descriptotes y no de identificadores).
@@ -55,11 +43,11 @@ Entre los IC se elige uno como **Identificador Principal** ( IP) y el resto ser�
 Los atributos **Multivaluados** son aquellos que pueden tomar más de un valor a la vez ( una persona puede tener más de un teléfono). Los atributos **Univaluados**: toman un solo valor.
 - Atributos Opcionales vs Obligatorios:**
 Opcionales: Por otro lado, puede obligarse a un atributo de un tipo de entidad a que tome, como mínimo, un valor del ( o de los) dominio ( s) subyacente ( s) para cada ejemplar de entidad, es decir, el valor de ese atributo es obligatorio ( no puede ser nulo) para todo ejemplar de la entidad.
-## # Interrelaciones
+## Interrelaciones
 Se entiende por interrelación una asociación, vinculación o correspondencia entre entidades. Distinguiremos entre el tipo de interrelación o estructura genérica que describe un conjunto de interrelaciones, y cada interrelación, es decir, cada uno de los **ejemplares** concretos.
 Matemáticamente, el conjunto de interrelaciones de un tipo de interrelación I se define como: { \<e<sub>1</sub>, e<sub>2</sub>, ..., e<sub>n</sub> \> } donde *e*<sub>i</sub> es un ejemplar del tipo de entidad *Ei* y *n* el **grado** del tipo de interrelación, es decir, el número de tipos de entidades participantes ( que están asociados en el tipo de interrelación).
 Un ejemplo de interrelación sería: IMPARTE es un tipo de interrelación que vincula los tipos de entidad PROFESOR y CURSO; un ejemplar del tipo de interrelación IMPARTE es la vinculación entre el profesor “Gutiérrez” y el curso “Sistemas Gestores de Bases de Datos”.
-### # Elementos de un tipo de interrelación
+### Elementos de un tipo de interrelación
 En una interrelación podemos encontrar lo siguientes elementos:
 - Nombre**: identificador único en el esquema.
 ![]( 1cuatri/Electronica/Lab/Practica4/_media/Practica_P4_Sistemas_adquisición_datos/media/image1.jpeg)
@@ -75,8 +63,7 @@ Los tipos de interrelación se clasifican también en **regulares** y **débiles
 - Dependencia en identificación**: además de cumplirse la condición anterior, los ejemplares del tipo de entidad débil se identifican mediante atributos propios más el identificador principal del tipo de entidad regular del cual depende. Una dependencia en identificación es siempre una dependencia en existencia.
 ![]( 2cuatri/AIC/Laboratorio/L0.0Guia de Inicia RVfpgaRISC-V/_media/SesionL0.0_RVfpga_GuiadeInicio_AICC_PREGUNTAS_v1/media/image3.jpeg)
 **Figura 1.3.** Representación de dependencia en existencia e identificación
-### # 
-### # Generalizaciones
+### Generalizaciones
 La **Generalización** se considera como un caso especial de interrelación entre uno o varios tipos de entidad ( subtipos) y un tipo más general ( supertipo), cuyas características son comunes a todos los subtipos.
 La interrelación que se establece entre los subtipos y el supertipo es de la forma *es un*. Es decir, un ejemplar de un subtipo ES_UN ejemplar ( también) del supertipo.
 Las cardinalidades mínimas y máximas siempre son ( 1,1) en el supertipo, y ( 0,1) en los subtipos.
@@ -288,7 +275,7 @@ C.F.
 1:N
 N:M
 ## Ejercicios propuestos
-## # Cursos de formación
+## Cursos de formación
 El departamento de formación de una empresa desea construir una base de datos para planificar y gestionar la formación de sus empleados.
 La empresa organiza cursos internos de formación de los que se desea conocer el código del curso, el nombre, una descripción, el número de horas de duración y el coste del curso.
 Un curso puede tener como prerrequisito haber realizado otro ( s) cursos previamente, y, a su vez la realización de un curso puede ser prerrequisito de otros. Un curso que es un prerrequisito de otro puede serlo de forma obligatoria o sólo recomendable.
@@ -296,7 +283,7 @@ Un mismo curso tiene diferentes ediciones, es decir, se imparte en diferentes lu
 Los cursos se imparten por personal de la propia empresa.
 De los empleados se desea almacenar un código de empleado, nombre y apellidos, dirección, teléfono, NIF ( número de identificación fiscal), fecha de nacimiento, nacionalidad, sexo, firma y salario, así como si está o no capacitado para impartir cursos.
 Un mismo empleado puede ser docente en una edición de un curso y alumno en otra edición, pero nunca puede ser ambas cosas a la vez ( en una misma edición de curso o lo imparte o lo recibe).
-## # Campeonato de Ajedrez
+## Campeonato de Ajedrez
 El club de ajedrez de Villatortas de Arriba, ha sido encargado por la Federación Internacional de Ajedrez de la organización de los próximos campeonatos mundiales que se celebrarán en la mencionada localidad. Por este motivo, desea llevar a una base de datos toda la gestión relativa a participantes, alojamientos y partidas teniendo en cuenta que:
 En el campeonato participan jugadores y árbitros; de ambos se requiere conocer el número de asociado, nombre, dirección, teléfono de contacto y campeonatos en los que han participado ( como jugador o como árbitro). De los jugadores de precisa además el nivel de juego en una escala de 1 a 10.
 Ningún árbitro puede participar como jugador.
@@ -308,8 +295,7 @@ Tanto jugadores como árbitros se alojan en uno de los hoteles en los que se des
 El campeonato se desarrolla a lo largo de una serie de jornadas ( año, mes, día) y cada partida tiene lugar en una de las jornadas aunque no tengan lugar partidas todas las jornadas.
 Cada partida se celebra en una de las salas de las que pueden disponer los hoteles, se desea conocer el número de entradas vendidas en la sala para cada partida. De cada sala, se desea conocer la capacidad y medios de que dispone ( radio, televisión, video ...) para facilitar la retransmisión de los encuentros. Una sala puede disponer de varios medios distintos.
 De cada partida se pretende registrar todos los movimientos que la componen, la identificación de movimiento se establece en base a un número de orden dentro de cada partida: Para cada movimiento se guardan la jugada ( 5 posiciones) y un breve comentario realizado por un experto.
-## # 
-## # Energía eléctrica
+## Energía eléctrica
 Se pretende llevar a cabo un control sobre la energía eléctrica que se produce y consume en un determinado país. Se parte de las siguientes hipótesis.
 Existen productores básicos de electricidad que se identifican por un nombre, de los cuales nos interesa su producción media, producción máxima y fecha de entrada en funcionamiento. Estos productos básicos lo son de una de las siguientes categorías: Hidroeléctrica, Solar, Nuclear o Térmica. De una central hidroeléctrica o presa nos interesa saber su ocupación, capacidad máxima y número de turbinas. De una central solar nos interesa saber la superficie total de paneles solares, la media anual de horas de sol y tipo ( fotovoltaica o termodinámica). De una central nuclear, nos interesa saber el número de reactores que posee, el volumen de plutonio consumido y el de residuos nucleares que produce. De una central térmica, nos interesa saber el número de hornos que posee, el volumen de carbón consumido y el volumen de emisión de gases.
 Por motivos de seguridad nacional interesa controlar el plutonio de que se provee una central nuclear, este control se refiere a la cantidad de plutonio que compra a cada uno de sus posibles suministradores, ( nombre y país), y que porta un determinado transportista ( nombre y matrícula), ha de tenerse en cuenta que el mismo suministrador puede vender plutonio a distintas centrales nucleares y que cada porte, ( un único porte por compra), puede realizarlo un transportista diferente.
@@ -319,7 +305,7 @@ La energía sobrante en una de las redes puede enviarse a otra red. Se registrar
 Una red está compuesta por una serie de líneas, cada línea se identifica por un número secuencial dentro del número de la red y tiene una determinada longitud. La menor de las líneas posibles abastecerá al menos a dos subestaciones.
 Una subestación es abastecida sólo por una línea y distribuye a una o varias zonas de servicio, a tales efectos, las provincias ( código y nombre), se encuentran divididas en tales zonas de servicio, aunque no se puede hablar de zonas de servicio que pertenezcan a más de una provincia. Cada zona de servicio puede ser atendida por más de una subestación.
 En cada zona de servicio se desea registrar el consumo medio y el número de consumidores finales de cada una de las siguientes categorías: particulares, empresas e instituciones.
-## # Conflictos bélicos
+## Conflictos bélicos
 Una organización internacional pretende realizar un seguimiento de los conflictos bélicos que se producen en todo el mundo. Para ello creará una base de datos que responderá al siguiente análisis:
 Se entiende por conflicto cualquier lucha armada que afecte a uno o varios países y en el cual se produzcan muertos y/o heridos. Todo conflicto se identificará por un nombre que habitualmente hará referencia a la zona o causa que provoca el conflicto, aunque dado que este nombre puede cambiar con el paso del tiempo, dentro de la BD cada conflicto se identificará por un código numérico sin significado alguno. Para cada conflicto se desea recoger los países a que afecta, así como el número de muertos y heridos contabilizados hasta el momento.
 Los conflictos pueden ser de distintos tipos según la causa que lo ha originado, clasificándose, a lo sumo, en cuatro grupos: territoriales, religiosos, económicos o raciales., en cada uno de estos grupos se recogerán diversos datos. En los conflictos territoriales se recogerán las regiones afectadas, en los religiosos las religiones afectadas, en los económicos las materias primas disputadas y en los raciales las etnias enfrentadas.
@@ -330,7 +316,7 @@ Los líderes políticos se identifican por su nombre y el código de grupo armad
 Cada división la pueden dirigir conjuntamente un máximo de tres jefes militares, aunque cada jefe militar no dirige más de una división. A cada jefe militar se le identifica por un código, además se recoge el rango que éste posee, y dado que un jefe militar no actúa por iniciativa propia sino que siempre obedece a las órdenes de un único líder político de entre aquellos que lideran al grupo armado al que el jefe pertenece, se registrará el líder político al que obedece.
 De las organizaciones medidoras se recogerá su código, su nombre, su tipo ( gubernamental, no gubernamental o internacional), la organización de que depende ( una como máximo), el número de personas que mantiene desplegadas en cada conflicto y el tipo de ayuda que presta en cada conflicto que será de uno y sólo uno de los tres tipos siguientes, médica, diplomática o presencial.
 Con diversos fines, los líderes políticos dialogan con las organizaciones; se desea recoger explícitamente esta información. Así para cada líder se recogerán aquellas organizaciones con que dialoga y viceversa.
-## # Gestión de nóminas
+## Gestión de nóminas
 Una empresa decide informatizar su nómina. Del resultado del análisis realizado, se obtienen las siguientes informaciones:
 A cada empleado se le entregan múltiples justificantes de nómina a lo largo de su vida laboral en la empresa y al menos uno mensualmente.
 A cada empleado se le asigna un número de matrícula en el momento de su incorporación a la empresa, y éste es el número usado a efectos internos de identificación. Además se registra el NIF del empleado, nombre, número de hijos, porcentaje de retención para Hacienda, datos de cuenta corriente en la que se le ingresa el dinero ( banco, sucursal y número de cuenta) y departamentos en los que trabaja. Un empleado puede trabajar en varios departamentos y cada uno de ellos trabajar con una función distinta.

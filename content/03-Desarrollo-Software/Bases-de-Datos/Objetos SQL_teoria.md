@@ -2,41 +2,6 @@
 
 **Lenguaje de Definición de Datos.**
 **Introducción a la Administración de Bases de Datos.**
-[1.1 INTRODUCCIÓN 3](#introducción)
-[1.2 CREACIÓN DE UNA BASE DE DATOS 3](#creación-de-una-base-de-datos)
-[1.2.1 Crear una tabla 3](#crear-una-tabla)
-[1.2.2 Restricciones sobre una tabla 5](#restricciones-sobre-una-tabla)
-[1.3 CREAR TABLAS CON DATOS RECUPERADOS DE UNA CONSULTA 11](#crear-tablas-con-datos-recuperados-de-una-consulta)
-[1.4 CREACIÓN Y USO DE VISTAS. CREATE VIEW 12](#creación-y-uso-de-vistas.-create-view)
-[1.4.1 Crear una vista. CREATE VIEW 12](#crear-una-vista.-create-view)
-[1.4.2 Consultar las vistas existentes. USER_VIEWS 13](#consultar-las-vistas-existentes.-user_views)
-[1.4.3 Borrar una vista. DROP VIEW 13](#borrar-una-vista.-drop-view)
-[1.4.4 Operaciones sobre vistas 13](#operaciones-sobre-vistas)
-[1.4.5 Vistas definidas sobre más de una tabla 14](#vistas-definidas-sobre-más-de-una-tabla)
-[1.4.6 Manejo de expresiones y de funciones en vistas 14](#manejo-de-expresiones-y-de-funciones-en-vistas)
-[1.5 SECUENCIAS 15](#secuencias)
-[1.5.1 Crear secuencias 15](#crear-secuencias)
-[1.5.2 Borrar secuencias 17](#borrar-secuencias)
-[1.6 SINÓNIMOS 17](#sinónimos)
-[1.6.1 Crear sinónimos 17](#crear-sinónimos)
-[1.6.2 Borrar sinónimos 18](#borrar-sinónimos)
-[1.7 VISTAS DEL DICCIONARIO DE DATOS 18](#vistas-del-diccionario-de-datos)
-[1.8 TRIGGERS 19](#triggers)
-[1.8.1 Creación de triggers 19](#creación-de-triggers)
-[1.8.2 Sintaxis de creación de triggers 20](#sintaxis-de-creación-de-triggers)
-[1.8.3 Referencias NEW y OLD 21](#referencias-new-y-old)
-[1.8.4 IF INSERTING, IF UPDATING e IF DELETING 23](#if-inserting-if-updating-e-if-deleting)
-[1.8.5 Triggers del tipo INSTEAD OF 23](#triggers-del-tipo-instead-of)
-[1.8.6 Triggers del sistema 24](#triggers-del-sistema)
-[1.8.7 Eliminar triggers 26](#eliminar-triggers)
-[1.8.8 Recompilar triggers 26](#recompilar-triggers)
-[1.8.9 Desactivar triggers 27](#desactivar-triggers)
-[1.8.10 Activar triggers 27](#activar-triggers)
-[1.8.11 Desactivar o activar todos los triggers de una tabla 27](#desactivar-o-activar-todos-los-triggers-de-una-tabla)
-[1.9 INTRODUCCIÓN A LA ADMINISTRACIÓN DE BASES DE DATOS 28](#introducción-a-la-administración-de-bases-de-datos)
-[1.9.1 Gestión de usuarios 28](#gestión-de-usuarios)
-[1.9.2 Privilegios de usuarios 30](#privilegios-de-usuarios)
-[1.10 IMPORTANDO Y EXPORTANDO ESQUEMAS 35](#importando-y-exportando-esquemas)
 ## INTRODUCCIÓN 
 Una vez analizado un problema y diseñada la solución informática que lo resuelve a través de los modelos conceptual, lógico y físico, llega el momento de construir una solución. Empieza ahora la **fase de implementación**. A partir de ahora se realiza:
 - Programación de las funciones del sistema
@@ -53,7 +18,7 @@ Primero crearemos una tabla que contenga un registro para cada uno de los emplea
 - Sexo
 - Fecha de ingreso
 - Código de Departamento
-## # Crear una tabla
+## Crear una tabla
 Para crear una tabla[^1] en SQL usaremos la sentencia ***CREATE TABLE*** cuya sintaxis general es:
 > ***CREATE TABLE** NOMBRETABLA (*
 >
@@ -116,7 +81,7 @@ Podemos comprobar que la tabla ha sido creada mediante la siguiente consulta:
 > SQL\> ***select** table_name **from** user_tables;*
 Y que además ha sido creada con el formato que realmente queríamos:
 > SQL\> ***desc** empleados*
-## # Restricciones sobre una tabla
+## Restricciones sobre una tabla
 La orden CREATE TABLE permite definir distintos tipos de **restricciones** sobre una tabla, con ayuda de la cláusula ***CONSTRAINT** nombrerestricción restriccion*:
 - Claves primarias ( PRIMARY KEY)
 - Claves ajenas ( FOREIGN KEY)
@@ -147,26 +112,21 @@ Existen dos modos de especificar restricciones:
 > ***CONSTRAINT** CLAVE_P PRIMARY KEY ( nombre),*
 >
 > *...*
-### # La restricción PRIMARY KEY
+### La restricción PRIMARY KEY
 *<u>Una **clave primaria** es una columna o conjunto de columnas que el diseñador ha elegido para identificar de manera única una fila de una tabla</u>*.
 Las claves proporcionan una manera rápida y eficiente de buscar datos en una tabla, además de que permiten preservar la integridad de los datos. <u>Cuando se crea una clave primaria, automáticamente se crea un índice que facilita el acceso a la tabla</u>.
 La restricción PRIMARY KEY se usa para definir una **clave primaria** dentro de una tabla.
-> *CREATE TABLE empleados (*
->
-> *Cod_Empl CHAR ( 5) ,*
->
-> *...);*
->
-> *CREATE TABLE empleados (*
->
-> *Cod_Empl CHAR ( 5) ,*
->
-> *...*
->
-> ***CONSTRAINT** CLAVE_P PRIMARY KEY ( Cod_Empl)*
->
-> *…);*
-### # La restricción FOREIGN KEY
+```sql
+CREATE TABLE empleados (
+Cod_Empl CHAR ( 5) ,
+...);
+CREATE TABLE empleados (
+Cod_Empl CHAR ( 5) ,
+...
+CONSTRAINT CLAVE_P PRIMARY KEY ( Cod_Empl)
+…);
+```
+### La restricción FOREIGN KEY
 En la mayoría de las ocasiones es necesario relacionar dos o más tablas. Es algo intrínseco a la vida real y que ya quedó reflejado en el esquema relacional ( grafo relacional) dentro del diseño lógico.
 Para poder relacionar dos tablas, es necesario asignar un ***<u>campo en común</u>*** a las dos tablas. En nuestro ejemplo, el campo *Cod_Depto* existe tanto en la tabla *empleados* como en la tabla *departamentos*.
 *<u>Una **clave foránea** o **ajena** es una columna en una tabla que se corresponde con la clave primaria de otra tabla</u>*. En nuestro ejemplo, la columna *Cod_Depto* en la tabla *empleados* es la clave foránea y se debe corresponder con la clave primaria de la tabla Departamentos.
@@ -193,25 +153,18 @@ que se puede usar en dos formatos distintos:
 ***REFERENCES** nombretabla [( col)]*
 ***[ON DELETE CASCADE]|[ON DELETE SET NULL]**);*
 A continuación se muestra cómo definir dos tablas de ejemplo con una clave foránea. Las tablas se van a llamar: clientes y ventas
-> *CREATE TABLE clientes (*
->
-> *id_cliente NUMBER ( 5),*
->
-> *nombre VARCHAR2 ( 40),*
->
-> *PRIMARY KEY ( id_cliente));*
->
-> *CREATE TABLE ventas (*
->
-> *id_factura NUMBER ( 5),*
->
-> *id_cliente NUMBER ( 5) NOT NULL,*
->
-> *cantidad NUMBER ( 5),*
->
-> *PRIMARY KEY ( id_factura),*
->
-> ***FOREIGN KEY** ( id_cliente) **REFERENCES** clientes ( id_cliente));*
+```sql
+CREATE TABLE clientes (
+id_cliente NUMBER ( 5),
+nombre VARCHAR2 ( 40),
+PRIMARY KEY ( id_cliente));
+CREATE TABLE ventas (
+id_factura NUMBER ( 5),
+id_cliente NUMBER ( 5) NOT NULL,
+cantidad NUMBER ( 5),
+PRIMARY KEY ( id_factura),
+FOREIGN KEY ( id_cliente) REFERENCES clientes ( id_cliente));
+```
 **<u>Acciones de creación y borrado</u>**
 - En el ejemplo, se debe crear primero la tabla CLIENTES y después la tabla VENTAS, ya que VENTAS referencia a CLIENTES. Si lo hacemos al revés, Oracle dará un error.
 - Si queremos borrar las tablas, comenzamos borrando la tabla VENTAS y después, la tabla CLIENTE. Si lo hacemos al revés, Oracle dará un mensaje de error.
@@ -226,22 +179,22 @@ Se pueden agregar restricciones de clave foránea a una tabla con el uso de la s
 ***FOREIGN KEY**(...) **REFERENCES** otra_tabla (...) [**ON DELETE CASCADE**]*
 **<u>Acciones de modificación</u>**
 Si queremos modificar el código de algún cliente en la tabla CLIENTES y que las filas correspondientes en la tabla VENTAS con ese *id_cliente* sean modificadas automáticamente por Oracle, se creará un **disparador** que se activará justo después de realizar la modificación. El hecho de utilizar un disparador o trigger es porque Oracle no soporta ON UPDATE CASCADE.
-> ***CREATE OR REPLACE TRIGGER** Ventas_UpdateCascade 
-> **AFTER UPDATE OF** id_cli 
-> **ON** clientes 
-> **FOR EACH ROW** 
-> **BEGIN***
->
-> ***UPDATE ventas SET** id_cli=**:NEW**.id_cli 
-> **WHERE** id_cli=**:OLD**.id_cli;*
->
-> ***END;***
+```sql
+*CREATE OR REPLACE TRIGGER Ventas_UpdateCascade
+AFTER UPDATE OF id_cli
+ON clientes
+FOR EACH ROW
+BEGIN*
+*UPDATE ventas SET id_cli=:NEW.id_cli
+WHERE id_cli=:OLD.id_cli;*
+END;
+```
 El disparador se ejecuta como cualquier otro procedimiento de PL/SQL. Se puede modificar el disparador con la opción **compile,** tal como se muestra en la figura.
 > *SQL\> sta Compras_Update;*
 Si se producen errores en la compilación, pueden mostrarse con el comando SHOW ERRORS
 > *SQL\> SHOW ERRORS;*
 ![]( 2cuatri/SistemasEmpotrados/TrabajoGrupal/_media/Plantilla-Trabajo-GrupoMIo/media/image1.png)
-### # La restricción de obligatoriedad NOT NULL
+### La restricción de obligatoriedad NOT NULL
 Esta restricción asociada a una columna significa que no puede tener valores nulos, es decir que ha de tener obligatoriamente un valor. En caso contrario, causa una excepción.
 *CREATE TABLE persona*
 *(*
@@ -251,7 +204,7 @@ Esta restricción asociada a una columna significa que no puede tener valores nu
 >
 > *EDAD NUMBER ( 2) **CONSTRAINT** Edad_nonula **NOT NULL***
 *);*
-### # Valores por defecto. DEFAULT
+### Valores por defecto. DEFAULT
 En el momento de crear una tabla podemos asignar valores por defecto a las columnas, es decir, un valor por omisión cuando el valor de la columna no se especifica al insertar una tupla.
 En la especificación **DEFAULT** es posible incluir varias expresiones: constantes, funciones SQL y variables UID y SYSDATE.
 *CREATE TABLE altaempleado*
@@ -269,7 +222,7 @@ En la especificación **DEFAULT** es posible incluir varias expresiones: constan
 Si insertamos una fila en la tabla dando valores a todas las columnas salvo a DIRECCION y FECHA:
 *INSERT INTO altaempleado ( DNI, NOMBRE, EDAD) VALUES (´1234´, ´PEPA´, 21);*
 Al visualizar el contenido de la tabla, en la columna FECHA se almacenará la fecha del sistema ya que no se dio valor a la columna FECHA *( SELECT ** FROM altaempleados;)*
-### # La restricción UNIQUE
+### La restricción UNIQUE
 <u>Evita valores repetidos en una o más columnas</u>. La diferencia con la restricción PRIMARY KEY es que ésta es única por tabla. En cambio, puede haber varias restricciones **UNIQUE** definidas en una misma tabla. Al igual que en PRIMARY KEY, cuando se define una restricción UNIQUE se crea un índice automáticamente.
 Restricción de columna sin nombre:
 *CREATE TABLE alumnos (*
@@ -280,7 +233,7 @@ Restricción de tabla con nombre:
 *CREATE TABLE columnas (*
 *…..*
 ***CONSTRAINT** R_UNI **UNIQUE** ( nmat))*
-### # La restricción CHECK
+### La restricción CHECK
 La restricción **CHECK** nos permite definir los dominios de los campos. La siguiente restricción va a impedir que la columna *sexo* admita un valor distinto a F ( Femenino) o M ( masculino).
 > *CREATE TABLE mascotas*
 >
@@ -322,7 +275,7 @@ La consulta puede contener una subconsulta, una combinación de tablas o cualqui
 ## CREACIÓN Y USO DE VISTAS. CREATE VIEW
 Una **vista** es una tabla lógica que permite acceder a la información de una o de varias tablas. No contiene información por sí misma, su información está basada en la que contienen otras tablas ( tablas base).
 <u>Permiten, a partir de una consulta simple, obtener datos de una consulta compleja. Tienen la misma estructura que una tabla: filas y columnas, y se tratan de igual forma que una tabla.</u>
-## # Crear una vista. CREATE VIEW
+## Crear una vista. CREATE VIEW
 ***CREATE** [OR REPLACE] **VIEW** nombrevista*
 *[( columna [, columna])*
 ***AS** consulta;*
@@ -330,30 +283,28 @@ Donde:
 - AS consulta**: determina las columnas y las tablas que aparecerán en la vista.
 - [OR REPLACE]** crea de nuevo la vista si ya existía.
 Un ejemplo de creación de una vista sería la que contiene únicamente aquellos empleados que son comerciales.
-> ***CREATE VIEW** **comerciales***
->
-> ***AS SELECT** **Cod_Empl, Nombre***
->
-> ***FROM** **empleados***
->
-> ***WHERE** **Cod_Depto=‘007’;***
+```sql
+CREATE VIEW comerciales
+AS SELECT Cod_Empl, Nombre
+FROM empleados
+WHERE Cod_Depto=‘007’;
+```
 También podríamos haber creado la vista dando nombre a las columnas, por ejemplo, CNOM, CCOD.
-> ***CREATE VIEW** **comerciales ( CCOD, CNOM)***
->
-> ***AS SELECT** **Cod_Empl, Nombre***
->
-> ***FROM** **empleados***
->
-> ***WHERE** **Cod_Depto=‘007’;***
-## # Consultar las vistas existentes. USER_VIEWS
+```sql
+CREATE VIEW comerciales ( CCOD, CNOM)
+AS SELECT Cod_Empl, Nombre
+FROM empleados
+WHERE Cod_Depto=‘007’;
+```
+## Consultar las vistas existentes. USER_VIEWS
 Para consultar las vistas creadas se dispone de la vista **USER_VIEWS**. Podemos visualizar los nombres de vistas con sus textos de la manera:
 *SELECT VIEW_NAME, TEXT*
 *FROM **USER_VIEWS**;*
 <u>Si borramos la tabla *empleados,* la vista creada (*comerciales*) seguiría existiendo pero quedaría inutilizada. Por eso, es preferible borrarla.</u>
-## # Borrar una vista. DROP VIEW
+## Borrar una vista. DROP VIEW
 Para borrar una vista utilizaremos la siguiente sentencia:
 > ***DROP VIEW** nombre_vista;*
-## # Operaciones sobre vistas
+## Operaciones sobre vistas
 Las operaciones que se pueden realizar sobre vistas son las mismas que las que se llevan a cabo sobre las tablas: SELECT, INSERT, UPDATE y DELETE, aunque se han de tener en cuenta ciertas restricciones.
 Las **consultas** siguen la misma sintaxis que sobre tablas:
 ***SELECT** ( col1, col2, …|**)*
@@ -366,7 +317,7 @@ Para **borrar** una fila a través de una vista, ésta debe haber sido creada:
 - Sin usar funciones de grupo o referencias a pseudocolumnas.
 Para la **actualización** de filas a través de una vista: además de las restricciones anteriores, ninguna de las columnas que se va a actualizar se habrá definido como una expresión
 En el caso de la **inserción** de filas a través de una vista: además de las restricciones anteriores, todas las columnas obligatorias de la tabla asociada deben estar presentes en la vista.
-## # Vistas definidas sobre más de una tabla
+## Vistas definidas sobre más de una tabla
 Se pueden crear vistas definidas sobre el número de tablas que se deseen. Un ejemplo sería:
 *CREATE VIEW empl_deptos*
 *( CODEMPL, NOMBRE, NOMDEPTO, FINGRESO)*
@@ -378,7 +329,7 @@ Si intentamos insertar una fila en la vista creada obtenemos error ya que la vis
 *INSERT INTO empl_deptos (‘007’, ’Marga Solano’, ‘RRHH’, ‘27/10/2006’);*
 *ORA-01776: no se puede modificar más de una tabla base a través de una vista de unión*
 Los borrados y modificaciones también producirán errores.
-## # Manejo de expresiones y de funciones en vistas
+## Manejo de expresiones y de funciones en vistas
 Se pueden crear vistas usando funciones, expresiones en columnas y consultas avanzadas, pero únicamente se podrán consultar esas vistas. Por ejemplo:
 *CREATE VIEW empl ( NOMBRE, DEPTO, FINGRESO)*
 *AS*
@@ -394,7 +345,7 @@ En la **inserción** tampoco es posible introducir filas si las columnas de la v
 da el error: ORA-01733: columna virtual no permitida aquí
 ## SECUENCIAS
 Una **SECUENCIA** es un objeto de Base de Datos que sirve para generar enteros únicos. <u>Son muy útiles para generar automáticamente valores para claves primarias</u>.
-## # Crear secuencias
+## Crear secuencias
 <u>Para crear una secuencia en el esquema propio es necesario tener el privilegio</u> **CREATE SEQUENCE**. Se crea una secuencia en cualquier otro esquema con el privilegio CREATE ANY SEQUENCE.
 La sentencia de creación de secuencias tiene la siguiente sintaxis:
 ***CREATE SEQUENCE** nombresecuencia*
@@ -428,7 +379,7 @@ Insertamos varias filas en la tabla animales obteniendo el código del animal de
 El resultado de esta inserciones serán tres filas, la primera con código 1 y nombre *león*, la segunda con código 2 y nombre *ciervo* y la tercera con código 3 y nombre *tigre*.
 Para saber el valor actual de la secuencia utilizaremos:
 ***SELECT CODIGOS.CURRVAL** FROM DUAL;*
-## # Borrar secuencias
+## Borrar secuencias
 Para eliminar una secuencia se usa la orden **DROP SEQUENCE**:
 ***DROP SEQUENCE** CODIGOS;*
 ## SINÓNIMOS
@@ -437,14 +388,14 @@ Si el usuario MIM1 quisiera consultar la tabla JOBS del usuario HR, introducirí
 ***SELECT ** FROM HR.JOBS**;*
 Obteniendo el resultado esperado siempre y cuando a MIM1 se le hubiera concedido el permiso de consulta a la tabla JOBS.
 Mediante el uso de **SINÓNIMOS** se pueden utilizar dos o más nombres diferentes ( alias) para referirse al mismo objeto. Son especialmente útiles para acceder a vistas del usuario administrador por parte de los usuarios convencionales, dado que crean *transparencia de localización*.
-## # Crear sinónimos
+## Crear sinónimos
 <u>Para crear un sinónimo en el esquema propio es necesario tener el privilegio</u> **CREATE SYNONYM**.
 La sentencia de creación de secuencias tiene la siguiente sintaxis:
 ***CREATE [PUBLIC] SYNONYM** nomsinónimo **FOR** [usuario.]nombretabla;*
 Donde PUBLIC permite que el sinónimo esté disponible para todos los usuarios.
 SQL\> CREATE SYNONYM EMPLEOS FOR HR.JOBS;
 ![]( 2cuatri/Sistemas en tiempo Real/_media/Resumen STR/media/image2.png)
-## # Borrar sinónimos
+## Borrar sinónimos
 Para eliminar una sinónimo se usa la orden **DROP [PUBLIC] SYNONYM [usuario.]sinónimo**:
 ***DROP SYNONYM** EMPLEOS;*
 ## VISTAS DEL DICCIONARIO DE DATOS
@@ -464,7 +415,7 @@ El código que se lanza con el trigger es PL/SQL. Sin embargo, no resulta del to
 - Disparadores de tablas**: se producen cuando se ocurre cualquier operación DML sobre una tabla.
 - Disparadores de sustitución**: se producen cuando se ocurre cualquier operación DML sobre una vista.
 - Disparadores del sistema**: se producen cuando ocurre cualquier suceso del sistema o una instrucción DDL sobre un objeto.
-## # Creación de triggers
+## Creación de triggers
 **<u>Elementos de los triggers</u>**
 Puesto que un trigger es un código que se dispara, al crearle se deben indicar los siguientes elementos:
 - El evento que da lugar a la ejecución del trigger (**INSERT**, **UPDATE** o **DELETE**) .
@@ -480,7 +431,7 @@ En el apartado anterior se han indicado los posibles tiempos para que el trigger
 Hay dos tipos de trigger:
 - De instrucción**. <u>El cuerpo del trigger se ejecuta una sola vez por cada evento que lance el trigge</u>r. *Esta es la opción por defecto*. El código se ejecuta aunque la instrucción DML no genere resultados.
 - De fila**. <u>El código se ejecuta una vez por cada fila afectada por el evento</u>. Por ejemplo si hay una cláusula UPDATE que desencadena un trigger y dicho UPDATE actualiza 10 filas; si el trigger es de fila se ejecuta una vez por cada fila, si es de instrucción se ejecuta sólo una vez ( por instrucción).
-## # Sintaxis de creación de triggers
+## Sintaxis de creación de triggers
 ***CREATE** [OR REPLACE] **TRIGGER** nombre_trigger*
 *{ BEFORE | AFTER }*
 *{ DELETE | INSERT | UPDATE [ OF \<columna [, columna]\>] }*
@@ -509,7 +460,7 @@ y -20999
 ***END;***
 ***/***
 Este trigger impide que se puedan añadir registros a la tabla ENVIAENERGIA entre las 10 y las 12 horas.
-## # Referencias NEW y OLD
+## Referencias NEW y OLD
 Cuando se ejecutan instrucciones UPDATE, hay que tener en cuenta que se modifican valores antiguos (**OLD**) para cambiarles por valores nuevos (**NEW**). Las palabras NEW y OLD permiten acceder a los valores nuevos y antiguos respectivamente.
 El apartado REFERENCING de la creación de triggers, permite asignar nombres a las palabras NEW y OLD ( en la práctica no se suele utilizar esta posibilidad). Así *new.nombre* haría referencia al nuevo nombre que se asigna a una determinada tabla y *old.nombre* al viejo.
 En el apartado de instrucciones del trigger ( BEGIN) hay que adelantar el símbolo “:” a las palabra NEW y OLD ( serían *:new.nombre* y *:old.nombre*)
@@ -524,19 +475,15 @@ Imaginemos que deseamos hacer una auditoria sobre una tabla PRODUCTOR. Queremos 
 >
 > fecha_audit date );
 Como queremos que la tabla se actualice automáticamente, creamos el siguiente trigger. Lo escribimos en un archivo de texto con extensión *.sql* para poder ser ejecutado desde el entorno SQL:
-> ***CREATE OR REPLACE TRIGGER** **tr_crear_audit_productor***
->
-> ***BEFORE UPDATE OF** **prodMax** **ON** **productor ***
->
-> ***FOR EACH ROW***
->
-> ***BEGIN***
->
-> ***IF (:new.prodmax \<\> :old.prodmax) THEN***
->
-> ***INSERT INTO** **productor_audit***
->
-> ***VALUES (:old.nombre, :old.prodmax, :new.prodmax, sysdate);***
+```sql
+CREATE OR REPLACE TRIGGER tr_crear_audit_productor
+BEFORE UPDATE OF prodMax ON productor
+FOR EACH ROW
+BEGIN
+IF (:new.prodmax \<\> :old.prodmax) THEN
+INSERT INTO productor_audit
+VALUES (:old.nombre, :old.prodmax, :new.prodmax, sysdate);
+```
 ***END IF;***
 > ***END;***
 >
@@ -544,7 +491,7 @@ Como queremos que la tabla se actualice automáticamente, creamos el siguiente t
 Lo ejecutamos y realizamos un cambio en la tabla PRODUCTOR
 ![]( 2cuatri/Sistemas en tiempo Real/_media/Resumen STR/media/image3.png)
 Con este trigger cada vez que se modifique una fila de la tabla PRODUCTOR que afecte a la producción máxima, se añadirá una nueva fila en la tabla PRODUCTOR_AUDIT.
-## # IF INSERTING, IF UPDATING e IF DELETING
+## IF INSERTING, IF UPDATING e IF DELETING
 Son palabras que se utilizan para determinar la instrucción que se estaba realizando cuando se lanzó el trigger. Esto se utiliza en triggers que se lanzan para varias operaciones ( utilizando INSERT OR UPDATE por ejemplo). En ese caso se pueden utilizar sentencias IF seguidas de INSERTING, UPDATING o DELETING; estas palabras devolverán TRUE si se estaba realizando dicha operación.
 ***CREATE** [OR REPLACE] **TRIGGER** nombre_trigger*
 ***BEFORE INSERT OR DELETE OR UPDATE OF** columna **ON** nombre_tabla*
@@ -562,7 +509,7 @@ Son palabras que se utilizan para determinar la instrucción que se estaba reali
 >
 > ***ENDIF***
 ***END;***
-## # Triggers del tipo INSTEAD OF
+## Triggers del tipo INSTEAD OF
 Hay un tipo de trigger especial que se llama INSTEAD OF y que sólo se utiliza con las vistas. Una vista es una consulta SELECT almacenada. En general sólo sirven para mostrar datos, pero podrían ser interesantes para actualizar. Por ejemplo, si partimos de las siguientes tablas y vista correspondiente:
 > PIEZAS (<u>tipo</u>, <u>modelo</u>, precio_venta)
 >
@@ -593,7 +540,7 @@ Eso lo realiza el trigger de tipo INSTEAD OF, que sustituirá el INSERT original
 >
 > ***/***
 Este trigger permite añadir a esa vista añadiendo los campos necesarios en las tablas relacionadas en la vista. Se podría modificar el trigger para permitir actualizar, eliminar o borrar datos directamente desde la vista y así desde cualquier acceso a la base de datos se utilizaría esa vista como si fuera una tabla más.
-## # Triggers del sistema
+## Triggers del sistema
 Se disparan cuando se produce un suceso del sistema o se activa una instrucción DDL y su sintaxis general es la siguiente:
 ***CREATE** [OR REPLACE] **TRIGGER** nomtrigger*
 *{ BEFORE | AFTER }*
@@ -631,30 +578,26 @@ Vamos a auditar los accesos a la base de datos, así como todos los eventos gene
 >
 > );
 Posteriormente creamos el disparador:
-> ***CREATE OR REPLACE TRIGGER*** ***tr_Control_Accesos***
->
-> ***AFTER DDL OR LOGON ON DATABASE***
->
-> ***BEGIN***
->
-> ***INSERT INTO*** ***ctrl_accesos ( usuario, instante, evento)***
->
-> ***VALUES*** ***( USER, SYSTIMESTAMP, ORA_SYSEVENT || '**' || ORA_DICT_OBJ_NAME);***
->
-> ***END;***
->
-> ***/***
+```sql
+CREATE OR REPLACE TRIGGER tr_Control_Accesos
+AFTER DDL OR LOGON ON DATABASE
+BEGIN
+INSERT INTO ctrl_accesos ( usuario, instante, evento)
+VALUES ( USER, SYSTIMESTAMP, ORA_SYSEVENT || '**' || ORA_DICT_OBJ_NAME);
+END;
+/
+```
 Realizamos diversos accesos con diferentes usuarios y generamos diversas instrucciones DDL.
 ![]( 2cuatri/Sistemas en tiempo Real/_media/Resumen STR/media/image4.png)
-## # Eliminar triggers
+## Eliminar triggers
 ***DROP TRIGGER** nombretrigger;*
-## # Recompilar triggers
+## Recompilar triggers
 ***ALTER TRIGGER** nombretrigger **COMPILE**;*
-## # Desactivar triggers
+## Desactivar triggers
 ***ALTER TRIGGER** nombretrigger **DISABLE**;*
-## # Activar triggers
+## Activar triggers
 ***ALTER TRIGGER** nombretrigger **ENABLE**;*
-## # Desactivar o activar todos los triggers de una tabla 
+## Desactivar o activar todos los triggers de una tabla
 Eso permite en una sola instrucción operar con todos los triggers relacionados con una determinada tabla ( es decir actúa sobre los triggers que tienen dicha tabla en el apartado ON del trigger).
 ***ALTER TABLE** nombretabla { **DISABLE** | **ENABLE} ALL TRIGGERS**;*
 ## INTRODUCCIÓN A LA ADMINISTRACIÓN DE BASES DE DATOS
@@ -668,7 +611,7 @@ Estas funciones se concretan en una serie de procedimientos de trabajo del DBA:
 - Respaldo y recuperación de la Base de Datos*: recuperación de la información en caso de pérdida física o pérdida de integridad de los datos. Utilización de utilidades de carga, descarga, importación y exportación de datos.
 - Control de concurrencia de múltiples usuarios a un mismo recurso*.
 - Manejo de herramientas de administración de la Base de Datos*: control de objetos y diccionario de datos.
-## # Gestión de usuarios
+## Gestión de usuarios
 Un **usuario** es un nombre definido en la base de datos con posibilidad de conectarse a ella y acceder a determinados recursos de la misma según ciertas restricciones definidas por el usuario administrador.
 Asociado a cada usuario de la base de datos se encuentra el objeto **esquema** que tiene el mismo nombre que el usuario. <u>El esquema es una colección de objetos ( tablas, secuencias, procedimientos, funciones, disparadores, índices, etc.) a los que tiene derecho dicho usuario</u>. Para acceder a los objetos de otro esquema se necesita el correspondiente permiso.
 En el caso concreto de la instalación de la Base de Datos Oracle, se crearon dos usuarios con privilegios de administrador: **SYS** y **SYSTEM.**
@@ -707,7 +650,7 @@ La orden para modificar usuarios es la siguiente:
 **<u>Borrado de usuarios</u>**
 ***DROP USER** nombre_usuario [CASCADE];*
 La opción CASCADE elimina todos los objetos del usuario antes de borrar el usuario.
-## # Privilegios de usuarios
+## Privilegios de usuarios
 Ningún usuario puede realizar una operación si previamente no se le ha concedido el **privilegio** de hacerlo. Un **rol** o función es un conjunto de privilegios. A un rol se le pueden asignar privilegios y a un usuario roles y privilegios. Existen tres roles creados por defecto por el sistema:
 | | |
 - ----------: -----------------------------------------------------------------

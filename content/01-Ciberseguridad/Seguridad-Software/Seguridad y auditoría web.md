@@ -22,13 +22,13 @@ Características:
 - HTTP** ( Hypertext Transport Protocol): protocolo simple de aplicación para intercambiar información entre el servidor web y el cliente.
 **Contenido estático**: datos presentados al usuario en función de cómo hayan sido definidos por el creador de la aplicación. Se usan lenguajes interpretados ( scripts) para añadir funcionalidades, especialmente para ofrecer una experiencia interactiva: HTML, XML, JavaScript...
 **Contenido dinámico**: el servidor web crea contenido sobre la marcha, en función de las acciones de los usuarios que acceden a la aplicación: PHP, Java ( Servlets y JSP), Perl, Ruby, Python, Node.js, ASP/ASP.NET...
-## # Aplicaciones web: inconvenientes
+## Aplicaciones web: inconvenientes
 - Habitualmente ofrecen menos funcionalidades que las aplicaciones de escritorio.
 - La disponibilidad depende del proveedor de la conexión a internet o del enlace entre el servidor de la aplicación y el cliente.
 - Están más expuestas a ataques.
 ## Vulnerabilidades web más críticas
 OWASP ( Open Web Application Security Project) publica el Top Ten de vulnerabilidades ( https://owasp.org/Top10/, última actualización 2021) y el Top Ten Controls ( https://www.owasp.org/index.php/OWASP_Proactive_Controls).
-## # Las 10 vulnerabilidades más críticas ( OWASP Top 10 - 2021)
+## Las 10 vulnerabilidades más críticas ( OWASP Top 10 - 2021)
 - A01 Broken Access Control
 - A02 Cryptographic Failures
 - A03 Injection
@@ -51,7 +51,7 @@ OWASP ( Open Web Application Security Project) publica el Top Ten de vulnerabili
 **A10 — Server-Side Request Forgery ( SSRF).** Falsificación de solicitudes del lado del servidor: ocurre cuando una aplicación web obtiene un recurso remoto sin validar la URL proporcionada por el usuario. El atacante podría editar la consulta para que la llamada se haga a una dirección diferente de la permitida, forzando al servidor a enviar una solicitud maliciosa a un destino inesperado. Puede tratarse de ataques contra el propio servidor ( proporcionando "localhost" o 127.0.0.1 para acceder a recursos inesperados) o contra otros servidores ( forzando al servidor de aplicaciones a solicitar recursos a sistemas a los que los usuarios no pueden acceder directamente).
 Comparación OWASP Top 10 2017-2021: https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project
 ## Profundizando en algunas vulnerabilidades: autenticación, autorización, inyección
-## # Autenticación
+## Autenticación
 Métodos más comunes de ataque a la autenticación basada en usuario/contraseña: enumeración de nombres de usuario, adivinar contraseñas, robar contraseñas, robar cookies, acceder a las credenciales mediante ataques de inyección, explotar debilidades en el sistema de gestión de identidad ( registro de usuarios, recuperación de contraseñas, etc.).
 **Enumeración de usuarios.** Objetivo: conseguir los nombres de usuario válidos en el sistema. Métodos: usar la información obtenida en el reconocimiento de la aplicación para inferir posibles nombres; observar mensajes de error en el login ( un mensaje como "Nombre de usuario no válido" o "Contraseña no válida" es menos seguro que uno genérico como "Nombre de usuario o contraseña no válidos"); aprovechar procesos mal diseñados en el servicio de recuperación de contraseñas ( SSPR, Self-Service Password Reset) que responden si el nombre de usuario no es válido; aprovechar que se permita usar el propio nombre como identificador en el registro, mostrando variantes fácilmente adivinables si ya existe; o realizar un ataque de temporización, analizando si el tiempo de respuesta difiere entre un nombre erróneo y una contraseña errónea cuando el sistema no da detalles explícitos.
 Contramedidas: no dar detalles en los mensajes de error; política de bloqueo de cuentas ( registrar el número de intentos fallidos en un intervalo y bloquear la cuenta al superar un límite); uso de CAPTCHA ( Completely Automated Public Turing test to tell Computers and Humans Apart) para evitar el uso de robots, distinguiendo entre una máquina y un humano mediante operaciones fáciles para el humano pero difíciles para la máquina.
@@ -63,7 +63,7 @@ Para prevenir ataques a cookies: usar un buen generador de cookies, cifrarlas pa
 **Robo de credenciales por ataques de inyección.** Si las credenciales se guardan en una base de datos SQL, se puede usar inyección SQL para obtener información de credenciales de forma no autorizada. Si se guardan en ficheros XML, se puede usar inyección XPath ( lenguaje de consultas para navegar por un documento XML) cuando la aplicación no valida adecuadamente la consulta del usuario. Prevención: validación de entradas, evitando que el usuario introduzca caracteres interpretables, y parametrización de las consultas.
 **Gestión de identidad.** Comprende el registro, la recuperación de contraseña y el cambio de contraseña. Estas aplicaciones son complejas y no siempre están bien diseñadas, por lo que son susceptibles de ataques dirigidos a conseguir acceso. En aplicaciones abiertas, crear una cuenta basta para acceder al sistema, por lo que se propone el uso de CAPTCHA para evitar la creación indiscriminada de cuentas por robots. En la recuperación de contraseña, las preguntas personales ( por ejemplo, "¿nombre de tu primer profesor?") suelen ser fácilmente adivinables, y el envío de un enlace de recuperación por correo puede ser vulnerable si el atacante consigue falsificar el enlace con su propia dirección de correo, cambiando así la contraseña de la víctima.
 Resumen de defensas frente a ataques a la autenticación: políticas de contraseñas fuertes, bloqueo y CAPTCHA contra el adivinado de contraseñas; HTTPS y autenticación Digest contra el robo por escucha; cifrado de la información de las cookies contra su robo; validación de datos y parametrización de consultas contra el robo de credenciales por inyección; y buenas políticas de gestión de identidad contra los ataques al sistema de gestión de identidad.
-## # Autorización
+## Autorización
 Una vez autenticado, el usuario necesita acceder a servicios, operaciones o recursos, y la aplicación debe comprobar si tiene permiso para ello. Habitualmente se implementa dando al usuario autenticado un token de acceso o ID de sesión que lo identifica en la aplicación. La aplicación decide los derechos de acceso en función del token, consultando su ACL ( Access Control List): si el token está en la lista, se comprueban los recursos a los que tiene acceso; si el recurso solicitado está asociado, se da acceso, y si no lo está o el token no figura en la lista, se rechaza.
 Con los tokens/ACL se evita la reautenticación continua, lo cual es cómodo para el usuario, pero los tokens pueden ser robados o adivinados y usados para obtener accesos no autorizados. Las vulnerabilidades típicas son errores en la configuración de ACL y errores de software.
 **Gestión de los tokens.** El token ( ID de sesión) lo genera el servidor de forma aleatoria ( no adivinable) y temporal ( dura lo que la sesión). El servidor lo envía al cliente ( por ejemplo, mediante `set-cookie`) y el cliente lo almacena y lo envía en sus peticiones ( GET, POST...).
@@ -78,7 +78,7 @@ Con los tokens/ACL se evita la reautenticación continua, lo cual es cómodo par
 - Recursos ocultos**: en algunos casos se ocultan directorios sensibles en vez de protegerlos mediante ACL; un estudio cuidadoso de la aplicación puede revelar información oculta ( por ejemplo, si existe `/user/menu`, podría existir también `/admin/menu`).
 **Defensas.** Buenas prácticas para evitar ataques a los tokens: usar TLS, usar el parámetro `Secure` en la cabecera `Set-Cookie` ( solo HTTPS), no incluir datos personales sensibles en el token, regenerar el token si cambian los privilegios o hay un nuevo inicio de sesión, invalidar el token tras un tiempo de inactividad y no permitir varias sesiones concurrentes del mismo usuario.
 Logs de seguridad: dan información precisa sobre ataques y pueden alertar de anomalías que sean potenciales ataques. Conviene registrar cambios en parámetros del perfil de usuario ( teléfono, email...) y de contraseña, avisar por correo de eventos como el cambio de contraseña o la eliminación/adición de usuarios, y no añadir información sensible en los logs.
-## # Inyección
+## Inyección
 Los ataques de inyección son de los más comunes entre los dirigidos a las aplicaciones web. La clave para prevenirlos es la validación de datos, una labor compleja.
 Ataques clasificados por objetivo: control del servidor mediante buffer overflow ( introduciendo valores de variables muy largos que desbordan la memoria); almacenamiento de datos ( SQL...); usuarios de la aplicación ( XSS, phishing...); host del servidor web ( ejecutar comandos del sistema operativo); y contenido de la aplicación ( provocar mensajes de error reveladores, saltarse restricciones de acceso a ficheros, acceder a datos prohibidos).
 ¿Dónde realizar la inyección? En los parámetros enviados por GET o POST ( procedentes de formularios o de la propia aplicación, con valores interesantes como nombre, contraseña, teléfono, número de tarjeta); mediante crawling se pueden catalogar ficheros, parámetros y campos de formulario; también en las cookies ( por ejemplo, el token de sesión).
@@ -95,16 +95,16 @@ Tipos de XSS: **almacenado** ( el código malicioso se guarda permanentemente en
 Contramedidas: en URLs y entradas de formularios, convertir `<` y `>` en su código HTML equivalente (`&lt` y `&gt`), de forma que el navegador no interprete `&ltscript&gt` como una etiqueta de script; si la aplicación permite etiquetas de formato de texto ( negrita, cursiva...), usar expresiones regulares para validar que solo se aceptan las etiquetas permitidas.
 **Evitar ataques de inyección en general:** parametrización; validación de datos ( límites de valores, caracteres permitidos, listas blancas de valores); rechazar caracteres especiales sin sentido para la naturaleza del dato ( por ejemplo, en un email tiene sentido `@` pero no `(`); tipado apropiado, asignando tipos específicos en lugar de strings cuando sea posible; y control de acceso, limitando el acceso solo a los recursos necesarios.
 ## Auditoría web
-## # Evaluación de la seguridad de las aplicaciones web ( testing web)
+## Evaluación de la seguridad de las aplicaciones web ( testing web)
 - Black box**: no hay conocimientos previos ( necesaria una fase de reconocimiento); evaluación totalmente externa a la red objetivo.
 - Grey box**: se actúa como usuario del sistema, con cierta información conocida ( diseño, arquitectura, documentación); evaluación más específica.
 - White box**: se dispone de todos los datos sobre actividad, arquitectura, sistemas y procesos, con relación directa con los desarrolladores; evaluación basada en conocimiento no accesible a los hackers.
-## # Tipos de herramientas de testing web
+## Tipos de herramientas de testing web
 - Crawler/spider**: descarga de forma sistemática páginas y las indexa ( bot).
 - Fuzzer**: busca errores software introduciendo datos inesperados en las entradas de las aplicaciones.
 - Proxy**: intercepta las comunicaciones entre cliente y servidor.
 - Scanner**: busca vulnerabilidades.
-## # Herramientas de testing en la red
+## Herramientas de testing en la red
 - Escaneo de puertos: Nmap.
 - Escaneo de vulnerabilidades: OpenSCAP, OpenVas, Nikto, Nessus.
 - Explotación de vulnerabilidades: Metasploit.
@@ -147,12 +147,12 @@ Clasificación de algunas herramientas de testing web disponibles en Kali:
  -
  - x
  -
-## # Metodologías
+## Metodologías
 Hay muchas: PTEST ( http://www.pentest-standard.org/index.php/Main_Page), SANS ( http://www.sans.org/reading-room/whitepapers/auditing/conducting-penetration-test-organization-67), OSSTMM ( http://www.pen-tests.com/open-source-security-testing-methodology-manual-osstmm.html) y OWASP ( https://owasp.org/www-project-web-security-testing-guide/).
 **OWASP Testing Guide**: metodología específica de testing web, basada en la experiencia de un gran grupo de expertos en seguridad web, y muy completa.
-## # Procedimiento integrado
+## Procedimiento integrado
 La verificación de la seguridad debe estar presente en todas las fases del ciclo de vida de la aplicación ( define, diseña, desarrolla, despliega, mantiene), dentro del SDLC ( Secure/Software Development Life Cycle).
-## # Ciclo de vida del producto web ( OWASP)
+## Ciclo de vida del producto web ( OWASP)
 Fases a considerar en el ciclo del desarrollo seguro ( SDL) del producto web: antes del inicio, definición y diseño, desarrollo software, despliegue, operación y mantenimiento.
 **Actividades antes del inicio:**
 1. Verificar que la seguridad se contempla en el ciclo de vida del desarrollo del software.
@@ -172,7 +172,7 @@ Fases a considerar en el ciclo del desarrollo seguro ( SDL) del producto web: an
 1. Revisión de los procedimientos de gestión y mantenimiento de la aplicación e infraestructura.
 2. Revisión periódica/auditoría ( mensual, cuatrimestral) de la aplicación y la infraestructura, para conocer el nivel de seguridad actual y verificar que los nuevos riesgos son tratados.
 3. Chequear los cambios introducidos en la aplicación: actualizaciones, nuevas funcionalidades.
-## # Metodología de auditoría
+## Metodología de auditoría
 1. Evaluar vulnerabilidades: ¿con herramientas automáticas o de forma manual? ¿Cómo se sabe qué posibles ataques verificar?
 2. Calcular riesgos e impacto de los posibles ataques: ¿cómo se define un riesgo? ¿Cómo se define el impacto?
 3. Realizar el informe: ¿a quién va dirigido? ¿Con qué lenguaje? ¿Qué estructura tiene?

@@ -52,12 +52,12 @@ Errores de desarrollo: 1. Validación de la entrada y representación; 2. Abuso 
 - Overflow** ( buffer overflow, integer overflow...): desbordamiento de memoria.
 - Format Strings**: mal uso de las funciones de tratamiento de cadenas con parámetros de formato.
 - Injection**: inyección de comandos maliciosos, inyección SQL.
-## # Organización de la memoria en un proceso
+## Organización de la memoria en un proceso
 - Code**: instrucciones del programa a ser interpretadas y ejecutadas.
 - Data**: variables globales, estáticas.
 - Heap**: variables dinámicas.
 - Stack**: argumentos de funciones, variables locales y puntero de instrucciones ( dirección de retorno).
-## # Buffer Overflow
+## Buffer Overflow
 Consiste en sobrescribir datos en memoria: ocurre cuando se copia en un buffer un valor que ocupa más espacio del que se ha reservado. Puede afectar a los segmentos Data ( variables globales y estáticas), Heap ( variables dinámicas) y Stack ( argumentos de funciones, variables locales, puntero de instrucciones).
 **Stack-based Overflow.** Imaginemos el siguiente código en C:
 ```c
@@ -67,7 +67,7 @@ void funcion ( char * cadena){
 }
 ```
 En la pila se almacenan los parámetros de la función (`*cadena`), la dirección de retorno (`ret`) y el espacio para la variable `buffer`. El problema es que `strcpy` no comprueba si `cadena` cabe en `buffer`. Si `cadena` es mayor que `buffer`, se produce un overflow que sobrescribe `ret`: en el mejor caso provoca una denegación de servicio, y en el peor el programa salta a la nueva dirección de retorno, permitiendo la ejecución arbitraria de código.
-## # Integer Overflow
+## Integer Overflow
 Ocurre cuando en un programa se intenta asignar a un entero un valor que está fuera del rango de los valores representables. El rango depende de la arquitectura y el tamaño de palabra: con 8 bits el valor máximo representable es 2⁸ − 1 = 255; con 16 bits, 2¹⁶ − 1 = 65.535; con 32 bits ( x86), 2³² − 1 = 4.294.967.295; con 64 bits, 2⁶⁴ − 1 = 18.446.744.073.709.551.615.
 Con 16 bits hay 2¹⁶ valores posibles ( 65.536): un `unsigned int` ( entero sin signo) va del 0 al 65.535, y un `int` ( entero con signo) va de −32.768 a 32.767.
 El problema típico es que una operación como `uia + uib` puede desbordar el espacio reservado para el resultado. La solución es una precondición: verificar si puede haber desbordamiento antes de hacer la operación.
@@ -78,7 +78,7 @@ Otro caso es la conversión automática de tipos, por ejemplo al recibir un `int
 - Desactivar los servicios innecesarios.
 - Tener el software actualizado.
 - No permitir la ejecución de la pila ( a nivel de sistema operativo).
-## # Format String
+## Format String
 Ocurre en funciones que permiten caracteres de formato de cadenas, cuando estos no se introducen adecuadamente. Funciones típicas: `printf` ( imprime en la salida estándar), `sprintf` ( imprime en una cadena), `snprintf` ( imprime en una cadena verificando la longitud) y `fprintf` ( imprime en un fichero).
 Caracteres de formato: `%d` ( entero por valor), `%x` ( hexadecimal por valor), `%s` ( string por referencia, `char *`), `%n` ( almacena el número de caracteres procesados, `int *`).
 En una llamada como `printf ("Título: %s %d", cadena, entero)`, la función procesa la cadena de formato carácter a carácter y, al encontrar `%`, determina el tipo de parámetro y lo extrae de la pila. El problema aparece con código como:
@@ -93,7 +93,7 @@ Aquí la llamada a `printf` es vulnerable porque se toma como cadena de formato 
 - Lectura de la memoria: `cadena = "%08x|%s"`.
 - Ejecución de código sobrescribiendo la dirección de retorno en la pila: `cadena = "<direcciónret><shellcode>"`.
 Para evitarlo, basta con utilizar correctamente las funciones que admiten cadenas de formato: `printf ("%s", cadena)`.
-## # Inyección SQL
+## Inyección SQL
 Consiste en ejecutar comandos SQL a través de la construcción de instrucciones SQL dinámicas en la entrada: se inserta código SQL intruso dentro del código SQL programado, con el fin de que se ejecute la porción de código incrustada sobre la base de datos. Se debe a la incorrecta comprobación o filtrado de las variables utilizadas en un programa que contiene o genera código SQL. Ocurre cuando los datos ingresan en un programa desde una fuente que no es de confianza y esos datos construyen dinámicamente una consulta SQL.
 Ejemplo de código vulnerable:
 ```

@@ -451,10 +451,6 @@ match ip-protocol tcp_only
 
 ```bash
 $ flow-cat ./data | flow-nfilter -f filters -F tcp_only | flow-stat -f9 –S1
-#
-#
-#
-#
 130.49.72.0 30415 6881695 36110
 128.223.216.0 28716 540202269 427566
 130.49.88.0 24267 10770631 32186
