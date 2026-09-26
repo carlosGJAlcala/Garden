@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "wiki.seedmycelium.com",
     ignorePatterns: ["private", "templates", ".obsidian","Recursos/**","assets/**","Plantillas/**","media/**","08-Personal/**"],
     defaultDateType: "modified",
     theme: {
